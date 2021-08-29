@@ -289,7 +289,43 @@ header p{
   z-index: 3;
   padding: 0  1rem;
 }
-
+.in-store-pics{
+  width: 100%;
+  height: 35rem;
+  background-color: beige;
+  position: relative;
+  margin-top: 5rem;
+}
+.condiments-1{
+  width: 35%;
+  height: 25rem;
+  background-color: red;    
+  position: absolute;
+  left: 9rem;
+  top: 5rem;
+  border: 5px solid blue;
+  border-radius:  40px;
+  overflow: hidden;
+}
+.condiments-1 img{
+  width: 100%;
+  height: 100%;
+}
+.pre-pack-fridge{
+  width: 35%;
+  height: 25rem;
+  background-color: red;   
+  position: absolute;
+  right: 9rem;
+  top: 5rem;
+  border: 5px solid blue;
+  border-radius: 40px ;
+  overflow: hidden;
+}
+.pre-pack-fridge img{
+  width: 100%;
+  height: 100%;
+}
 
 
 
