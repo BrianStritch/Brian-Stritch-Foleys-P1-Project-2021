@@ -268,7 +268,7 @@ header p{
 .hero-2{
   float: left;
   margin: 5% 5%;
-  padding: 1% 2%;
+  padding: 1% 2%;  
 }
 .hero-3{
   float: left;
@@ -280,7 +280,15 @@ header p{
   height: 100%;
   min-width: 203px;
 }
-
+.frozen-seasoning-message{
+  text-align: center;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 61rem;
+  left: 1rem;
+  z-index: 3;
+  padding: 0  1rem;
+}
 
 
 
