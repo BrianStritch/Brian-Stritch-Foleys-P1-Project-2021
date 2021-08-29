@@ -161,3 +161,91 @@ header p{
     display: inline-block;
   }
 /* *************** navigation links end ************* */
+
+/* *************** navigation links end ************* */
+
+/* **************************************** end of header styles ********************************* */
+/************** index / home page *******************/
+/* hero image and surrounding images and covers*/
+
+#hero-section-1{
+  width: 100%;
+  height: 26rem;
+  /* vertical-align: middle; */
+  position: relative;
+  
+}
+.shop-front{
+  width: 60%;
+  height: 100%;
+  border: 5px groove blue;
+  border-radius: 13px;
+  overflow: hidden;    
+  min-width: 640px;
+  position: absolute;
+  left: 18.5rem;
+  top: 2rem;
+}
+.shop-front img, .bord-bia img, .great-taste-award img, .craft-butcher img, .irish-beef img{
+  width: 100%;
+  height: 100%;
+}
+.bord-bia{
+  width: 10rem;
+  height: 10rem;
+  border: 5px groove blue;
+  border-radius: 13px;
+  overflow: hidden;    
+  position: absolute;
+  left: 4rem;
+  top: 17rem;
+}
+.great-taste-award{
+  width: 10rem;
+  height: 10rem;
+  border: 5px groove blue;
+  border-radius: 13px;
+  overflow: hidden;    
+  position: absolute;
+  left: 4rem;
+  top: 4rem;
+}
+.craft-butcher{
+  width: 10rem;
+  height: 10rem;
+  border: 5px groove blue;
+  border-radius: 13px;
+  overflow: hidden;    
+  position: absolute;
+  right: 4rem;
+  top: 4rem;
+}
+.irish-beef{
+  width: 10rem;
+  height: 10rem;
+  border: 5px groove blue;
+  border-radius: 13px;
+  overflow: hidden;    
+  position: absolute;
+  right: 4rem;
+  top: 17rem;
+}
+.opening-text{
+  text-align: center;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 34rem;
+  left: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
