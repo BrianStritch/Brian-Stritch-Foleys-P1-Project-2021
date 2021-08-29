@@ -237,6 +237,49 @@ header p{
   top: 34rem;
   left: 1rem;
 }
+.hero-section-2{
+  width: 100%;
+  height: 24rem;    
+  border: none;
+  padding: 6rem 0 0 0;
+  margin: 0; 
+  justify-content: space-evenly;    
+}
+
+.hero-1, .hero-2, .hero-3{
+  width: 20%;
+  height: 17rem;
+  display: inline;
+  background-color: white;
+  border: 5px solid blue;
+  border-radius: 10%;
+  overflow: hidden;
+  box-sizing: border-box;    
+}
+.hero-1{
+  float: left;
+  margin:5% 5% 5% 10%;
+
+}
+.hero-1 img{
+  width: 100%;
+  height: 100%;
+}
+.hero-2{
+  float: left;
+  margin: 5% 5%;
+  padding: 1% 2%;
+}
+.hero-3{
+  float: left;
+  margin: 5% 10% 5% 5% ;
+  padding: 0;
+}
+.hero-3 img{
+  width: 100%;
+  height: 100%;
+  min-width: 203px;
+}
 
 
 
