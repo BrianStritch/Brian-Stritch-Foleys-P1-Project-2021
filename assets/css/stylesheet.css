@@ -380,7 +380,106 @@ footer p{
   font-weight: 800;
   font-size: 2rem;
 }
-
+.meat-type-heading{
+  width: 100%;
+  height: 3.5rem; 
+  clear: both; 
+  background-color: blue; 
+  color: #fafafa;   
+  z-index: 1;
+}
+.meat-type-heading div{
+  width: 30%;
+  height: 2rem;
+  float: left;
+  
+}
+hr{
+  width: 100%;
+  height: 2px;
+  color: white;
+  background-color:white;
+  margin: 5% 5% 5% 14%;
+  
+} 
+.product-heading{
+  text-align: center;
+  display:-webkit-inline-box;
+  margin: 2% 0 0 33%;    
+}
+.product-outer{
+  width: 100%;
+  height: 19.5rem;
+  background-color: beige;
+  position: relative;
+}
+.meat-cuts-left img{
+  width: 26%;
+  height: 60%;
+  margin: 8% 0 0 5%;
+  border: 5px solid blue;
+  border-radius: 0 40px;
+  overflow: hidden;
+  position: absolute;
+  top: -20%;
+  left: -4%; 
+  z-index: 0;
+}
+.meat-cuts-right img{
+  width: 26%;
+  height: 60%;
+  margin: 8% 0 0 5%;
+  border: 5px solid blue;
+  border-radius: 0 40px;
+  overflow: hidden;
+   position: absolute;
+  top: -20%;
+  right: 1%; 
+  z-index: 0;
+}
+.animal-pic-right img{
+  width: 30%;
+  height: 78%;
+  margin: 8% 0 0 5%;
+  border: 5px solid blue;
+  border-radius: 0 40px;
+  overflow: hidden;
+   position: absolute;
+  top: -30%;
+  right: 1%;
+  z-index: 0; 
+}
+.animal-pic-left img{
+  width: 30%;
+  height: 78%;
+  margin: 8% 0 0 5%;
+  border: 5px solid blue;
+  border-radius: 0 40px;
+  overflow: hidden;
+   position: absolute;
+  top: -32%;
+  left: -4%;
+  z-index: 0; 
+}
+.product-outer div p{
+  width: 43%;
+  height: auto;
+  margin: 8% 0 0 5%;
+  border: 5px solid blue;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: -12%;
+  left: 22.5%;
+  padding: 1%;
+  z-index: 2;
+}
+.product-outer .left{
+  top: -10%;
+  left: 22%;    
+}
 
 
 
