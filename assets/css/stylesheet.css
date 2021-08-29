@@ -162,16 +162,50 @@ header p{
   }
 /* *************** navigation links end ************* */
 
-/* *************** navigation links end ************* */
-
 /* **************************************** end of header styles ********************************* */
+
+/* ************************************* footer styles and links ********************************************** */
+
+/*footer and social media links */
+footer{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 113.5rem;
+  height: 2rem;
+}
+footer h3{
+  text-align: center;
+  color: blue;
+}
+footer p{
+  padding: 0 20px 0 0;
+  text-align: right;
+}
+.social-media-links li{
+  display: inline;
+}
+.social-media-links{
+  font-size: 250%;
+  margin: 1%;
+  padding: 0 0 0 6%;
+  color: #fafafa;
+  letter-spacing: 100px;
+  text-align: center;       
+}
+.fab {
+  color: blue;  
+}
+
+
+/* ************************* end of footer styles *************************** */
+
 /************** index / home page *******************/
 /* hero image and surrounding images and covers*/
 
 #hero-section-1{
   width: 100%;
   height: 26rem;
-  /* vertical-align: middle; */
   position: relative;
   
 }
@@ -333,7 +367,7 @@ header p{
   z-index: 3;
   padding: 0  1rem;
 }
-
+/********************* end of index page styles ***********************/
 
 
 
