@@ -123,6 +123,119 @@
                         </select>
                     </fieldset>
                 </div>
+                <fieldset class="products-and-services">
+                    <legend>Products and services</legend>
+                    <div>
+                        <label for="pick-meat" class="fav-meat">Choose your favourite type of meat.</label>
+                        <input id="pick-meat"  list="meats" name="favourite-meat" required>
+                        <datalist id="meats">
+                            <option value="Beef">
+                            <option value="Chicken">
+                            <option value="Duck">
+                            <option value="Ham">   
+                            <option value="Lamb">
+                            <option value="Pork"> 
+                            <option value="Turkey">
+                            <option value="Venison">
+                            <option value="Veal">
+                            <option value="Wagyu">    
+                            <option value="Wild-game">                        
+                        </datalist>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="pick-meat" class="least-fav-meat">Choose your least favourite type of meat.</label>
+                        <input id="pick-meat"  list="meats" name="least-favourite-meat" required>
+                        <datalist id="meats">
+                            <option value="Beef">
+                            <option value="Chicken">
+                            <option value="Duck">
+                            <option value="Ham">   
+                            <option value="Lamb">
+                            <option value="Pork"> 
+                            <option value="Turkey">
+                            <option value="Venison">
+                            <option value="Veal">
+                            <option value="Wagyu">    
+                            <option value="Wild-game">                        
+                        </datalist>
+                    </div>
+        
+                    <p>How often would you eat meat per week?</p>
+        
+                    <input id="once-week" name="meat-intake-weekly" value="once-weekly" type="radio" required>
+                    <label for="once-week">Once a week</label>
+        
+                    <input id="twice-a-week" name="meat-intake-weekly" value="twice-a-week" type="radio" required>
+                    <label for="twice-a-week">Twice a week</label>
+        
+                    <input id="once-a-fortnight" name="meat-intake-weekly" value="once-a-fortnight" type="radio" required>
+                    <label for="once-a-fortnight">Once a fortnight</label>
+        
+                    <input id="not-often" name="meat-intake-weekly" value="not-often" type="radio" required>
+                    <label for="not-often">Not often</label>
+        
+                    <p>How often do you shop for meat products?</p>
+        
+                    <input id="once-a-week" name="shopping-frequency" value="once-a-week" type="radio" required>
+                    <label for="once-a-week">Once a week</label>
+        
+                    <input id="twice-a-week" name="shopping-frequency" value="twice-a-week" type="radio" required>
+                    <label for="twice-a-week">Twice a week</label>
+        
+                    <input id="once-a-fortnight" name="shopping-frequency" value="once-a-fortnight" type="radio" required>
+                    <label for="once-a-fortnight">Once a fortnight</label>
+        
+                    <input id="not-often" name="shopping-frequency" value="not-often" type="radio" required>
+                    <label for="not-often">Not often</label>
+        
+                    <p>Delivery options</p>
+        
+                    <div>
+                        <label for="delivery" class="delivery-list">Prefferred delivery times</label>
+                        <input id="delivery"  list="delivery-options" name="delivery-method" required>
+                            <datalist id="delivery-options">
+                                <option value="Morning">
+                                <option value="Afternoon">
+                                <option value="Special request">
+                                <option value="I would like to collect">                        
+                            </datalist>
+                        <br>
+                        <label for="special-delivery" class="delivery-note">Special Request note: <br></label>
+                        <textarea name="Special-delivery" id="special-delivery" cols="30" rows="5" maxlength="200" placeholder="Place notes here"></textarea>                        
+                    </div> 
+        
+                    <p>Please select which of the following local products would interest you?</p>
+        
+                    <div>
+                        <input type="checkbox" id="free-range-eggs" name="eggs">
+                        <label for="free-range-eggs">Free range eggs</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="chutney" name="fruit-chutney">
+                        <label for="chutney">Boyne Valley Chutneys</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="bread" name="gluten-free-bread">
+                        <label for="bread">Handmade gluten free bread</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="goats-milk" name="goats-milk">
+                        <label for="goats-milk">Goats Milk</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="plant-based-milk" name="alternative-milk">
+                        <label for="plant-based-milk">plant based milk</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="sauce" name="sauce-variety">
+                        <label for="sauce">Variety of sauces</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="seasoning" name="seasoning-variety">
+                        <label for="seasoning">Variety of seasonings</label>
+                    </div>  
+                </fieldset>
             </fieldset>
     
     
