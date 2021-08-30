@@ -604,8 +604,57 @@ hr{
   left: 24.5%;
   border-radius: 5px 5px;
 }
+#rewards-form-outer h1{
+  text-align: center;
+}
+.user-data{
+  margin-bottom: 1rem;
+  
+}
+fieldset{
+  border:2px solid blue;
+}
+#rewards-page{
+  background-color: white;
+  
+}
 
+/*form styles */
+input[type=submit] {
+	margin: 0 0.75rem 1rem;
+	padding: 0.75rem;
+	background-color: blue;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
 
+form {
+	width: 50rem;
+}
+
+legend {
+	font-size: large;
+	font-weight: 600;
+	text-transform: uppercase;
+    font-family: Architects Daughter, sans-serif;
+}
+.personal-details, .address{
+    width: 302px;
+    height: 152px;
+    
+}
+.personal-details div input {
+    float:right;
+}
+
+.address div input {
+  float:right;
+}
+.personal-and-address{
+  display: inline-block;
+  padding: 0 1.5rem;
+}
 
 
 

@@ -57,6 +57,74 @@
     </header>
     <div class="rewards-form-outer">
         <form action="https://formdump.codeinstitute.net" method="POST">
+            <fieldset class="user-data">
+                <h1>Join our rewards scheme today and become an official member</h1>
+                <div class="personal-and-address">
+                    <fieldset class="personal-details">
+                        <legend>Your contact details</legend>    
+                        <div>
+                            <label for="full-name">Full name:</label>
+                            <input id="full-name" type="text" name="full_name" placeholder="Full name" required>
+                        </div>                        
+                        <div>
+                            <label for="number">Contact No:</label>
+                            <input id="number" type="tel" name="phone_number" placeholder="Your Contact number" required>
+                        </div>            
+                        <div>
+                            <label for="email-field">Email:</label>
+                            <input id="email-field" type="email" name="email" placeholder="Your email" required>
+                        </div>                    
+                        <div>
+                            <label for="u-name">Username</label>
+                            <input type="text" name="username" id="u-name" placeholder="Type your preferred username" required>                    
+                        </div>
+                        <div>
+                            <label for="pword">Password</label>
+                            <input type="password" name="password" id="pword" placeholder="Password" required>
+                        </div> 
+                        <div>
+                            <label for="verify-password">Verify Password</label>
+                            <input type="password" name="verify-password" id="verify-password" placeholder="Verify password" required>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="personal-and-address">
+                    <fieldset class="address">
+                        <legend>Your address</legend>
+    
+                        <div>
+                            <label for="house_number">House number:</label>
+                            <input id="house_number" type="number" name="house_number" placeholder="house number">
+                        </div>
+                        <div>
+                            <label for="house_name">House name:</label>
+                            <input id="house_name" type="text" name="house_number" placeholder="Optional" >
+                        </div>
+                        <div>
+                            <label for="street-name-1">Street name 1:</label>
+                            <input id="street-name-1" type="text" name="street-name-1" placeholder="Street Name 1" required>
+                        </div>
+                        <div>
+                            <label for="street-name-2">Street name 2:</label>
+                            <input id="street-name-2" type="text" name="street-name-2" placeholder="Street Name 2" required>
+                        </div>                    
+                        <div>
+                            <label for="city">City:</label>
+                            <input id="city" type="text" name="text" placeholder="City" required>
+                        </div>
+                        
+                        <label for="distance">Delivery distance:</label>
+                        <select id="distance" name="delivery" required>
+                            <option value="under-1-mile">Under 1 mile</option>
+                            <option value="2-5_miles">2 - 5 miles</option>
+                            <option value="6-10_miles">6 - 10 miles</option>
+                            <option value="10-20_miles">10-20 miles</option>
+                            <option value="20+_miles">20 + miles</option>                
+                        </select>
+                    </fieldset>
+                </div>
+            </fieldset>
+    
     
             
             
