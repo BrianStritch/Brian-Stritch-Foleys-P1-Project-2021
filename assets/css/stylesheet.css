@@ -697,3 +697,13 @@ form div{
 }
 
 /* ********************************** rewards form styles and positioning end ************************** */
+
+/* ********************************** contact page styles and positioning ****************************** */
+ 
+
+.contact-us-details{
+  text-align: left;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+
