@@ -54,30 +54,16 @@ header p{
     float: right;
     
 }
-/* *************************** members area login *********************************/
-#members form{
-    position: absolute;
-    right: -4rem;
-    top: 0.1rem;
-    font-family: Architects Daughter, sans-serif;
-}
-#members input[type=submit] {
-	margin-left: 0.75rem;
-	padding: 0.2rem;
-	background-color: white;
-	color: blue;
-	border: 2px solid black;
-	border-radius: 5px;    
-}
+
 /* ****************************navigation links start**************************** */
 #menu {
     font-weight: 400;
-    font-size: 0.9rem;
+    font-size: 18px;
     font-family: nunito-sans, sans-serif;
     margin-right: 25px;
     position: absolute;
-    top: 3.5rem;
-    right: 1rem;
+    top: 27px;
+    right: 10px;
   }
   
   #menu ul {
@@ -191,7 +177,7 @@ header p{
   display: block;
   position: absolute;
   right: 0;
-  top: -3px;
+  top: -5px;
   border: 2px solid white;
 }
 
@@ -267,7 +253,7 @@ footer p{
 .shop-front{
   width: 60%;
   height: 100%;
-  border: 5px groove blue;
+  /* box-shadow: 10px 10px gray; */
   border-radius: 13px;
   overflow: hidden;    
   min-width: 640px;
@@ -282,7 +268,7 @@ footer p{
 .bord-bia{
   width: 10rem;
   height: 10rem;
-  border: 5px groove blue;
+  box-shadow: 10px 10px gray;
   border-radius: 13px;
   overflow: hidden;    
   position: absolute;
@@ -292,7 +278,7 @@ footer p{
 .great-taste-award{
   width: 10rem;
   height: 10rem;
-  border: 5px groove blue;
+  box-shadow: 10px 10px gray;
   border-radius: 13px;
   overflow: hidden;    
   position: absolute;
@@ -302,7 +288,7 @@ footer p{
 .craft-butcher{
   width: 10rem;
   height: 10rem;
-  border: 5px groove blue;
+  box-shadow: 10px 10px gray;
   border-radius: 13px;
   overflow: hidden;    
   position: absolute;
@@ -312,24 +298,24 @@ footer p{
 .irish-beef{
   width: 10rem;
   height: 10rem;
-  border: 5px groove blue;
+  box-shadow: 10px 10px gray;
   border-radius: 13px;
   overflow: hidden;    
   position: absolute;
   right: 4rem;
   top: 17rem;
 }
-.opening-text{
+.opening-text h2{
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 33px;
   position: absolute;
-  top: 34rem;
-  left: 1rem;
+  top: 573px;
+  left: 405px;
 }
 .hero-section-2{
   width: 100%;
-  height: 24rem;    
-  border: none;
+  height: 24rem;      
+  border-radius: 50%;
   padding: 6rem 0 0 0;
   margin: 0; 
   justify-content: space-evenly;    
@@ -339,15 +325,15 @@ footer p{
   width: 20%;
   height: 17rem;
   display: inline;
-  background-color: white;
-  border: 5px solid blue;
+  background-color: beige;
+  /* border: 5px solid blue; */
   border-radius: 10%;
   overflow: hidden;
   box-sizing: border-box;    
 }
 .hero-1{
   float: left;
-  margin:5% 5% 5% 10%;
+  margin:83px 79px 83px 148px;
 
 }
 .hero-1 img{
@@ -356,12 +342,12 @@ footer p{
 }
 .hero-2{
   float: left;
-  margin: 5% 5%;
+  margin: 83px 70px 83px 70px;
   padding: 1% 2%;  
 }
 .hero-3{
   float: left;
-  margin: 5% 10% 5% 5% ;
+  margin:83px 148px 83px 79px ;
   padding: 0;
 }
 .hero-3 img{
@@ -373,8 +359,8 @@ footer p{
   text-align: center;
   font-size: 1.5rem;
   position: absolute;
-  top: 61rem;
-  left: 1rem;
+  top: 1025px;
+  left: 173px;
   z-index: 3;
   padding: 0  1rem;
 }
@@ -391,7 +377,7 @@ footer p{
   position: absolute;
   left: 9rem;
   top: 5rem;
-  border: 5px solid blue;
+  /* border: 5px solid blue; */
   border-radius:  40px;
   overflow: hidden;
 }
@@ -405,7 +391,7 @@ footer p{
   position: absolute;
   right: 9rem;
   top: 5rem;
-  border: 5px solid blue;
+  /* border: 5px solid blue; */
   border-radius: 40px ;
   overflow: hidden;
 }
@@ -643,6 +629,11 @@ hr{
 /* *************************** rewards page styles and positioning **************************************************/
 /* rewards form */
 /* *** references from Coders coffeehouse code institute walkthrough for form layout modified to suit this website ***** */
+#rewards-page{
+  background-image: url(../images/wooden-background.jpeg) ;
+  width: 100%;
+  height: auto;
+}
 .rewards-form-outer{
   width: 50rem;
   height: auto;
@@ -658,6 +649,7 @@ hr{
 }
 .user-data{
   margin-bottom: 1rem;
+  border: none;
   
 }
 fieldset{
@@ -692,14 +684,20 @@ legend {
 }
 .personal-details div input {
     float:right;
+    margin: 0 0 0 -6px;
 }
-
+#distance{
+  margin-left: 1px;
+}
 .address div input {
   float:right;
 }
 .personal-and-address{
   display: inline-block;
   padding: 0 1.5rem;
+}
+.products-and-services{
+  line-height: 20px;
 }
 input{
     padding: 0 0.5rem;
@@ -710,7 +708,6 @@ label{
 }
 form div{
     display: table-row;
-    
 }
 .fav-meat{
     padding: 0 2.9rem 0 0;
@@ -718,13 +715,44 @@ form div{
 .least-fav-meat{
     padding: 0 0.5rem 0 0;
 }
+.eat-frequency label, .shop-frequency label{
+  margin: -2px -2px 0 0;
+}
+.eat-frequency p, .shop-frequency p{
+  margin-bottom: -2px;
+}
+.delivery{
+  line-height: 20px;
+}
+.delivery h3{
+  margin: 22px 0 10px;
+}
+.delivery input{
+  margin-bottom: -2px;
+}
+.delivery label{
+  margin-top: 2px;
+}
 #special-delivery{
     width: 26.8rem;
     height: auto;
-    
 }
 .delivery-note{
     padding: 0 1.55rem 0 0;
+}
+.local-choice div{
+  width: 50px;
+  height: auto;
+  display: inline;
+}
+#chutney{
+  margin-left: 61px;
+}
+#goats-milk{
+  margin-left: 52px;
+}
+#sauce{
+  margin-left: 58px;
 }
 .underline{
     text-decoration:underline;
@@ -736,68 +764,65 @@ form div{
 .frozen-foods-form-list{
   display: inline-block;
   padding: 0 1.5rem;
+  line-height: 30px;
+  
 }
+.frozen-foods-form-list li{
+  list-style-type: none;
+}
+#feedback{
+  margin-top: 10px;
+}
+
 
 /* ********************************** rewards form styles and positioning end ************************** */
 
 /* ********************************** contact page styles and positioning ****************************** */
- 
-
-.contact-us-details{
+.contact-us-details {
+  width: 30%;
+  height: auto;
+}
+.contact-us-details h1{
   text-align: left;
-  font-size: 1.5rem;
-  margin-left: 2rem;
+  font-size: 33px;
+  margin: 50px 0 -22px 40px;
+  font-weight: 500;
+}
+.contact-us-details p{
+  text-align: left;
+  font-size: 15px;
+  margin-left: 40px;
+  font-weight: 300;
+  color: rgba(109, 106, 106, 0.8);
+  line-height: 30px;
 }
 .queries{
-  width: 30%;
+  width: 300px;
   height: auto;
   position: absolute;
-  right: 2rem;
-  top: 8rem;
+  right: 100px;
+  top: 168px;
+  border: none;
+  font-size: 12px;
+  line-height: 30px;
 }
-/* Code below from an answer given to a question on the following site and adjusted for this website
-https://stackoverflow.com/questions/49546104/input-range-make-small-vertical-lines-in-on-the-horizontal-line */
-.slider-wrapper {
-  position: relative;
-  width: 186px;
-  display: inline;
+.queries legend{
+  font-size: 26px;
+  font-weight: 400;
 }
-
-.slider {
-  width: 150px;
+.queries input[type=submit]{
   margin: 0;
-  padding: 0;
+  padding: 6px;
 }
-
-.underlay {
-  position: absolute;
-  height: 10px;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  display: flex;
-}
-
-.breakpoint {
-  width: Calc(100%/5);
-}
-
-.breakpoint:not(:first-child) {
-  border-left: 1px solid blue;
-}
-.satisfaction{
-  width: 30%;
-  height: auto;
-  position: absolute;
-  right: 35rem;
-  top: 8rem;
+.queries input[type=text]{
+  width: 418px;
 }
 .find-us{
   position: absolute;
-  top: 35rem;
-  left: 4rem;
-  font-size: 2.5rem;
+  top: 500px;
+  left: 130px;
+  font-size: 39px;
+  font-weight: 200;
 }
 
 /*Code below from a google search "how to iframe google map"
@@ -807,9 +832,9 @@ https://google-map-generator.com/ */
   text-align:right;
   height:500px;
   width:600px;
-  top: 43.5rem;
-  left: 2rem;
-  border: 2px solid blue ;
+  top: 600px;
+  left: 100px;
+  box-shadow: 20px 20px rgba(109, 106, 106, 0.4);
   border-radius: 40px;
   overflow: hidden;
 }
@@ -822,33 +847,16 @@ https://google-map-generator.com/ */
 .contact-us-shop-front{
   width: 600px;
   height: 500px;
-  border: 2px solid blue;
+  box-shadow: 20px 20px rgba(109, 106, 106, 0.4);
   border-radius: 40px;
   position: absolute;
-  top: 43.5rem;
-  right: 2rem;
+  top: 600px;
+  right: 100px;
   overflow: hidden;
+  /* float: right; */
 }
 .contact-us-shop-front img{
   width: 100%;
   height: 100%;
 }
-.satisfaction p{
-  letter-spacing: 8px;
-  margin: -1%;
-  padding: 2px;
-}
-.satisfaction input[type=submit]{
-  float: right;
-}
-.satisfaction-submit{
-  display: inline;
-  
-}
-.satisfaction h3{
-  margin-top: 1px;
-}
-.queries input[type=submit]{
-  float: right;
-  margin-top: 36px;
-}
+

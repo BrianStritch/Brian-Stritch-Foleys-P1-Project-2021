@@ -15,14 +15,7 @@
             </h1>
             <p>Est. 2004</p> 
         </div> 
-        <div id="members">        
-            <form action="https://formdump.codeinstitute.net" method="POST">                           
-                <label for="login-uname">Members area login</label>
-                <input type="text" name="U-name" id="login-uname" placeholder="Username" required>
-                <input type="password" placeholder="Password">
-                <input type="submit" value="Login" >                
-            </form>
-        </div>  
+         
          <!--Navigation Menu-->
          <div class="nav-div">
             <nav id="menu">
@@ -46,10 +39,6 @@
                         <a href="rewards.html" class="dropbtn active">Rewards</a>
                     </li>
                     <li class="dropdown"><a href="contact.html" class="dropbtn">Contact</a>
-                        <div class="dropdown-content">
-                            <a href="contact.html#find-us">Find us</a>
-                            <a href="#">Opening times</a>
-                        </div>
                     </li>              
                 </ul>        
             </nav>
@@ -78,6 +67,7 @@
           }
         }
         </script>
+    <!-- rewards sign up form-->
     <div class="rewards-form-outer">
         <form action="https://formdump.codeinstitute.net" method="POST">
             <fieldset class="user-data">
@@ -136,7 +126,7 @@
                             <input id="city" type="text" name="text" placeholder="City" required>
                         </div>
                         
-                        <label for="distance">Delivery distance:</label>
+                        <label for="distance">Delivery range:</label>
                         <select id="distance" name="delivery" required>
                             <option value="under-1-mile">Under 1 mile</option>
                             <option value="2-5_miles">2 - 5 miles</option>
@@ -149,8 +139,8 @@
                 <fieldset class="products-and-services">
                     <legend>Products and services</legend>
                     <div>
-                        <label for="pick-meat" class="fav-meat">Choose your favourite type of meat.</label>
-                        <input id="pick-meat"  list="meats" name="favourite-meat" required>
+                        <label for="pick-fav" class="fav-meat">Choose your favourite type of meat.</label><br>
+                        <input id="pick-fav"  list="meats" name="favourite-meat" required>
                         <datalist id="meats">
                             <option value="Beef">
                             <option value="Chicken">
@@ -167,8 +157,8 @@
                     </div>
                     <br>
                     <div>
-                        <label for="pick-meat" class="least-fav-meat">Choose your least favourite type of meat.</label>
-                        <input id="pick-meat"  list="meats" name="least-favourite-meat" required>
+                        <label for="pick-least" class="least-fav-meat">Choose your least favourite type of meat.</label><br>
+                        <input id="pick-least"  list="meats" name="least-favourite-meat" required>
                         <datalist id="meats">
                             <option value="Beef">
                             <option value="Chicken">
@@ -183,40 +173,41 @@
                             <option value="Wild-game">                        
                         </datalist>
                     </div>
+                    <div class="eat-frequency">
+                        <p>How often would you eat meat per week?</p>
+                              
+                        <input id="once-week" name="meat-intake-weekly" value="once-weekly" type="radio" required>
+                        <label for="once-week">Once a week</label>
         
-                    <p>How often would you eat meat per week?</p>
+                        <input id="twice-a-week" name="meat-intake-weekly" value="twice-a-week" type="radio" required>
+                        <label for="twice-a-week">Twice a week</label>
         
-                    <input id="once-week" name="meat-intake-weekly" value="once-weekly" type="radio" required>
-                    <label for="once-week">Once a week</label>
+                        <input id="once-a-fortnight" name="meat-intake-weekly" value="once-a-fortnight" type="radio" required>
+                        <label for="once-a-fortnight">Once a fortnight</label>
         
-                    <input id="twice-a-week" name="meat-intake-weekly" value="twice-a-week" type="radio" required>
-                    <label for="twice-a-week">Twice a week</label>
+                        <input id="not-often" name="meat-intake-weekly" value="not-often" type="radio" required>
+                        <label for="not-often">Not often</label>
+                    </div>
+                    
+                    <div class="shop-frequency">
+                        <p>How often do you shop for meat products?</p>
         
-                    <input id="once-a-fortnight" name="meat-intake-weekly" value="once-a-fortnight" type="radio" required>
-                    <label for="once-a-fortnight">Once a fortnight</label>
+                        <input id="once-a-week" name="shopping-frequency" value="once-a-week" type="radio" required>
+                        <label for="once-a-week">Once a week</label>
         
-                    <input id="not-often" name="meat-intake-weekly" value="not-often" type="radio" required>
-                    <label for="not-often">Not often</label>
+                        <input id="twice-a-week" name="shopping-frequency" value="twice-a-week" type="radio" required>
+                        <label for="twice-a-week">Twice a week</label>
         
-                    <p>How often do you shop for meat products?</p>
+                        <input id="once-a-fortnight" name="shopping-frequency" value="once-a-fortnight" type="radio" required>
+                        <label for="once-a-fortnight">Once a fortnight</label>
         
-                    <input id="once-a-week" name="shopping-frequency" value="once-a-week" type="radio" required>
-                    <label for="once-a-week">Once a week</label>
-        
-                    <input id="twice-a-week" name="shopping-frequency" value="twice-a-week" type="radio" required>
-                    <label for="twice-a-week">Twice a week</label>
-        
-                    <input id="once-a-fortnight" name="shopping-frequency" value="once-a-fortnight" type="radio" required>
-                    <label for="once-a-fortnight">Once a fortnight</label>
-        
-                    <input id="not-often" name="shopping-frequency" value="not-often" type="radio" required>
-                    <label for="not-often">Not often</label>
-        
-                    <p>Delivery options</p>
-        
-                    <div>
-                        <label for="delivery" class="delivery-list">Prefferred delivery times</label>
-                        <input id="delivery"  list="delivery-options" name="delivery-method" required>
+                        <input id="not-often" name="shopping-frequency" value="not-often" type="radio" required>
+                        <label for="not-often">Not often</label>
+                    </div>
+                    <div class="delivery">
+                        <h3 class="underline">Delivery options</h3>
+                        <label for="delivery" class="delivery-list">Prefferred delivery times</label><br>
+                        <input id="delivery"  list="delivery-options" name="delivery-method" placeholder="Select times here" required>
                             <datalist id="delivery-options">
                                 <option value="Morning">
                                 <option value="Afternoon">
@@ -224,46 +215,54 @@
                                 <option value="I would like to collect">                        
                             </datalist>
                         <br>
-                        <label for="special-delivery" class="delivery-note">Special Request note: <br></label>
+                        <br>
+                        <label for="special-delivery" class="delivery-note">Special Request note:</label><br>
                         <textarea name="Special-delivery" id="special-delivery" cols="30" rows="5" maxlength="200" placeholder="Place notes here"></textarea>                        
                     </div> 
         
                     <p>Please select which of the following local products would interest you?</p>
-        
-                    <div>
-                        <input type="checkbox" id="free-range-eggs" name="eggs">
-                        <label for="free-range-eggs">Free range eggs</label>
+                    <div class="local-choice">
+                         <div>
+                            <input type="checkbox" id="free-range-eggs" name="eggs">
+                            <label for="free-range-eggs">Free range eggs</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="chutney" name="fruit-chutney">
+                            <label for="chutney">Boyne Valley Chutneys</label>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="checkbox" id="bread" name="gluten-free-bread">
+                            <label for="bread">Gluten free bread</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="goats-milk" name="goats-milk">
+                            <label for="goats-milk">Goats Milk</label>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="checkbox" id="plant-based-milk" name="alternative-milk">
+                            <label for="plant-based-milk">plant based milk</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="sauce" name="sauce-variety">
+                            <label for="sauce">Variety of sauces</label>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="checkbox" id="seasoning" name="seasoning-variety">
+                            <label for="seasoning">Variety of seasonings</label>
+                        </div>  
                     </div>
-                    <div>
-                        <input type="checkbox" id="chutney" name="fruit-chutney">
-                        <label for="chutney">Boyne Valley Chutneys</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="bread" name="gluten-free-bread">
-                        <label for="bread">Handmade gluten free bread</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="goats-milk" name="goats-milk">
-                        <label for="goats-milk">Goats Milk</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="plant-based-milk" name="alternative-milk">
-                        <label for="plant-based-milk">plant based milk</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="sauce" name="sauce-variety">
-                        <label for="sauce">Variety of sauces</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="seasoning" name="seasoning-variety">
-                        <label for="seasoning">Variety of seasonings</label>
-                    </div>  
+                   
                 </fieldset>
                 <fieldset>
                     <legend>Frozen products</legend>
-                    <h2>Large range of frozen prepackaged products which include:</h2>
+                    <h2>Large range of frozen prepackaged products available:</h2>
                     <div class="frozen-foods-form-list">
                         <ul>
+                            <li>Onion rings</li>
+                            <li>Shredded Chicken</li>
                             <li>Goujons</li>
                             <li>Wedges</li>
                             <li>Sausage rolls</li>
@@ -277,16 +276,9 @@
                             <li>Battered chicken nuggets</li>
                             <li>Burgers</li>
                             <li>Frozen kale and quinoa</li>
-                            <li>Southern fried goujons</li>                    
-                        </ul> 
-                    </div>
-                    <div class="frozen-foods-form-list">
-                        <ul>
-                            <li>Onion rings</li>
-                            <li>Shredded Chicken</li>
+                            <li>Southern fried goujons</li>
                             <li>Chicken balls</li>
-                            <li>Buffalo wings</li>
-                            <li>salt and chili chips</li>                    
+                            <li>Buffalo wings</li>                    
                         </ul> 
                     </div>
                 </fieldset>

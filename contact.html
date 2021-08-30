@@ -15,14 +15,7 @@
             </h1>
             <p>Est. 2004</p> 
         </div> 
-        <div id="members">        
-            <form action="https://formdump.codeinstitute.net" method="POST">                           
-                <label for="login-uname">Members area login</label>
-                <input type="text" name="U-name" id="login-uname" placeholder="Username" required>
-                <input type="password" placeholder="Password">
-                <input type="submit" value="Login" >                
-            </form>
-        </div>  
+          
          <!--Navigation Menu-->
          <div class="nav-div">
             <nav id="menu">
@@ -46,10 +39,6 @@
                         <a href="rewards.html" class="dropbtn">Rewards</a>
                     </li>
                     <li class="dropdown"><a href="contact.html" class="dropbtn active">Contact</a>
-                        <div class="dropdown-content">
-                            <a href="contact.html#find-us">Find us</a>
-                            <a href="#">Opening times</a>
-                        </div>
                     </li>              
                 </ul>        
             </nav>
@@ -68,77 +57,55 @@
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
     </div>
-      <script>
-        function myFunction() {
-          var x = document.getElementById("myLinks");
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "block";
-          }
-        }
+        <script>
+            function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+            }
         </script>
     <!-- contact details section section-->
-    <section class="contact-us-details">
-        <h1>Contact details:
-        </h1>
-        <p>
-            Unit 5, the copper beech,<br>
-            Main street, <br>
-            Duleek, <br>
-            County Meath, <br>
-            Ireland. <br>
-            A92RX83 <br>
-            Phone:<i class="fas fa-phone-square"></i> (041) 9882676 <br>
-            email:<i class="fas fa-envelope-open-text"></i> info@foleys_duleek.ie </i>
-        </p>
-        <!-- customer queries section-->
-        <fieldset class="queries">
-            <legend>Customer Queries</legend>
-                <div>
-                    <label for="fname">Full name</label>
-                    <input id="fname" type="text" name="full-name" placeholder="Full Name" required>
-                    <br>
-                    <label for="queries" class="queries-textarea">If you have any queries you can Ask here. <br></label>
-                    <textarea name="customer-queries" id="queries" cols="30" rows="5" maxlength="200" placeholder="Type queries here"></textarea>
-                    <a href="contact.html"><input type="submit" value="Submit"></a> 
-                </div>
-        </fieldset>
-        <!-- website satisfaction section-->
-        <fieldset class="satisfaction">
-            <legend>Website satisfaction</legend>
-                <h3>How satisfied on a scale of 1 to 5 were you with your visit to our site</h3>
-                    <!-- /* Code below from an answer given to a question on the following site and adjusted for this website -->
-                    <!-- https://stackoverflow.com/questions/49546104/input-range-make-small-vertical-lines-in-on-the-horizontal-line */ -->
-                <p>1 2 3 4 5</p>
-                <div class="slider-wrapper">
-                    <div class="underlay">
-                    <div class="breakpoint"></div>
-                    <div class="breakpoint"></div>
-                    <div class="breakpoint"></div>
-                    <div class="breakpoint"></div>
-                    <div class="breakpoint"></div>
-                </div>
-                    <input id="myRange" step="1" name="foo" type="range" min="0" max="40" class="slider" required/>
-                </div>
-                <h3>How likely are you to return to our site on a scale of 1 to 5</h3>
-                    <!-- /* Code below from an answer given to a question on the following site and adjusted for this website -->
-                    <!-- https://stackoverflow.com/questions/49546104/input-range-make-small-vertical-lines-in-on-the-horizontal-line */ -->
-                <p>1 2 3 4 5</p>
-                <div class="slider-wrapper">
-                    <div class="underlay">
-                    <div class="breakpoint"></div>
-                    <div class="breakpoint"></div>
-                    <div class="breakpoint"></div>
-                    <div class="breakpoint"></div>
-                    <div class="breakpoint"></div>
-                </div class="satisfaction-submit">
-                    <input id="myRange" step="1" name="foo" type="range" min="0" max="40" class="slider" required />
-                    <a href="contact.html"><input type="submit" value="Submit"></a> 
-                </div>
-                
-        </fieldset>
-        <!-- find us and map section-->
+    <section >
+        <div >
+            <div class="contact-us-details">
+                <h1>Contact details:</h1>
+                <p>
+                    Unit 5, the copper beech,<br>
+                    Main street, <br>
+                    Duleek, <br>
+                    County Meath, <br>
+                    Ireland. <br>
+                    A92RX83 <br>
+                    Phone:<i class="fas fa-phone-square"></i> (041) 9882676 <br>
+                    email:<i class="fas fa-envelope-open-text"></i> info@foleys_duleek.ie </i>
+                </p>
+            </div>
+        </div>   
+            
+                    <!-- customer queries section-->
+            <div>
+                <fieldset class="queries">
+                    <legend>Customer Queries</legend>
+                        <span>
+                            <label for="fname">Full name</label><br>
+                            <input id="fname" type="text" name="full-name" placeholder="Full Name" required>
+                            <br>
+                            <label for="queries" class="queries-textarea">Queries <br></label>
+                            <textarea name="customer-queries" id="queries" cols="59" rows="5" maxlength="200" placeholder="Type queries here"></textarea>
+                            <br>
+                            <a href="contact.html"><input type="submit" value="Submit"></a> 
+                        </span>
+                </fieldset>
+            </div>
+        <!-- </div> -->
+        
+        
+    </section>
+    <section>  
+                <!-- find us and map section-->
         <div class="contact-us-shop-front">
             <img src="assets/images/foleys-shop-front.jpg" alt="image of foleys shop front">
         </div>
