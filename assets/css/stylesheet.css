@@ -706,4 +706,11 @@ form div{
   font-size: 1.5rem;
   margin-left: 2rem;
 }
+.queries{
+  width: 30%;
+  height: auto;
+  position: absolute;
+  right: 2rem;
+  top: 8rem;
+}
 
