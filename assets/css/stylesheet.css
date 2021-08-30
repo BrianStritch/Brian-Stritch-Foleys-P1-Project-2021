@@ -713,4 +713,80 @@ form div{
   right: 2rem;
   top: 8rem;
 }
+/* Code below from an answer given to a question on the following site and adjusted for this website
+https://stackoverflow.com/questions/49546104/input-range-make-small-vertical-lines-in-on-the-horizontal-line */
+.slider-wrapper {
+  position: relative;
+  width: 150px;
+}
 
+.slider {
+  width: 150px;
+  margin: 0;
+  padding: 0;
+}
+
+.underlay {
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: flex;
+}
+
+.breakpoint {
+  width: Calc(100%/5);
+}
+
+.breakpoint:not(:first-child) {
+  border-left: 1px solid blue;
+}
+.satisfaction{
+  width: 30%;
+  height: auto;
+  position: absolute;
+  right: 35rem;
+  top: 8rem;
+}
+.find-us{
+  position: absolute;
+  top: 35rem;
+  left: 4rem;
+  font-size: 2.5rem;
+}
+
+/*Code below from a google search "how to iframe google map"
+https://google-map-generator.com/ */
+.mapouter{
+  position:absolute;
+  text-align:right;
+  height:500px;
+  width:600px;
+  top: 43.5rem;
+  left: 2rem;
+  border: 2px solid blue ;
+  border-radius: 40px;
+  overflow: hidden;
+}
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important
+  ;height:500px;
+  width:600px;
+}
+.contact-us-shop-front{
+  width: 600px;
+  height: 500px;
+  border: 2px solid blue;
+  border-radius: 40px;
+  position: absolute;
+  top: 43.5rem;
+  right: 2rem;
+  overflow: hidden;
+}
+.contact-us-shop-front img{
+  width: 100%;
+  height: 100%;
+}
