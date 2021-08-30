@@ -714,7 +714,8 @@ form div{
 https://stackoverflow.com/questions/49546104/input-range-make-small-vertical-lines-in-on-the-horizontal-line */
 .slider-wrapper {
   position: relative;
-  width: 150px;
+  width: 186px;
+  display: inline;
 }
 
 .slider {
@@ -786,4 +787,23 @@ https://google-map-generator.com/ */
 .contact-us-shop-front img{
   width: 100%;
   height: 100%;
+}
+.satisfaction p{
+  letter-spacing: 8px;
+  margin: -1%;
+  padding: 2px;
+}
+.satisfaction input[type=submit]{
+  float: right;
+}
+.satisfaction-submit{
+  display: inline;
+  
+}
+.satisfaction h3{
+  margin-top: 1px;
+}
+.queries input[type=submit]{
+  float: right;
+  margin-top: 36px;
 }

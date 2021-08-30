@@ -73,42 +73,47 @@
         <fieldset class="queries">
             <legend>Customer Queries</legend>
                 <div>
-                <label for="fname">Full name</label>
-                <input id="fname" type="text" name="full-name">
-                <br>
-                <label for="queries" class="queries-textarea">If you have any queries you can Ask here. <br></label>
-                <textarea name="customer-queries" id="queries" cols="30" rows="5" maxlength="200" placeholder="Type queries here"></textarea>
-            </div>
+                    <label for="fname">Full name</label>
+                    <input id="fname" type="text" name="full-name" placeholder="Full Name" required>
+                    <br>
+                    <label for="queries" class="queries-textarea">If you have any queries you can Ask here. <br></label>
+                    <textarea name="customer-queries" id="queries" cols="30" rows="5" maxlength="200" placeholder="Type queries here"></textarea>
+                    <a href="contact.html"><input type="submit" value="Submit"></a> 
+                </div>
         </fieldset>
         <!-- website satisfaction section-->
         <fieldset class="satisfaction">
             <legend>Website satisfaction</legend>
-            <h3>How satisfied on a scale of 1 to 5 were you with your visit to our site</h3>
-            <!-- /* Code below from an answer given to a question on the following site and adjusted for this website -->
-            <!-- https://stackoverflow.com/questions/49546104/input-range-make-small-vertical-lines-in-on-the-horizontal-line */ -->
-            <div class="slider-wrapper">
-                <div class="underlay">
-                  <div class="breakpoint"></div>
-                  <div class="breakpoint"></div>
-                  <div class="breakpoint"></div>
-                  <div class="breakpoint"></div>
-                  <div class="breakpoint"></div>
+                <h3>How satisfied on a scale of 1 to 5 were you with your visit to our site</h3>
+                    <!-- /* Code below from an answer given to a question on the following site and adjusted for this website -->
+                    <!-- https://stackoverflow.com/questions/49546104/input-range-make-small-vertical-lines-in-on-the-horizontal-line */ -->
+                <p>1 2 3 4 5</p>
+                <div class="slider-wrapper">
+                    <div class="underlay">
+                    <div class="breakpoint"></div>
+                    <div class="breakpoint"></div>
+                    <div class="breakpoint"></div>
+                    <div class="breakpoint"></div>
+                    <div class="breakpoint"></div>
                 </div>
-                <input id="myRange" step="1" name="foo" type="range" min="0" max="40" class="slider" />
-              </div>
-              <h3>How likely are you to return to our site on a scale of 1 to 5</h3>
-            <!-- /* Code below from an answer given to a question on the following site and adjusted for this website -->
-            <!-- https://stackoverflow.com/questions/49546104/input-range-make-small-vertical-lines-in-on-the-horizontal-line */ -->
-            <div class="slider-wrapper">
-                <div class="underlay">
-                  <div class="breakpoint"></div>
-                  <div class="breakpoint"></div>
-                  <div class="breakpoint"></div>
-                  <div class="breakpoint"></div>
-                  <div class="breakpoint"></div>
+                    <input id="myRange" step="1" name="foo" type="range" min="0" max="40" class="slider" required/>
                 </div>
-                <input id="myRange" step="1" name="foo" type="range" min="0" max="40" class="slider" />
-              </div>
+                <h3>How likely are you to return to our site on a scale of 1 to 5</h3>
+                    <!-- /* Code below from an answer given to a question on the following site and adjusted for this website -->
+                    <!-- https://stackoverflow.com/questions/49546104/input-range-make-small-vertical-lines-in-on-the-horizontal-line */ -->
+                <p>1 2 3 4 5</p>
+                <div class="slider-wrapper">
+                    <div class="underlay">
+                    <div class="breakpoint"></div>
+                    <div class="breakpoint"></div>
+                    <div class="breakpoint"></div>
+                    <div class="breakpoint"></div>
+                    <div class="breakpoint"></div>
+                </div class="satisfaction-submit">
+                    <input id="myRange" step="1" name="foo" type="range" min="0" max="40" class="slider" required />
+                    <a href="contact.html"><input type="submit" value="Submit"></a> 
+                </div>
+                
         </fieldset>
         <!-- find us and map section-->
         <div class="contact-us-shop-front">
