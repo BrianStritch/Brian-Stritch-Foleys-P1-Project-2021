@@ -15,7 +15,7 @@ h1,h2,h3,h4,h5,h6{
 p{
     font-family:roboto, sans-serif ;
 }
-/* ********************************************** HEADER ***********************************/
+/* ********************************************** HEADER styles and positioning***********************************/
 header{
     background-color: blue;
     width: 100%;
@@ -162,9 +162,9 @@ header p{
   }
 /* *************** navigation links end ************* */
 
-/* **************************************** end of header styles ********************************* */
+/* **************************************** end of header styles and positioning ********************************* */
 
-/* ************************************* footer styles and links ********************************************** */
+/* ************************************* footer styles and links and positioning ********************************************** */
 
 /*footer and social media links */
 footer{
@@ -203,10 +203,14 @@ footer p{
   top: 198rem;
   height: 2rem;
 }
+#rewards-page .social-media-links{
+  display: inline-flex;
+  margin: 0 8rem;
+}
 
-/* ************************* end of footer styles *************************** */
+/* ************************* end of footer styles and positioning *************************** */
 
-/************** index / home page *******************/
+/************** index / home page and positioning *******************/
 /* hero image and surrounding images and covers*/
 
 #hero-section-1{
@@ -373,9 +377,9 @@ footer p{
   z-index: 3;
   padding: 0  1rem;
 }
-/********************* end of index page styles ***********************/
+/********************* end of index page styles and positioning***********************/
 
-/* ******************* products page styles ***************************/
+/* ******************* products page styles and positioning ***************************/
 .natural{
   margin: 1%;
   font-size: 1.5rem;
@@ -589,9 +593,9 @@ hr{
   height: 100%;
   min-width: 203px;
 }
-/* *************************** end of products page styles ******************************************/
+/* *************************** end of products page styles and positioning ******************************************/
 
-/* *************************** rewards page styles **************************************************/
+/* *************************** rewards page styles and positioning **************************************************/
 /* rewards form */
 /* *** references from Coders coffeehouse code institute walkthrough for form layout modified to suit this website ***** */
 .rewards-form-outer{
@@ -692,4 +696,4 @@ form div{
   padding: 0 1.5rem;
 }
 
-
+/* ********************************** rewards form styles and positioning end ************************** */
