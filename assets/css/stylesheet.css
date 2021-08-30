@@ -687,6 +687,9 @@ form div{
 .rewards-info{
     margin: 0 1rem 1rem 1rem;
 }
-
+.frozen-foods-form-list{
+  display: inline-block;
+  padding: 0 1.5rem;
+}
 
 
