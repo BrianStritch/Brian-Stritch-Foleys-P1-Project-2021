@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto&display=swap');
+
+body{
+    /* font-family: roboto, sans-serif;
+    font-weight: 300;
+    color: black;
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+    border: none; */
+    
+    scroll-behavior: smooth;
+    margin: 0;
+    
+}
+/* h1,h2,h3,h4,h5,h6{
+    font-family: Architects Daughter, sans-serif;
+}
+p{
+    font-family:roboto, sans-serif ;
+} */
+/* ********************************************** HEADER styles and positioning***********************************/
+header{	
+    width: 100%;	
+    height: 150px;	
+    background-color: #05274b;	
+    position: relative;	
+    text-align: center;
+    z-index: 8; 
+    }
+
+header h1{
+    font-size: 2.8rem;
+    line-height: 0.5;
+    /* position: absolute;
+    left: 1rem;
+    top: -1.5rem; */
+}
+/* header p{
+    text-align: left;
+    position: absolute;
+    left: 2%;
+    top: 4rem;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid white;
+    font-family: Architects Daughter, sans-serif;
+} */
+.foley-name{
+    float: left;
+}
+.nav-div{
+    float: right;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ****************************navigation links start**************************** */
+#menu {
+    font-weight: 400;
+    font-size: 18px;
+    font-family: nunito-sans, sans-serif;
+    margin-right: 25px;
+    position: absolute;
+    top: 27px;
+    right: 10px;
+  }
+  
+  #menu ul {
+    text-align: center;
+    width: auto;
+  }
+  
+  #menu li {
+    text-align: center;
+    display: inline;
+    margin-left: 3px;
+    width: 25px;
+    list-style: none;
+    z-index: 2;
+  }
+  
+  /*Code below from an answer given to a question on the following site
+  https://stackoverflow.com/questions/31140935/how-do-i-add-vertical-line-on-my-menu-item-in-html-css */
+  
+  /* #menu li:not(:first-child):before {
+    content: "|      ";
+    color: white;
+  } */
+  
+  #menu a.active {
+    
+    color: white;
+    border-bottom: 2px solid white;
+  }
+  
+  /* Dropdown menu */
+  
+  /*Dropdown from W3 school tutorial for dropdown menu - adjusted for this site
+                  https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar-->*/
+  
+  li a,
+  .dropbtn {
+    display: inline-block;
+    text-align: center;
+    padding: 0px;
+    text-decoration: none;
+  }
+  a.dropbtn{
+      color: white;
+  }
+  
+  nav li a:hover,
+  .dropdown:hover .dropbtn {
+    background-color: white;
+    color: #05274b;
+  }
+  
+  li.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 210px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    top: 17px;
+    left: 50%;
+    margin-left: -100px;
+    
+  }
+  
+  .dropdown-content a {
+    color:#05274b;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #05274b;
+    color: white;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: inline-block;
+  }
+/* *************** navigation links end ************* */
+/* *************** floating Navigation burger menu styles and positioning******************* */
+/* <!-- code below from question on w3schools on how to create a burger menu
+        https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar--> */
+        .topnav {
+            background-color: #05274b;
+            position: fixed;
+            right: 45px;
+            top: 63px;
+            z-index: 4;
+          }
+          
+          .topnav #myLinks {
+            display: none;
+          }
+          
+          .topnav a {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+          }
+          
+          .topnav a.icon {
+            background: #05274b;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: -15px;
+            border: 2px solid white;
+          }
+          
+          .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+          }
+          
+          .active {
+            background-color: #05274b;
+            color: white;
+          }
+          
+          /* *************************************** end of floating navigation burger menu ******************************* */
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *************************************media queries ************************************************/
+@media screen and (max-width: 600px){	   
+    body{   
+    padding: 0; 
+        }   
+    header{ 
+    width: 100%;
+    height: 150px; 
+    }
+    .foley-name{
+      float: none;
+    }   
+    
+    header h1{   
+    text-align: center; 
+    margin: 0;
+    }   
+    header h2{  
+    font-size: 15px;    
+    text-align: center; 
+    }  
+    .topnav a.icon {
+      background: #05274b;
+      display: block;
+      position: absolute;
+      right: -30px;
+      top: -50px;
+      border: 2px solid lime;
+    }
+  
+  
+   
+    .hero-section-inner{ 
+    height: 126px; 
+    position: static; 
+    }   
+    .hero-section-inner h1{     
+    font-size: 39px; 
+    text-align: center; 
+    }   
+    .hero-section-inner p{      
+    font-size: 15px;    
+    
+    margin: 0 0 30px 0; 
+    text-align: center; 
+    }   
+    .product-selectors{ 
+    width: 100%;    
+    height: 1299px;
+    display: flex;  
+    }   
+    .div1, .div2, .div3, .div4 {    
+    width: 100%;    
+    height: 300px;  
+    position: static;
+    }   
+    .div1 h2, .div2 h2,.div3 h2, .div4 h2{ 
+    Padding: 0 ;
+    text-align: center; 
+    margin: 0;  
+    }   
+     
+    .inner-div{ 
+    height: 85%; 
+    }   
+    
+    .section1-inner {  
+    height: 1300px; 
+    }   
+    .our-products-heading{  
+    Position: static;
+    font-size: 30px;       
+    text-align: center; 
+    }   
+    .section2{  
+    
+    height: 620px;  
+    position: relative; 
+    display: flex;  
+    }   
+    .meat-image-outer{  
+    width: 50%; 
+    height: 800px;  
+    position: static;
+    text-align: center; 
+    }   
+    .meat-image{    
+    width: 80%; 
+    height: 200px;  
+    position: absolute; 
+    left: 7.5%; 
+    top: 3.5%;  
+    box-shadow: 15px 15px darkslategray;    
+        
+    }   
+    .meat-text-outer{   
+    width: 100%;    
+    height: 630px;  
+    position: absolute; 
+    left: -166px;   
+    bottom: -86px;  
+    }   
+  
+    .meat-heading-and-text h1, .meat-heading-and-text p{  
+    
+    text-align: center; 
+    }   
+    
+    .learn-more{    
+    position: absolute; 
+    bottom: 22px;   
+    left: 30%;  
+    }   
+    #menu ul{
+      display: none;
+    }
+    
+    
+    
+}
+/* ********************************** above 680 ***********************************/
+@media screen and (min-width: 768px){
+    body{
+        padding: 0;
+        margin: 0;
+        }
+        .welcome-message{
+          text-align: center;
+          
+           }
+        header{
+        width: 100%;
+        height: 100px;
+        background-color: #05274b;
+        position: relative;
+        }
+        .foleys-name{
+        font-family: Hina Mincho, sans-serif;
+        }
+        .hero-section{
+          height: 626px;
+        }  
+        
+        header h1{
+        color: white;
+        font-size: 50px;
+        font-family: Hina Mincho, sans-serif;
+        
+        }
+        /* header h2{  
+        top: 13%;
+        right: 2.5%;
+        color: white;
+      
+        } */
+        .hero-section-inner{
+        width: 100%;
+        height: 783px;
+        background-color: #757575;
+        /* position: relative; 
+        top: -56px;
+        bottom: 5px; */
+        }
+        .hero-section-inner h1{
+        font-size: 60px;
+        color: white;
+        margin-top: 0;
+        }
+        .hero-section-inner p{  
+        /* top: 127px;
+        left: 521px; */
+        font-size: 30px;
+        color: white;
+        }
+        .craft{
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        top: 55px;
+        right: 5px;
+        }
+        .product-selectors{
+        width: 100%;
+        height: 503px;
+        position: relative;
+        background-color: #05274b;
+        display: flex;
+        }
+        .div1{
+        background-color: #05274b;
+        top: -280px;
+        left: 2.5%;
+        }
+        .div2{
+        background-color: #05274b;
+        top: -280px;
+        left: 27.5%;
+        }
+        .div3{
+        
+        background-color: #05274b;
+        top: -280px;
+        right: 27.5%;
+        }
+        .div4{
+        background-color: #05274b;
+        top: -280px;
+        right: 2.5%;
+        }
+        .div1, .div2, .div3, .div4 {
+        width: 20%;
+        height: 400px;
+        position: absolute;
+        z-index: 2;
+        }
+        .div1 h2, .div2 h2{
+        
+        top: 314px;
+        left: 126px;
+        color: white;
+        font-size: 30px;
+        padding: 7% 0 0px 40%;
+        } 
+        .div3 h2, .div4 h2{
+        
+        top: 314px;
+        right: 126px;
+        color: white;
+        font-size: 30px;
+        padding: 7% 0 0px 34%;
+        }
+        .inner-div{
+        width: 100%;
+        height: 70%;
+        background-color: white;
+        position: relative ;
+        }
+        .inner-div img{
+        width: 100%;
+        height: 100%;
+        }
+        .section1-inner {
+        width: 100%;
+        height: 500px;
+        background-color: #251e19;
+        box-sizing: borderbox;
+        position: relative;
+        }
+        .our-products-heading{
+        position: absolute;
+        bottom: 2%;
+        left: 40%;
+        font-size: 55px;
+        color: white;
+        }
+        .section2{
+        width: 100%;
+        height: 800px;
+        position: relative;
+        display: flex;
+        }
+        .meat-image-outer{
+        width: 50%;
+        height: 800px;
+        }
+        .meat-image{
+        width: 40%;
+        height: 400px;
+        position: absolute;
+        left: 7.5%;
+        top: 12.5%;
+        box-shadow: 15px 15px darkslategray;
+        
+        }
+      
+        .meat-text-outer{
+        width: 50%;
+        height: 800px;
+        position: relative;
+      
+        }
+        .meat-heading-and-text{
+        position: absolute;
+        left: 250px;
+        top: 140px;
+        width: 50%;
+        height: auto;
+        
+        }
+        .meat-heading-and-text h1{
+        font-size: 40px;
+        color: white;
+        }
+        .meat-heading-and-text p{
+        font-size: 18px;
+        color: white;
+      
+        }
+        #beef{
+        background-color: #05274b ;
+        }
+        #pork{
+        background-color: rgb(2, 48, 2);
+        }
+        #chicken{
+        background-color: white;
+        }
+        #chicken .meat-heading-and-text h1{
+        font-size: 40px;
+        color:#05274b ;
+        }
+        #chicken .meat-heading-and-text p{
+        font-size: 18px;
+        color: #05274b;
+      
+        }
+        #lamb{
+        background-color: #757575;
+        }
+        .learn-more{
+        position: absolute;
+        bottom: 153px;
+        left: 22.5%;
+        }
+        .learn-more button{
+        font-size: 25px;
+        }
+        #chicken button{
+        background-color:#05274b ;
+        color: white;
+        }
+        #pork button{
+        background-color: #757575;
+      
+        }
+        #lamb button{
+        background-color: white;
+        color: #05274b;
+        }
+      
+    }      
+      /****************************************************************/
