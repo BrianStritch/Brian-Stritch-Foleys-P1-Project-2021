@@ -425,7 +425,7 @@ footer p{
   width: 100%;
   height: 3.5rem; 
   clear: both; 
-  background-color: blue; 
+  box-shadow: 10px 10px gray; 
   color: #fafafa;   
   z-index: 1;
   font-size: 1.5rem;
@@ -448,7 +448,8 @@ hr{
 .product-heading{
   text-align: center;
   display:-webkit-inline-box;
-  margin: 2% 0 0 33%;    
+  margin: 2% 0 0 33%; 
+  color: blue;   
 }
 .product-outer{
   width: 100%;
@@ -460,7 +461,7 @@ hr{
   width: 26%;
   height: 60%;
   margin: 8% 0 0 5%;
-  border: 5px solid blue;
+  box-shadow: 10px 10px gray;
   border-radius: 0 40px;
   overflow: hidden;
   position: absolute;
@@ -472,7 +473,7 @@ hr{
   width: 26%;
   height: 60%;
   margin: 8% 0 0 5%;
-  border: 5px solid blue;
+  box-shadow: 10px 10px gray;
   border-radius: 0 40px;
   overflow: hidden;
    position: absolute;
@@ -484,7 +485,7 @@ hr{
   width: 30%;
   height: 78%;
   margin: 8% 0 0 5%;
-  border: 5px solid blue;
+  box-shadow: 10px 10px gray;
   border-radius: 0 40px;
   overflow: hidden;
    position: absolute;
@@ -496,7 +497,7 @@ hr{
   width: 30%;
   height: 78%;
   margin: 8% 0 0 5%;
-  border: 5px solid blue;
+  box-shadow: 10px 10px gray;
   border-radius: 0 40px;
   overflow: hidden;
    position: absolute;
@@ -508,7 +509,7 @@ hr{
   width: 43%;
   height: auto;
   margin: 8% 0 0 5%;
-  border: 5px solid blue;
+  box-shadow: 10px 10px gray;
   border-radius: 1rem;
   overflow: hidden;
   background-color: white;
@@ -528,7 +529,7 @@ hr{
   height: 17rem;
   display: inline;
   background-color: white;
-  border: 5px solid blue;
+  box-shadow: 10px 10px gray;
   border-radius: 10%;
   overflow: hidden;
   box-sizing: border-box;    
