@@ -49,17 +49,92 @@ p{
     font-family: var(--ff--secondary);
     font-weight: 300;
     font-size: 1.2rem;
-    line-height: 1.2; 
+    line-height: 1.2;
+    margin-bottom: 1.2rem; 
     color: var(--clr--dark-gray);   
 }
 h1, h2, h3 {
     font-family: var(--ff--primary);
     line-height: 1;
     font-weight: 600;
+    margin-bottom: 1.2rem;
 }
-/* background colors for sections */
-.bg-navy{background-color: var(--clr--navy);}
-.bg-lgray{background-color:var(--clr--light-gray);}
-.bg-lgreen{background-color:var(--clr--light-green);}
-.bg-dgreen{background-color:var(--clr--dk-green);}
-.bg-dgray{background-color: var(--clr--dark-gray);}
+section {
+    padding: 30px;
+}
+.outer{
+    margin: 0 auto;
+    min-width: 600px;
+    max-width: 95%;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    
+}
+.column div{
+   flex-basis: 100%; 
+}
+.greeting{
+    height: 500px;
+}
+.meat-selectors{
+    width: 20%;    
+}
+.meat-selectors img{
+    box-shadow: none;    
+}
+.selector{
+    height: 500px;
+    margin: 5px;
+    margin-top: -250px;
+    min-width: 20%;
+}
+img{
+    border-radius: 10px;
+    box-shadow: 20px 20px darkslategray;
+    max-width: 100%;
+    display: block;
+}
+h1, h2, h3, p{
+    text-align: center;
+}
+/* background colors and font colors for sections */
+.bg-navy{
+    background-color: var(--clr--navy);
+    color: var(--clr--white);
+    
+}
+.bg-lgray{
+    background-color:var(--clr--light-gray);
+    color: var(--clr--white);    
+}
+.bg-lgray img{
+    box-shadow: 20px 20px darkslategray;
+}
+.bg-lgreen{
+    background-color:var(--clr--light-green);
+    color: var(--clr--dark-gray);
+}
+.bg-dgreen{
+    background-color:var(--clr--dk-green);
+    color: var(--clr--light-gray);
+}
+.bg-dgray{
+    background-color: var(--clr--dark-gray);
+    color: var(--clr--white);
+}
+.bg-white{
+    color: var(--clr--navy);
+}
+/* ****************** header styles ************************* */
+
+@media screen and (min-width:1200px){
+    .column{
+        flex-direction: row;
+        
+    }
+    .column div{
+        flex-basis: 100%;
+    }
+}
