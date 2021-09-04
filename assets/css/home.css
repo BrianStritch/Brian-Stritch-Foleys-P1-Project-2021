@@ -12,6 +12,7 @@ body{
     
     scroll-behavior: smooth;
     margin: 0;
+    /* color: lime; */
     
 }
 /* h1,h2,h3,h4,h5,h6{
@@ -29,15 +30,21 @@ header{
     text-align: center;
     z-index: 8; 
     }
-
+header{	
+    width: 100%;	
+    height: 150px;	
+    background-color: #05274b;	
+    position: relative;	
+    text-align: center;
+    z-index: 8; 
+    }
 header h1{
-    font-size: 2.8rem;
-    line-height: 0.5;
-    /* position: absolute;
-    left: 1rem;
-    top: -1.5rem; */
+        font-size: 2.8rem;
+        position: absolute;
+        left: 1rem;
+        top: -1.5rem;
 }
-/* header p{
+header p{
     text-align: left;
     position: absolute;
     left: 2%;
@@ -45,16 +52,19 @@ header h1{
     padding: 0;
     margin: 0;
     border-bottom: 1px solid white;
-    font-family: Architects Daughter, sans-serif;
-} */
+    font-family: Architects Daughter, sans-serif;    
+}
 .foley-name{
     float: left;
 }
 .nav-div{
     float: right;
-    
+        
 }
-
+    
+    
+    
+    
 
 
 
@@ -249,9 +259,8 @@ header h1{
     height: 150px; 
     }
     .foley-name{
-      float: none;
-    }   
-    
+    float: none;
+    }  
     header h1{   
     text-align: center; 
     margin: 0;
@@ -268,9 +277,6 @@ header h1{
       top: -50px;
       border: 2px solid lime;
     }
-  
-  
-   
     .hero-section-inner{ 
     height: 126px; 
     position: static; 
@@ -313,8 +319,7 @@ header h1{
     font-size: 30px;       
     text-align: center; 
     }   
-    .section2{  
-    
+    .section2{ 
     height: 620px;  
     position: relative; 
     display: flex;  
@@ -331,8 +336,7 @@ header h1{
     position: absolute; 
     left: 7.5%; 
     top: 3.5%;  
-    box-shadow: 15px 15px darkslategray;    
-        
+    box-shadow: 15px 15px darkslategray; 
     }   
     .meat-text-outer{   
     width: 100%;    
@@ -340,13 +344,10 @@ header h1{
     position: absolute; 
     left: -166px;   
     bottom: -86px;  
-    }   
-  
-    .meat-heading-and-text h1, .meat-heading-and-text p{  
-    
+    } 
+    .meat-heading-and-text h1, .meat-heading-and-text p{ 
     text-align: center; 
     }   
-    
     .learn-more{    
     position: absolute; 
     bottom: 22px;   
@@ -579,5 +580,5 @@ header h1{
         color: #05274b;
         }
       
-    }      
+    }         
       /****************************************************************/
