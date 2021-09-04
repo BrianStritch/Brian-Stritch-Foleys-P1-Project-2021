@@ -13,10 +13,11 @@ font colors
 White color rgba(250, 249, 249, 0.9)
 black rgba(0, 0, 0, 0.9)
  */
+
 /* code below learned via kevin powell youtuber and leading to google search for custom css properties and information taken from
 https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties*/
 
-root{
+:root{
     /*custom property colors*/
     --clr--navy:#05274b;
     --clr--light-gray:#757575;
@@ -28,11 +29,9 @@ root{
     --ff--none:none;
     --ff--primary:"Hina Mincho", san-serif;
     --ff--secondary:"Roboto", serif;
-    
-
 }
 
-/* code below from question on freecodecamp on how to set box-sizing: border-box; to every element  
+/* code below learned via Kevin Powell youtuber and taken from google search from question on freecodecamp on how to set box-sizing: border-box; to every element  
 https://forum.freecodecamp.org/t/before-after-box-sizing-border-box/425735/5*/
 
 *,
@@ -45,4 +44,10 @@ https://forum.freecodecamp.org/t/before-after-box-sizing-border-box/425735/5*/
 html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
     margin: 0;
     
+}
+body{
+    font-family: var(--ff--primary);
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.2;    
 }
