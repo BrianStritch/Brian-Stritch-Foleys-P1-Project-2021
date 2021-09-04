@@ -21,7 +21,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties*/
     /*custom property colors*/
     --clr--navy:#05274b;
     --clr--light-gray:#757575;
-    --clr--dark-gray:rgba(0, 0, 0, 0.2);
+    --clr--dark-gray:rgba(0, 0, 0, 0.6);
     --clr--light-green:#209481;
     --clr--dk-green:rgba(2, 48, 2, 0.9);
     --clr--white:rgba(250, 249, 249, 0.9);
@@ -45,9 +45,21 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
     margin: 0;
     
 }
-body{
-    font-family: var(--ff--primary);
-    font-weight: 400;
+p{
+    font-family: var(--ff--secondary);
+    font-weight: 300;
     font-size: 1.2rem;
-    line-height: 1.2;    
+    line-height: 1.2; 
+    color: var(--clr--dark-gray);   
 }
+h1, h2, h3 {
+    font-family: var(--ff--primary);
+    line-height: 1;
+    font-weight: 600;
+}
+/* background colors for sections */
+.bg-navy{background-color: var(--clr--navy);}
+.bg-lgray{background-color:var(--clr--light-gray);}
+.bg-lgreen{background-color:var(--clr--light-green);}
+.bg-dgreen{background-color:var(--clr--dk-green);}
+.bg-dgray{background-color: var(--clr--dark-gray);}
