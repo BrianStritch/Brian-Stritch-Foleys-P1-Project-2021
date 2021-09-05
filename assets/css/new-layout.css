@@ -19,10 +19,10 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties*/
 
 :root{
     /*custom property colors*/
-    --clr--navy:#05274b;
-    --clr--light-gray:#757575;
+    --clr--navy:#201e1e;
+    --clr--light-gray:#7a7676;
     --clr--dark-gray:rgba(0, 0, 0, 0.6);
-    --clr--light-green:#209481;
+    --clr--light-green:#206694;
     --clr--dk-green:rgba(2, 48, 2, 0.9);
     --clr--white:rgba(250, 249, 249, 0.9);
     --clr--black:rgb(0, 0, 0, 0.9)
@@ -38,7 +38,6 @@ https://forum.freecodecamp.org/t/before-after-box-sizing-border-box/425735/5*/
 *::before,
 *::after {
   box-sizing: border-box;
-  
 }
 
 html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
@@ -164,8 +163,9 @@ h1, h2, h3, p{
   }
   
   #menu a.active {
-    background-color: rgb(250, 249, 249);
-    color: blue;
+    background-color: var(--clr--navy);
+    border-bottom: 2px solid bottom;
+    color: white;
   }
   
   /* Dropdown menu */
@@ -186,8 +186,8 @@ h1, h2, h3, p{
   
   nav li a:hover,
   .dropdown:hover .dropbtn {
-    background-color: white;
-    color: blue;
+    border-bottom: 1px solod #717175;
+    color: white;
   }
   
   li.dropdown {
@@ -198,7 +198,7 @@ h1, h2, h3, p{
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: #717175;
     min-width: 210px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     top: 17px;
@@ -208,7 +208,7 @@ h1, h2, h3, p{
   }
   
   .dropdown-content a {
-    color:blue;
+    color:white;
     padding: 10px 15px;
     text-decoration: none;
     display: block;
@@ -217,8 +217,8 @@ h1, h2, h3, p{
   }
   
   .dropdown-content a:hover {
-    background-color: blue;
-    color: white;
+    background-color: white;
+    color: var(--clr--navy);
   }
   
   .dropdown:hover .dropdown-content {
@@ -229,11 +229,12 @@ h1, h2, h3, p{
 /* <!-- code below from question on w3schools on how to create a burger menu
         https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar--> */
 .topnav {
-    background-color: blue;
+    background-color: #717175;
     position: fixed;
     right: 45px;
     top: 63px;
     z-index: 4;
+
   }
   
   .topnav #myLinks {
@@ -249,12 +250,13 @@ h1, h2, h3, p{
   }
   
   .topnav a.icon {
-    background: blue;
+    background: #717175;
     display: block;
     position: absolute;
     right: 0;
     top: -5px;
     border: 2px solid white;
+    border-radius: 5px;
   }
   
   .topnav a:hover {
@@ -263,7 +265,7 @@ h1, h2, h3, p{
   }
   
   .active {
-    background-color: blue;
+    background-color: #717175;
     color: white;
   }
   
