@@ -444,8 +444,154 @@ em{
   text-align: left;
 }
 
+/* ************************************* rewards page styling and positioning *********************************************** */
+/* *************************** rewards page styles and positioning **************************************************/
+/* rewards form */
+/* *** references from Coders coffeehouse code institute walkthrough for form layout modified to suit this website ***** */
+#rewards-page{
+  background-image: url(../images/wooden-background.jpeg) ;
+  width: 100%;
+  height: auto;
+}
+.rewards-form-outer{
+  width: 50rem;
+  height: auto;
+  border: 2px double black;   
+  border-radius: 5px 5px;
+  margin-left: 30%;
+}
+#rewards-form-outer h1{
+  text-align: center;
+}
+.user-data{
+  margin-bottom: 1rem;
+  border: none;
+  
+}
+fieldset{
+  border:2px solid blue;
+}
 
 
+/*form styles */
+input[type=submit] {
+	margin: 0 0.75rem 1rem;
+	padding: 0.75rem;
+	background-color: blue;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+form {
+	width: 50rem;
+}
+
+legend {
+	font-size: large;
+	font-weight: 600;
+	text-transform: uppercase;
+    font-family: Architects Daughter, sans-serif;
+}
+.personal-details, .address{
+    width: 302px;
+    height: 152px;
+    
+}
+.personal-details div input {
+    float:right;
+    margin: 0 0 0 -6px;
+}
+#distance{
+  margin-left: 1px;
+}
+.address div input {
+  float:right;
+}
+.personal-and-address{
+  display: inline-block;
+  padding: 0 1.5rem;
+}
+.products-and-services{
+  line-height: 20px;
+}
+input{
+    padding: 0 0.5rem;
+    margin: 0;
+}
+label{
+    padding: 0 0.5rem 0 0;
+}
+form div{
+    display: table-row;
+}
+.fav-meat{
+    padding: 0 2.9rem 0 0;
+}
+.least-fav-meat{
+    padding: 0 0.5rem 0 0;
+}
+.eat-frequency label, .shop-frequency label{
+  margin: -2px -2px 0 0;
+}
+.eat-frequency p, .shop-frequency p{
+  margin-bottom: -2px;
+}
+.delivery{
+  line-height: 20px;
+}
+.delivery h3{
+  margin: 22px 0 10px;
+}
+.delivery input{
+  margin-bottom: -2px;
+}
+.delivery label{
+  margin-top: 2px;
+}
+#special-delivery{
+    width: 26.8rem;
+    height: auto;
+}
+.delivery-note{
+    padding: 0 1.55rem 0 0;
+}
+.local-choice div{
+  width: 50px;
+  height: auto;
+  display: inline;
+}
+#chutney{
+  margin-left: 61px;
+}
+#goats-milk{
+  margin-left: 52px;
+}
+#sauce{
+  margin-left: 58px;
+}
+.underline{
+    text-decoration:underline;
+    margin-left: 1rem;
+}
+.rewards-info{
+    margin: 0 1rem 1rem 1rem;
+}
+.frozen-foods-form-list{
+  display: inline-block;
+  padding: 0 1.5rem;
+  line-height: 30px;
+  
+}
+.frozen-foods-form-list li{
+  list-style-type: none;
+}
+#feedback{
+  margin-top: 10px;
+}
+
+
+/* ********************************** rewards form styles and positioning end ************************** */
 
 
 
