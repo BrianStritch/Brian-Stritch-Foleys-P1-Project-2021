@@ -25,11 +25,13 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties*/
     --clr--light-green:#206694;
     --clr--dk-green:rgba(2, 48, 2, 0.9);
     --clr--white:rgba(250, 249, 249, 0.9);
+    --clr--p-light:rgba(250, 249, 249, 0.9);
     --clr--black:rgb(0, 0, 0, 0.9)
     --ff--none:none;
     --ff--primary:"Hina Mincho", san-serif;
     --ff--secondary:"Roboto", serif;
 }
+/*  ******************* page layout and positioning ******************************************* */
 
 /* code below learned via Kevin Powell youtuber and taken from google search from question on freecodecamp on how to set box-sizing: border-box; to every element  
 https://forum.freecodecamp.org/t/before-after-box-sizing-border-box/425735/5*/
@@ -44,22 +46,22 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
     margin: 0;
     
 }
-header{
-    height: 100px;
-}
+
 p{
     font-family: var(--ff--secondary);
     font-weight: 300;
     font-size: 1.2rem;
     line-height: 1.2;
     margin-bottom: 1.2rem; 
-    color: var(--clr--dark-gray);   
+    color: var(--clr--p-light);   
 }
 h1, h2, h3 {
     font-family: var(--ff--primary);
     line-height: 1;
     font-weight: 600;
     margin-bottom: 1.2rem;
+    font-size: 2.6rem;
+    color: orange;
 }
 section {
     padding: 30px;
@@ -77,26 +79,14 @@ section {
 .column div{
    flex-basis: 100%; 
 }
-.greeting{
-    height: 500px;
-}
-.meat-selectors{
-    width: 100%;    
-}
-.meat-selectors img{
-    box-shadow: none;    
-}
-.selector{
-    height: 500px;
-    margin: 5px;
-    margin-top: -250px;
-    min-width: 20%;
-}
+
+
 img{
     border-radius: 10px;
     box-shadow: 20px 20px darkslategray;
     max-width: 100%;
     display: block;
+    margin: 2rem 0;
 }
 h1, h2, h3, p{
     text-align: center;
@@ -116,34 +106,57 @@ h1, h2, h3, p{
 }
 .bg-lgreen{
     background-color:var(--clr--light-green);
-    color: var(--clr--dark-gray);
+    color: var(--clr--white);
 }
 .bg-dgreen{
     background-color:var(--clr--dk-green);
-    color: var(--clr--light-gray);
+    color: var(--clr--white);
 }
 .bg-dgray{
     background-color: var(--clr--dark-gray);
-    color: var(--clr--white);
+    color: yellow;
 }
 .bg-white{
     color: var(--clr--navy);
 }
+.bg-white p{
+  color: var(--clr--navy);
+}
+
 /* ****************** header styles ************************* */
+header{
+    height: 115px;
+    z-index: 3;
+    position: relative;
+}
+header h1 {
+    float: left;
+    line-height: 1.5;
+    padding-left: 2.5rem;
+    font-size: 3.8rem;
+}
+
+
+
+
 /* ****************************navigation links start**************************** */
 #menu {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 22px;
     font-family: nunito-sans, sans-serif;
-    margin-right: 25px;
-    position: absolute;
-    top: 27px;
-    right: 10px;
+    margin-right: 25px;    
+    z-index: 4;
+    
+  }
+  #menu a:hover{
+    color:orange;
   }
   
   #menu ul {
     text-align: center;
     width: auto;
+    line-height:5;
+    float: right;
   }
   
   #menu li {
@@ -152,19 +165,20 @@ h1, h2, h3, p{
     margin-left: 3px;
     width: 25px;
     list-style: none;
-    z-index: 2;
+    z-index: 4;
+    padding:0 1rem;
   }
   
   /*Code below from an answer given to a question on the following site
   https://stackoverflow.com/questions/31140935/how-do-i-add-vertical-line-on-my-menu-item-in-html-css */
   
-  #menu li:not(:first-child):before {
+  /* #menu li:not(:first-child):before {
     content: "|      ";
-  }
+  } */
   
   #menu a.active {
     background-color: var(--clr--navy);
-    border-bottom: 2px solid bottom;
+    text-decoration: underline;
     color: white;
   }
   
@@ -184,15 +198,16 @@ h1, h2, h3, p{
       color: white;
   }
   
-  nav li a:hover,
+  #menu nav li a:hover,
   .dropdown:hover .dropbtn {
-    border-bottom: 1px solod #717175;
+    border-bottom: 1px solid #717175;
     color: white;
   }
   
   li.dropdown {
     position: relative;
     display: inline-block;
+    
   }
   
   .dropdown-content {
@@ -201,9 +216,10 @@ h1, h2, h3, p{
     background-color: #717175;
     min-width: 210px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    top: 17px;
+    top: 22px;
     left: 50%;
     margin-left: -100px;
+    line-height: 1;
     
   }
   
@@ -217,36 +233,40 @@ h1, h2, h3, p{
   }
   
   .dropdown-content a:hover {
-    background-color: white;
+    background-color: black;
     color: var(--clr--navy);
   }
   
   .dropdown:hover .dropdown-content {
     display: inline-block;
   }
+/* *************** navigation links end ************* */
 
-  /* *************** floating Navigation burger menu styles and positioning******************* */
+/* *************** floating Navigation burger menu styles and positioning******************* */
 /* <!-- code below from question on w3schools on how to create a burger menu
         https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar--> */
+
 .topnav {
     background-color: #717175;
     position: fixed;
     right: 45px;
     top: 63px;
-    z-index: 4;
+    z-index: 2;
 
   }
   
   .topnav #myLinks {
     display: none;
+    z-index: 2;
   }
   
   .topnav a {
-    color: white;
+    color: orange;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     display: block;
+    z-index: 2;
   }
   
   .topnav a.icon {
@@ -255,28 +275,162 @@ h1, h2, h3, p{
     position: absolute;
     right: 0;
     top: -5px;
-    border: 2px solid white;
+    border: 2px solid orange;
     border-radius: 5px;
+    z-index: 2;
   }
   
   .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: black;
+    color: orange;
+    z-index: 2;
   }
   
   .active {
     background-color: #717175;
     color: white;
+    z-index: 2;
   }
-  
-  /* *************************************** end of floating navigation burger menu ******************************* */
-/* *************** navigation links end ************* */
+  .burger-menu{
+    z-index: 2;
+  }
+/* *************************************** end of floating navigation burger menu ******************************* */
+/* **********************************************end of header section ****************************************** */
 
+/* ********************* greeting section ***************************** */
+.greeting{
+    height: 475px;
+}
+.greeting h1{
+  font-size: 8rem;
+  }
+.greeting p{
+  font-size: 3rem;
+  margin-top: 5px;
+  font-weight: 300;
+}
 
+/* ********************* meat selectors section *************************** */
+.meat-selectors{
+    width: 100%;
+    border-radius: 5px;    
+}
+.meat-selectors a{
+  text-decoration: none; 
+}
+.meat-selectors img{
+    box-shadow: none;    
+}
+.selector{
+    height: 400px;
+    margin: 40px;    
+    min-width: 20%;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.our-products{
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+  font-size: 6rem;
+  color: orange;
+}
+.meat-description{
+  max-width: 40%;
+}
+.meat-description h1{
+  padding-top: 5rem;
+}
+.learn-more{
+  padding-left:45%;
+  margin-top: 13rem;
+}
+/* ********************************** Pre packaged products/frozen food /condiments/specials ************************************/
+.pre-pack h1{
+  text-align: left;
+  padding-left: 17%;
+  margin: 4rem 0 2rem;
+}
+.frozen-food h1{
+  text-align: left;
+  padding-left: 26%;
+  margin: 4rem 0 2rem;
+}
+.pre-pack ul {
+  padding-left: 25%;
+  line-height: 4;
+}
+.frozen-food ul {
+  padding-left: 25%;
+  line-height: 4;
+}
+.condiments h1{
+  text-align: center;
+  margin: 3rem 0 2rem;
+}
 
+.condiments ul{
+  padding-left:40%; 
+  line-height: 3; 
+}
+.con-img img{
+  margin-left:20%;  
+}
+/************************************** Know your cuts section ***********************************/
+.beef h1, .pork h1{
+  padding-left: 16rem;
+  margin-top: 2rem;
+}
+.beef ul{
+  padding-left: 16rem;
+  line-height: 3.5;
+  margin-top: 2rem;
+}
+.pork ul{
+  padding-left: 16rem;
+  line-height: 3.5;
+  margin-top: 2rem;
+}
+.chicken ul{
+  padding-left: 5rem;
+  line-height: 5;
+  margin-top: 3rem;
+}
+.lamb ul{
+  padding-left: 5rem;
+  line-height: 4;
+  margin-top: 2rem;
+}
+/* *********************************** special offers **********************************************/
+.specials{
+  display: contents;
+  padding-left: 2rem;
+}
+.specials-img{
+  margin-right: 5rem;
 
-
-
+}
+.special-1 h3, .special-2 h3, .special-3 h3{
+  text-align: left;
+}
+.special-1 ul, .special-2 ul, .special-3 ul{
+  padding-left: 2rem;
+  line-height: 3;
+}
+.special-1 p, .special-2 p, .special-3 p{
+  text-align: left;
+}
+.special-1 p{
+  padding-top: 3rem;
+}
+em{
+  color: orange;
+}
+/************************************* About us section ******************************************/
+#about-img{
+    
+    width: 48%;
+    
+}
 
 
 
@@ -288,15 +442,17 @@ h1, h2, h3, p{
 /*footer and social media links */
 footer{
   width: 100%;
-  height: 2rem;
+  height: 12rem;
+  background-color: black;
 }
 footer h3{
   text-align: center;
-  color: var(--clr--navy);
+  color: orange;
 }
 footer p{
   padding: 0 20px 0 0;
   text-align: right;
+  color: yellow;
 }
 .social-media-links li{
   display: inline;
@@ -333,4 +489,55 @@ footer p{
     .column div{
         flex-basis: 100%;
     }
+    
+    
+}
+
+
+
+@media screen and (max-width:1200px){
+  section{
+    width: 100%;
+  }
+  header{
+    width: 100%;
+  }
+  header h1{
+      float: none;
+      font-size: 1.2rem;
+  }
+  #menu{
+      display: none;
+  }
+  #about-img{    
+      
+    min-width: 45%;
+   
+    
+}
+}
+
+@media screen and (max-width:600px){
+  section{
+    width: 1100px;
+  }
+  header{
+    width: 100%;
+  }
+  #menu{
+    display: none;
+  }
+  #map-section{
+    display: none;
+  }
+  img{
+    max-width: 490px;
+    margin-bottom: 2rem;
+  }
+  #about-img{    
+      
+    min-width: 45%;
+   
+    
+}
 }
