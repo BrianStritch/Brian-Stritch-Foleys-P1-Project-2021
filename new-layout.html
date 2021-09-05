@@ -20,19 +20,19 @@
                         <li class="dropdown">
                             <a href="products.html" class="dropbtn">Products</a>
                                 <div class="dropdown-content">
-                                    <a href="#">Lamb</a>
-                                    <a href="#">Poultry</a>                     
-                                    <a href="#">Beef</a>
-                                    <a href="#">Pork</a>
-                                    <a href="#">Special Offers</a>
-                                    <a href="#">Meat Counter</a>
+                                    <a href="#beef">Beef</a>
+                                    <a href="#pork">Pork</a>
+                                    <a href="#chicken">Chicken</a> 
+                                    <a href="#lamb">Lamb</a>
+                                    <a href="#know-your-cuts">Know your cuts</a> 
                                 </div>
                         </li>
-                        <li><a href="#" class="dropbtn">About us</a></li>
+                        <li><a href="#special-offers" class="dropbtn">Special Offers</a></li>
+                        <li><a href="#about" class="dropbtn">About us</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropbtn">Rewards</a>
                         </li>
-                        <li class="dropdown"><a href="#" class="dropbtn">Contact</a>
+                        <li class="dropdown"><a href="#contact" class="dropbtn">Contact</a>
                         </li>               
                 </ul>        
             </nav>
@@ -46,10 +46,10 @@
             <a href="#home" class="active"></a>
                 <div id="myLinks">
                     <a href="#">home</a>
-                    <a href="#">Products</a>
-                    <a href="#">About</a>
+                    <a href="#beef">Products</a>
+                    <a href="#about">About</a>
                     <a href="#">Rewards</a>
-                    <a href="#">contact</a>
+                    <a href="#contact">contact</a>
                 </div>
 
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
@@ -76,7 +76,7 @@
             <div class="column ">
                 <!--beef-->
                 <div class="meat-selectors">
-                    <a href="#">
+                    <a href="#beef">
                         <div class="bg-navy selector">
                             <img src="assets/images/new-images/steak-1.webp" alt="Image of a very appetising raw steak on a frying pan with garnish">
                             <h2>Beef</h2>
@@ -85,7 +85,7 @@
                 </div>
                 <!--pork-->
                 <div class="meat-selectors">
-                    <a href="#">
+                    <a href="#pork">
                         <div class="bg-navy selector">
                             <img src="assets/images/new-images/pork.jpg" alt="Image of pork sausages and pork chops on a grill">
                             <h2>Pork</h2>
@@ -94,7 +94,7 @@
                 </div>
                 <!--chicken-->
                 <div class="meat-selectors">
-                    <a href="#">
+                    <a href="#chicken">
                         <div class="bg-navy selector">
                             <img src="assets/images/new-images/chicken-bbq.jpg" alt="Image of chicken drumsticks on a bbq grill">
                             <h2>Chicken</h2>
@@ -103,7 +103,7 @@
                 </div>
                 <!--lamb-->
                 <div class="meat-selectors">
-                    <a href="#">
+                    <a href="#lamb">
                         <div class="bg-navy selector">
                             <img src="assets/images/new-images/lamb-shank.jpg" alt="Image of very apetising lamb shank on a chopping board with garnish">
                             <h2>Lamb</h2>
@@ -471,26 +471,45 @@
         
     </section>    
     <!-- about us section-->
-    <section>
+    <section id="about">
         <div class="outer bg-white">
            <div>
                 <h1>About us</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam deserunt, dolore quisquam, 
-                        officia quod alias cupiditate quos blanditiis eligendi facere voluptatem saepe aliquam iusto 
-                        sint fugiat temporibus tempora aperiam voluptatibus qui laborum sapiente ea explicabo. Deserunt 
-                        asperiores laborum sequi illo.
-                </p>
+                <p>
+                    Located in Duleek, County Meath, we are the premier source for 100% grass-fed
+                    organic beef, 100% pasture raised pork, organic poultry and Mountain raised organic lamb.                     
+                </p> 
+                <p> We believe that every animal should have the opportunity where possible to explore its own natural 
+                    environment and live a happy and healthy life as close to nature as possible. We carefully select 
+                    our partner farmers ensuring that you have the highest quality produce delivered straight from the 
+                    farm to you. All our meats are fully tested and are fully traceable and complies with the latest in EU regulations.
+                </p>   
+                <p>
+                    All of our products come from local farms which are located in Leinster, Munster and Connought. We believe in 
+                    knowing the farmers and knowing the food, so we can ensure you are getting the freshest, most delicious
+                    cuts of meat without harmful chemicals. 
+                </p> 
+                <p>
+                    Our staff are happy to take custom requests or to help you select from our delicious, fresh cuts of meat. 
+                    For a true farm-to-butcher-to-table experience, call into our shop today. Sign up and become a member to avail of our 
+                    rewards scheme for better savings on your favourite products. Click <a href="#rewards.html">here</a> to sign up today. 
+                </p>    
+                <h3>
+                    Locally sourced meats you can trust!
+                </h3>   
             </div>
-            <div class="column " id="about-img">
+            <div class="column">
+                <div  id="about-img-left">
                 <img src="assets/images/new-images/foleys-shop-front.jpg" alt="Image showing foley's shop front">
-            </div> 
-            <div class="column " id="about-img">
-                <img src="assets/images/new-images/butcher-in-shop.jpg" alt="image of interior of the shop with butcher working">
-            </div> 
+                </div> 
+                <div id="about-img-right">
+                    <img src="assets/images/new-images/butcher-in-shop.jpg" alt="image of interior of the shop with butcher working">
+                </div> 
+            </div>
         </div>
     </section>
     <!-- contact us section-->
-    <section class="bg-lgray">
+    <section id="contact" class="bg-lgray">
         <div class="outer">
             <div class="column">
                 <div>

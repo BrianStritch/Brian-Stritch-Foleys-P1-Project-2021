@@ -41,8 +41,14 @@ https://forum.freecodecamp.org/t/before-after-box-sizing-border-box/425735/5*/
 *::after {
   box-sizing: border-box;
 }
-
-html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
+html, body {
+  width: 100%;
+  padding:0;
+  margin: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+h1, h2, h3, h4, h5, h6, p, ul, li {
     margin: 0;
     
 }
@@ -305,7 +311,7 @@ header h1 {
   font-size: 8rem;
   }
 .greeting p{
-  font-size: 3rem;
+  font-size: 1.5rem;
   margin-top: 5px;
   font-weight: 300;
 }
@@ -426,10 +432,16 @@ em{
   color: orange;
 }
 /************************************* About us section ******************************************/
-#about-img{
-    
-    width: 48%;
-    
+#about-img-left{
+  padding-left: 14rem;    
+}
+#about-img-right{
+  padding-left: 12rem;    
+}
+#about p{
+  max-width: 80%;
+  padding-left: 20%;
+  text-align: left;
 }
 
 
@@ -448,6 +460,10 @@ footer{
 footer h3{
   text-align: center;
   color: orange;
+  
+}
+footer h3 a{
+  text-decoration: none;
 }
 footer p{
   padding: 0 20px 0 0;
@@ -467,6 +483,9 @@ footer p{
 }
 .fab {
   color: blue;  
+}
+.fab:hover{
+  color: #206694;
 }
 
 #rewards-page .social-media-links{
