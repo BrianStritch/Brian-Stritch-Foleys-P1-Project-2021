@@ -328,7 +328,8 @@ header h1 {
     box-shadow: none;    
 }
 .selector{
-    height: 400px;
+    height: 83%;
+    width: 83%;
     margin: 40px;    
     min-width: 20%;
     border-radius: 50px;
@@ -654,37 +655,104 @@ footer p{
     .column div{
         flex-basis: 100%;
     }
-    
+    .pp-list-2{
+    display: none;
+    }
+    .pp-list{
+      display: block;
+    }
     
 }
 
 
 
 @media screen and (max-width:1200px){
+  h1, h2, h3, p {    
+    font-weight: 500;
+  }
+  p{
+    line-height: 2.2;
+  }
   section{
     width: 100%;
   }
   header{
     width: 100%;
+    position: static;
   }
   header h1{
       float: none;
-      font-size: 1.2rem;
+      font-size: 5.2rem;
   }
   #menu{
       display: none;
   }
+  .topnav a {
+    font-size: 39px;
+  }
+  .topnav a.icon {
+    top: -35px;
+  }
+  #beef .meat-img  img,#pork .meat-img img,#lamb .meat-img  img,#chicken .meat-img  img{
+    margin-left: 25%;
+  }
   #about-img{    
-      
     min-width: 45%;
-   
-    
-}
+  }
+  .selector{
+    width: 48%;
+    min-width: 49%;
+  }
+  .meat-selectors{
+    margin-left: 20%;
+  }
+  .meat-description {
+    max-width: 69%;
+    margin-left: 17%;
+  }
+  .pre-pack h1 {
+    padding-left: 33%;
+  }
+  .pre-pack ul {
+    padding-left: 42%;
+    line-height: 2.5;
+  }
+  .prepak-list-2{
+    display: block;
+  }
+  .prepak-list{
+      display: none;
+  }
+  .prepak-img{
+    margin-left: 20%;
+  }
+  .Frozen-list-1{
+    display:none;
+  }
+  .Frozen-list-2{
+    display:block;
+  }
+  .frozen-food ul {
+    padding-left: 42%;
+    line-height: 2.5;
+  }
+  .frozen-food h1 {    
+    padding-left: 33%;    
+  }
+  .frozen-img{
+    margin-left: 20%;
+  }
+  .condiments ul {    
+    line-height: 2.5;
+  }
+  .condiments-img {    
+    margin-left: 20%;
+  }
 }
 
 @media screen and (max-width:600px){
   section{
-    width: 1100px;
+    width: 100%;
   }
   header{
     width: 100%;
@@ -698,11 +766,24 @@ footer p{
   img{
     max-width: 490px;
     margin-bottom: 2rem;
+    min-width: 70%;
   }
-  #about-img{    
-      
+  #about-img{ 
     min-width: 45%;
-   
-    
-}
+  }
+  .pp-list{
+    display: none;
+  }
+  .pp-list-2{
+    display: block;
+  }
+  .Frozen-list-1{
+    display:block;
+  }
+  .Frozen-list-2{
+    display:block;
+  }
+  .frozen-img{
+    margin-left: 20%;
+  }
 }
