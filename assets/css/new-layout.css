@@ -357,6 +357,8 @@ header h1 {
   padding-left: 17%;
   margin: 4rem 0 2rem;
 }
+
+
 .frozen-food h1{
   text-align: left;
   padding-left: 26%;
@@ -366,9 +368,18 @@ header h1 {
   padding-left: 25%;
   line-height: 4;
 }
+.prepak-list-2{
+  display: none;
+}
 .frozen-food ul {
   padding-left: 25%;
   line-height: 4;
+}
+.Frozen-list-2{
+  display:none;
+}
+.Frozen-list-1{
+  display:block;
 }
 .condiments h1{
   text-align: center;
@@ -382,14 +393,15 @@ header h1 {
 .con-img img{
   margin-left:20%;  
 }
+
+
+
+
+
+
 /************************************** Know your cuts section ***********************************/
 .beef h1, .pork h1{
   padding-left: 16rem;
-  margin-top: 2rem;
-}
-.beef ul{
-  padding-left: 16rem;
-  line-height: 3.5;
   margin-top: 2rem;
 }
 .pork ul{
@@ -406,6 +418,15 @@ header h1 {
   padding-left: 5rem;
   line-height: 4;
   margin-top: 2rem;
+}
+.prepak-list-2{
+    display: none;
+}
+.beef ul, .pork ul, .chicken ul, .lamb ul{
+      padding-left: 10rem;
+      line-height: 2.5;
+      margin-top: 5rem;    
+      display: inline-block;
 }
 /* *********************************** special offers **********************************************/
 .specials{
@@ -443,6 +464,26 @@ em{
   max-width: 80%;
   padding-left: 20%;
   text-align: left;
+}
+/* ********************************** contact-us ************************************/
+
+.mapouter{
+  position:relative;  
+  height:303px;
+  width: 117rem;
+  margin: 2rem 0;
+}
+
+.gmap_canvas{
+  overflow:hidden;
+  background:none!important;
+  height:303px;
+  width:100%;
+}
+
+.gmap_canvas iframe{
+  width: 70%;
+   height: 100%;
 }
 
 /* ************************************* rewards page styling and positioning *********************************************** */
@@ -645,8 +686,6 @@ footer p{
 
 
 
-
-
 @media screen and (min-width:1200px){
     .column{
         flex-direction: row;
@@ -654,12 +693,6 @@ footer p{
     }
     .column div{
         flex-basis: 100%;
-    }
-    .pp-list-2{
-    display: none;
-    }
-    .pp-list{
-      display: block;
     }
     
 }
@@ -671,7 +704,7 @@ footer p{
     font-weight: 500;
   }
   p{
-    line-height: 2.2;
+    line-height: 2.5;
   }
   section{
     width: 100%;
@@ -714,16 +747,18 @@ footer p{
     padding-left: 33%;
   }
   .pre-pack ul {
-    padding-left: 42%;
-    line-height: 2.5;
+    padding-left: 42%;    
   }
   .prepak-list-2{
     display: block;
   }
-  .prepak-list{
-      display: none;
-  }
-  .prepak-img{
+  .prepak-list, .beef-1, .pork-1, .chicken-1, .lamb-1{
+    display: none;
+  }  
+  .beef-2,.pork-2, .chicken-2, .lamb-2{
+    display: inline;
+  } 
+  .prepak-img, .frozen-img, .condiments-img, .specials-img, .chicken-cuts-img, .lamb-cuts-img{
     margin-left: 20%;
   }
   .Frozen-list-1{
@@ -734,20 +769,75 @@ footer p{
   }
   .frozen-food ul {
     padding-left: 42%;
-    line-height: 2.5;
+    
   }
   .frozen-food h1 {    
     padding-left: 33%;    
-  }
-  .frozen-img{
-    margin-left: 20%;
-  }
-  .condiments ul {    
+  }  
+  .pre-pack ul, .frozen-food ul, .condiments ul, .special-1, .special-3{    
     line-height: 2.5;
   }
-  .condiments-img {    
-    margin-left: 20%;
+    
+  .special-1 p {
+    padding-top: 1rem;
   }
+  .special-2{
+    margin-left: 36%;
+    line-height: 2.5;
+  }
+  .special-3{
+    margin-left: 67%;    
+  }  
+  .beef-cuts-img, .pork-cuts-img{
+    margin-left: 20%;
+  }  
+  .beef ul, .pork ul, .chicken ul {
+    padding-left: 11rem;
+    line-height: 2.5;
+    margin-top: 2rem;    
+    display: inline-block;
+  }
+  .chicken ul{
+    margin-left: 10%;
+  } 
+  .lamb ul{
+    margin-left: 20%;
+    line-height: 2.5;
+    margin-top: 2rem;    
+    display: inline-block;
+  }
+  #about p {
+    max-width: 94%;
+    padding-left: 6%;    
+  }
+  #about-img-left {
+    padding-left: 23rem;
+  }
+  #about-img-right {
+    padding-left: 6rem;
+  }
+  
+  .mapouter{
+    position: static;
+    height:370px;
+    width:97rem;
+    left: 12%;
+    bottom: 22rem;
+    margin: 2rem 0;
+    text-align: left;
+  }
+  .gmap_canvas{    
+    height:400px;
+    width:100%;
+  }
+  .gmap_canvas iframe{
+    width: 60%;
+     height: 100%;
+  }
+  .contact-us{
+    display: inline-block;
+    line-height: 2.5;
+  }  
 }
 
 @media screen and (max-width:600px){
@@ -756,34 +846,102 @@ footer p{
   }
   header{
     width: 100%;
+    height: 250px;
   }
+  header h1 {
+    float: none;
+    font-size: 5.2rem;
+    margin-right: 4rem;
+    font-weight: 900;
+}
   #menu{
     display: none;
   }
-  #map-section{
-    display: none;
+  .topnav {
+    background-color:var(--clr--dark-gray);
+    position: fixed;
+    right: 45px;
+    top: 143px;
+    z-index: 2;
   }
-  img{
-    max-width: 490px;
+  .topnav a.icon {
+    top: -22px;
+    right: -28px;
+  }
+  
+  img {
+    max-width: 294px;
     margin-bottom: 2rem;
     min-width: 70%;
+  }
+  #beef .meat-img img, #pork .meat-img img, #lamb .meat-img img, #chicken .meat-img img {
+    margin-left: 7%;
+  }
+  .meat-selectors {
+    margin-left: 32%;
+  }
+  .meat-description {
+    margin-left: 14%;
+  }
+  .frozen-food h1 {
+    padding-left: 19%;
+  }
+  .frozen-food ul {
+    padding-left: 34%;
+  }
+  .frozen-list-1{
+    display: none;
+  }
+  .pre-pack h1 {
+    padding-left: 17%;
+  }
+  .pre-pack ul {
+    padding-left: 35%;
+  }
+  .outer {
+    min-width: 100%;
   }
   #about-img{ 
     min-width: 45%;
   }
-  .pp-list{
+  .selector {
+    
+    margin: 40px 40px 40px -26px;
+  }
+  .prepak-list{
     display: none;
   }
-  .pp-list-2{
+  .prepak-list-2{
     display: block;
   }
-  .Frozen-list-1{
-    display:block;
-  }
+  
   .Frozen-list-2{
     display:block;
   }
   .frozen-img{
     margin-left: 20%;
+  }
+  .beef .beef-cuts-img{
+    margin-left: 20%;
+  }
+  .beef ul, .pork ul {
+    padding-left: 7rem; 
+  } 
+  .chicken ul{
+    padding-left: 5rem;
+    
+  }
+  .lamb-2 ul{
+    padding-left: 2rem;
+    
+  }
+  #about-img-left {
+    padding-left: 6rem;
+  } 
+  #about-img-right {
+    padding-left: 6rem;
+  }
+  #map-section{
+    display: none;
   }
 }
