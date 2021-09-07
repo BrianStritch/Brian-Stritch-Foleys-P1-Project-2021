@@ -85,7 +85,9 @@ section {
 .column div{
    flex-basis: 100%; 
 }
-
+ul {
+  list-style-type: none;
+}
 
 img{
     border-radius: 10px;
@@ -846,67 +848,122 @@ footer p{
   }
   header{
     width: 100%;
-    height: 250px;
+    height: 109px;
   }
   header h1 {
     float: none;
-    font-size: 5.2rem;
+    font-size: 2.2rem;
     margin-right: 4rem;
     font-weight: 900;
-}
+  }
+  .outer {
+    min-width: 100%;
+  }
+  
+  /* nav link styles */
   #menu{
     display: none;
   }
   .topnav {
     background-color:var(--clr--dark-gray);
     position: fixed;
-    right: 45px;
-    top: 143px;
+    right: 32px;
+    top: 37px;
     z-index: 2;
   }
   .topnav a.icon {
     top: -22px;
-    right: -28px;
+    right: -15px;
   }
   
-  img {
-    max-width: 294px;
-    margin-bottom: 2rem;
-    min-width: 70%;
+  .topnav a {    
+    padding: 8px 8px;    
   }
-  #beef .meat-img img, #pork .meat-img img, #lamb .meat-img img, #chicken .meat-img img {
-    margin-left: 7%;
+  /* nav link styles end */
+
+  .greeting {
+    height: 200px;
+  }
+  .greeting h1 {
+    font-size: 35px;
+  }
+  .greeting p {
+    font-size: 10px;
+    width: 230px;
+    padding-left: 39px;
   }
   .meat-selectors {
-    margin-left: 32%;
-  }
-  .meat-description {
-    margin-left: 14%;
-  }
-  .frozen-food h1 {
-    padding-left: 19%;
-  }
-  .frozen-food ul {
-    padding-left: 34%;
-  }
-  .frozen-list-1{
-    display: none;
-  }
-  .pre-pack h1 {
-    padding-left: 17%;
-  }
-  .pre-pack ul {
-    padding-left: 35%;
-  }
-  .outer {
-    min-width: 100%;
-  }
-  #about-img{ 
-    min-width: 45%;
+    margin-left: 82px;
   }
   .selector {
-    
-    margin: 40px 40px 40px -26px;
+    width: 95%;
+    min-width: 49%;
+    margin: 40px 40px 40px -77px;
+  }
+  .our-products {
+    font-size: 50px;
+  }  
+  #beef .meat-img img, #pork .meat-img img, #lamb .meat-img img, #chicken .meat-img img {
+    margin-left: -2px;
+    height: 174px;
+  }
+  .meat-description {
+    margin-left: 40px;
+  }
+  .prepak-img, .frozen-img, .condiments-img, .specials-img{
+    margin-left: -2px;    
+  }
+  .chicken-cuts-img, .lamb-cuts-img {
+    margin-left: -30px;    
+  }
+  .con-img img {
+    margin-left: -2px;
+  }
+  .specials-img{
+    margin-right: 0;
+  }
+  .special-1 h3, .special-2 h3, .special-3 h3 {
+    text-align: center;
+  }
+  .special-1 ul, .special-2 ul, .special-3 ul {
+    padding-left: 74px;    
+  }
+  
+  .special-1 p, .special-2 p, .special-3 p {
+    padding-top: 1rem;
+    text-align: center;
+  }
+  .special-2 {
+    margin-left: 0%;
+    line-height: 2.5;
+  }
+  .special-3 {
+    margin-left: 0%;
+  }
+  .beef-cuts-img, .pork-cuts-img {
+    margin-left: -31px;
+  }
+  .beef ul, .pork ul, .chicken ul {    
+    line-height: 2.5;
+    margin-top: 2rem;
+    display: inline-block;
+  }
+  .beef ul {
+    padding-left: 0px;
+    padding-right: 14px;
+  }
+  .pork ul {
+    padding-left: 0px;
+    padding-right: 41px;
+  }
+  .chicken ul{
+    padding-left: 28px;    
+  } 
+  .lamb-2 ul{
+    padding-left: 7px;    
+  }
+  .pre-pack h1 {
+    padding-left: 30px;
   }
   .prepak-list{
     display: none;
@@ -914,34 +971,86 @@ footer p{
   .prepak-list-2{
     display: block;
   }
-  
+  .frozen-list-1{
+    display: none;
+  }
   .Frozen-list-2{
     display:block;
   }
   .frozen-img{
-    margin-left: 20%;
+    margin-left: -2px;
   }
-  .beef .beef-cuts-img{
-    margin-left: 20%;
+  .frozen-food h1 {
+    padding-left: 25px;
   }
-  .beef ul, .pork ul {
-    padding-left: 7rem; 
-  } 
-  .chicken ul{
-    padding-left: 5rem;
-    
+  .frozen-food ul {
+    padding-left: 52px;
   }
-  .lamb-2 ul{
-    padding-left: 2rem;
-    
+  .condiments ul, .pre-pack ul{
+    padding-left: 56px;    
+  }
+  #about-img{ 
+    min-width: 45%;
   }
   #about-img-left {
-    padding-left: 6rem;
-  } 
+    padding-left: 0;
+  }
   #about-img-right {
-    padding-left: 6rem;
+      padding-left: 0;
   }
-  #map-section{
-    display: none;
+  .social-media-links {    
+    letter-spacing: 11px;    
   }
+  footer h3 {
+    font-size: 25px;
+  }
+  footer p {
+    padding: 42px 39px 0px 0px;
+    text-align: right;
+    color: var(--clr--white);
+    font-size: 14px;
+  }
+
+
+
+
+  /* img {
+    max-width: 253px;
+    margin-bottom: 2rem;
+    min-width: 70%;
+  } */
+  
+  
+  .mapouter{
+    position: static;
+    height:260px;
+    width:260px;
+    left: 12%;
+    bottom: 22rem;
+    margin: 2rem 0;
+    text-align: left;
+  }
+  .gmap_canvas{    
+    height:260px;
+    width:260px;
+  }
+  .gmap_canvas iframe{
+    width: 100%;
+     height: 100%;
+  }
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+ 
+  
+  
+  
 }
