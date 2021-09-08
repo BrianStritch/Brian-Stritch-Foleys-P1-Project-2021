@@ -330,7 +330,7 @@ header h1 a{
 /* ********************* greeting section ***************************** */
 .greeting{
     height: 650px;
-    background-image: url(/assets/images/new-images/cutting-cooked-meat.jpeg);
+    background-image: url(../images/new-images/cutting-cooked-meat.jpeg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -783,11 +783,10 @@ footer p{
     position: static;
     height: 90px;
   }
-  header h1 a{
-      float: none;
-      font-size: 4.2rem;
-      margin-bottom: 0;
-      line-height:3.5;
+  header h1 a {    
+    font-size: 3.2rem;
+    margin-bottom: 0px;
+    line-height: 2;    
   }
   #menu{
       display: none;
