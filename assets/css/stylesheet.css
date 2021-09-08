@@ -524,19 +524,14 @@ em{
   margin: 0;
   padding: 0;
 }
-#rewards-page header{
-  top: -19px;
-}
 .rewards-form-outer{
   width: 50rem;
   height: auto;
-  /* border: 2px double black;  */
   box-shadow: 10px 10px 40px orange;  
-  border-radius: 5px 5px;
-  margin-left: 30%;
+  border-radius: 15px 15px;
+  margin: 30px 23%;
   background-color:rgba(0, 0, 0, 0.7);
-  color: white;
-  margin-bottom: 30px;
+  color: white;  
 }
 #rewards-form-outer h1{
   text-align: center;
@@ -552,13 +547,9 @@ fieldset{
 
 
 /*form styles */
-input[type=submit] {
-	margin: 0 0.75rem 1rem;
-	padding: 0.75rem;
-	background-color: var(--clr--orange);
-	color: white;
-	border: none;
-	border-radius: 5px;
+#rewards-page header{
+  height: 111px;
+  top: -20px;
 }
 
 form {
@@ -572,7 +563,7 @@ legend {
     font-family: Architects Daughter, sans-serif;
 }
 .personal-details{
-    width: auto;
+    width: 300px;
     height: auto;
     
 }
@@ -662,6 +653,19 @@ form div{
 
 #feedback{
   margin-top: 10px;
+  width: 427px;
+}
+#rewards-page input[type=submit]{
+  color: white;
+	border: none;
+	border-radius: 10px;
+  margin: 0 0.75rem 1rem;
+	padding: 0.75rem;
+  background-color: transparent;
+  border: 1px solid orange;
+}
+#rewards-page input[type=submit]:hover{
+  box-shadow: 10px 10px 30px green;
 }
 input[type=reset]{
   background-color: transparent;
@@ -671,6 +675,11 @@ input[type=reset]{
 input[type=reset]:hover{
   box-shadow: 5px 5px 30px red;
 }
+fieldset{
+  border: none;
+}
+
+
 
 
 /* ********************************** rewards form styles and positioning end ************************** */
@@ -898,7 +907,35 @@ footer p{
     display: inline-block;
     line-height: 2.5;
   }  
+  /*  ************************ rewards form styles ******************************/
+  .rewards-form-outer{
+    width: 94vw;    
+    margin: 30px 5% ;
+  }
+  .user-data h1{
+    width: 64vw;
+    padding-left: 19vw;
+  }
+  .local-list{
+    text-align: center;
+    width: 84vw;
+  }
+  .underline{
+    text-align: left;
+    padding-left: 19vw;
+  }
+  .rewards-info{
+    width: 84vw;
+  }
+
 }
+
+
+
+
+
+
+
 
 @media screen and (max-width:600px){
   section{
@@ -1072,10 +1109,6 @@ footer p{
     color: var(--clr--white);
     font-size: 14px;
   }
-
-
-
-  
   .mapouter{
     position: static;
     height:260px;
@@ -1093,5 +1126,12 @@ footer p{
     width: 100%;
      height: 100%;
   }
-  
+  /***************** Rewards form Styles ***************************/
+  .rewards-form-outer {
+    width: 90vw;
+    margin: 30px 5%;
+  }
+  .rewards-info {
+    width: 80vw;
+}
 }
