@@ -923,9 +923,12 @@ footer p{
     width: 64vw;
     padding-left: 19vw;
   }
+  .personal-details div input {
+    width: 40vw;
+  }
   .local-list{
     text-align: center;
-    width: 84vw;
+    width: 70vw;
   }
   .underline{
     text-align: left;
@@ -952,7 +955,32 @@ footer p{
   }
   .local-choice div {    
     margin-left: -16px;
+    display:inherit;
+    line-height: 1;
   }
+  .local-choice br{    
+    display: none;
+  }
+  .underline {
+    padding-left: 0;
+    font-size: 2rem;
+  }
+  #chutney{
+    margin-left: 0;
+  }
+  #goats-milk{
+    margin-left: 0;
+  }
+  #sauce{
+    margin-left: 0;
+  }
+  .footer{
+    height: auto;
+  }
+  .social-media-links {
+    letter-spacing: -5px;
+  }
+  
 }
 
 
@@ -1153,17 +1181,33 @@ footer p{
     width: 100%;
      height: 100%;
   }
-  /***************** Rewards form Styles ***************************/
-  .rewards-form-outer {
-    width: 90vw;
-    margin: 30px 5%;
+  
+  /*  ************************ rewards form styles ******************************/
+  .rewards-form-outer{
+    width: 90vw;    
+    margin: 30px 5% ;
+  }
+  .user-data h1{
+    width: 64vw;
+    padding-left: 19vw;
+  }
+  .personal-details div input {
+    width: 40vw;
+  }
+  .local-list{
+    text-align: center;
+    width: 70vw;
+  }
+  .underline{
+    text-align: left;
+    padding-left: 19vw;
+  }
+  .rewards-info{
+    width: 80vw;
   }
   #rewards-form-outer h1{
     text-align: center;
     font-size:2rem;
-  }
-  .rewards-info {
-    width: 80vw;
   }
   #special-delivery {
     width: 15rem;
@@ -1173,4 +1217,42 @@ footer p{
     margin-top: 10px;
     width: 15rem;
   }
+  .local-choice{
+    width: 20rem;
+    height: auto;
+  }
+  .local-choice div {    
+    margin-left: -16px;
+    display:inherit;
+    line-height: 1;
+  }
+  .local-choice br{    
+    display: none;
+  }
+  .underline {
+    padding-left: 0;
+    font-size: 2rem;
+  }
+  #chutney{
+    margin-left: 0;
+  }
+  #goats-milk{
+    margin-left: 0;
+  }
+  #sauce{
+    margin-left: 0;
+  }
+  .footer{
+    height: auto;
+  }
+  .social-media-links {
+    letter-spacing: -5px;
+  }
+  .eat-frequency label, .shop-frequency label {    
+    display: inherit;
+  }
+  .eat-frequency p, .shop-frequency p {    
+    font-size: 4vw;
+  }
+  
 }
