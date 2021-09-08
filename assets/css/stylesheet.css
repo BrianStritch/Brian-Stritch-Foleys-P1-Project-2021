@@ -29,8 +29,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties*/
     --clr--dk-green:rgba(2, 48, 2, 0.9);
     --clr--white:rgba(250, 249, 249, 0.7);
     --clr--orange:rgba(255, 165, 0, 0.9);
-    --clr--black:rgb(0, 0, 0, 0.9)
-    --ff--none:none;
+    --clr--black:#000000;    
     --ff--primary:"Hina Mincho", san-serif;
     --ff--secondary:"Roboto", serif;
 }
@@ -115,8 +114,8 @@ h1, h2, h3, p{
 .bg-lgray img{
     box-shadow: 20px 20px darkslategray;
 }
-.bg-lgreen{
-    background-color:var(--clr--light-green);
+.bg-black{
+    background-color:var(--clr--black);
     color: var(--clr--white);
 }
 .bg-dgreen{
@@ -139,7 +138,8 @@ button, button a{
   color: var(--clr--orange);
 }
 button:hover{
-  box-shadow: 5px 5px 25px orange;
+  background-color: orange;
+  border-radius: 5px;
 }
 
 /* ****************** header styles ************************* */
@@ -175,7 +175,7 @@ header h1 a{
   }
   #menu a:hover{
     color:var(--clr--orange);
-    box-shadow: 10px 10px 30px orange;
+    box-shadow: 0px 1px 3px orange;
   }
   
   #menu ul {
@@ -203,7 +203,7 @@ header h1 a{
   } */
   
   #menu a.active {
-    background-color: var(--clr--navy);
+    background-color: var(--clr--black);
     text-decoration: underline;
     color: white;
   }
@@ -239,7 +239,7 @@ header h1 a{
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #717175;
+    background-color:var(--clr--black);
     min-width: 210px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     top: 22px;
@@ -278,8 +278,11 @@ header h1 a{
     right: 45px;
     top: 63px;
     z-index: 2;
-
   }
+  .topnav:hover{
+    display: block;
+  }
+  
   
   .topnav #myLinks {
     display: none;
@@ -325,7 +328,10 @@ header h1 a{
 
 /* ********************* greeting section ***************************** */
 .greeting{
-    height: 475px;
+    height: 650px;
+    background-image: url(/assets/images/new-images/cutting-cooked-meat.jpeg);
+    background-size: cover;
+    background-position: center;
 }
 .greeting h1{
   font-size: 8rem;
@@ -377,8 +383,6 @@ header h1 a{
   padding-left: 17%;
   margin: 4rem 0 2rem;
 }
-
-
 .frozen-food h1{
   text-align: left;
   padding-left: 26%;
@@ -421,8 +425,8 @@ header h1 a{
 
 /************************************** Know your cuts section ***********************************/
 .know-your-cuts{
-  background-color: black;
   width: 100%;
+  margin-bottom: 10px;
 }
 .know-your-cuts h1{
   padding: 0;
@@ -520,9 +524,10 @@ em{
 /* rewards form */
 /* *** references from Coders coffeehouse code institute walkthrough for form layout modified to suit this website ***** */
 #rewards-page{
-  background-image: url(../images/new-images/butchers-knife.jpeg) ; 
+  background-image: url(../images/new-images/hero-image.jpeg) ; 
   margin: 0;
   padding: 0;
+  background-size: cover;
 }
 .rewards-form-outer{
   width: 50rem;
@@ -646,11 +651,14 @@ form div{
 
 .underline{
     text-decoration:underline;
-    margin-left: 1rem;
+    margin-left: 0;
+    text-align: left;
 }
 .rewards-info{
     margin: 0 1rem 1rem 1rem;
+    font-size: 0.8rem;
 }
+
 
 #feedback{
   margin-top: 10px;
@@ -666,7 +674,8 @@ form div{
   border: 1px solid orange;
 }
 #rewards-page input[type=submit]:hover{
-  box-shadow: 10px 10px 30px green;
+  background-color: orange;
+  cursor: pointer;
 }
 input[type=reset]{
   background-color: transparent;
@@ -674,7 +683,8 @@ input[type=reset]{
   border: none;
 }
 input[type=reset]:hover{
-  box-shadow: 5px 5px 30px red;
+  color: red;
+  cursor: pointer;
 }
 fieldset{
   border: none;
@@ -699,7 +709,7 @@ fieldset{
 footer{
   width: 100%;
   height: 12rem;
-  background-color: var(--clr--navy);
+  background-color: var(--clr--black);
 }
 footer h3{
   text-align: center;
@@ -720,7 +730,7 @@ footer p{
   margin: 1% 12% 1% 0;
 }
 .social-media-links{
-  font-size: 250%;
+  font-size: 2rem;
   margin: 1% -9% 1% 0;
   color: #fafafa;
   text-align: center;       
@@ -729,14 +739,19 @@ footer p{
   color: blue;  
 }
 .fab:hover{
-  box-shadow: 12px 12px 40px orange;
+  background-color: orange;
+  padding: 10px;
+  border-radius: 50%;
 }
 .brians-github {
   text-decoration: none;
 }
 
 
+@media screen and (min-width:1500px){
 
+
+}
 
 
 

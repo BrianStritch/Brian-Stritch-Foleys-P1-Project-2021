@@ -8,7 +8,7 @@
         <title>Foley's of Duleek</title>
     </head>
     <body>
-        <header id="home" class="bg-navy">
+        <header id="home" class="bg-black">
             <h1><a href="index.html">Foley's of Duleek</a></h1>
             <!--Navigation Menu-->
             <div class="nav-div">
@@ -29,7 +29,7 @@
                             </li>
                             <li><a href="index.html#special-offers" class="dropbtn">Special Offers</a></li>
                             <li><a href="index.html#about" class="dropbtn">About us</a></li>                            
-                            <li class="dropdown"><a href="#contact" class="dropbtn">Contact</a></li>
+                            <li class="dropdown"><a href="index.html#contact" class="dropbtn">Contact</a></li>
                             <li><a href="gallery.html" class="dropbtn">Gallery</a></li>  
                             <li class="dropdown">
                                 <a href="rewards.html" class="dropbtn">Rewards</a>
@@ -43,18 +43,16 @@
             <!-- code below from question on w3schools on how to create a burger menu
             https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
             <div class="topnav">
-                <a href="#home" ></a> <!--class="active"-->
+                    <a href="#home" ></a>
                     <div id="myLinks">
                         <a href="index.html#home">Home</a>
                         <a href="index.html#beef">Products</a>
                         <a href="index.html#about">About</a>
-                        <a href="index.html#contact">contact</a>
+                        <a href="index.html#contact">Contact</a>
                         <a href="gallery.html">Gallery</a>
                         <a href="rewards.html">Rewards</a>
-                        
                     </div>
-
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a> 
                     <script>
                         function myFunction() {
                             var x = document.getElementById("myLinks");
@@ -68,12 +66,12 @@
             </div>
         </div>
         <!-- introduction message-->
-        <section id="welcome-section" class="bg-lgray greeting">
+        <section id="welcome-section" class="greeting">
             <h1>Welcome to Foley's</h1>
             <p>Serving Duleek and District with the finest quality meats since 2004.</p>
         </section>
         <!-- meat selectors-->
-        <section id="meat-selectors" class="bg-lgreen">
+        <section id="meat-selectors" >  
             <div class="outer">
                 <div class="column ">
                     <!--beef-->
@@ -115,10 +113,10 @@
                 </div>
             </div>
         </section>
-        <h2 class="bg-lgray our-products">Our Products</h2>
+        <h2 class="bg-dgreen our-products">Our Products</h2>
         <!-- meat sections-->
         <!-- beef-->
-        <section id="beef" class="bg-navy">
+        <section id="beef" class="bg-white">
             <div class="outer">
                 <div class="column">
                     <div class="meat-img">
@@ -181,7 +179,7 @@
             
         </section>
         <!-- lamb -->
-        <section id="lamb" class="bg-lgray">
+        <section id="lamb" class="bg-dgreen">
             <div class="outer">
                 <div class="column">
                     <div class="meat-img">
@@ -200,7 +198,7 @@
             </div>
         </section>
         <!-- pre-packaged foods-->
-        <section id="pre-pack" class="bg-lgreen">
+        <section id="pre-pack" class="bg-white">
             <div class="outer">            
                 <div class="column pre-pack">
                     <div class="prepak-list">
@@ -248,7 +246,7 @@
                 </div>
         </section>
         <!-- frozen foods-->
-        <section id="frozen-food" class="bg-navy">
+        <section id="frozen-food" class="bg-dgreen">
             <div class="outer">
                 <div class="column frozen-food">
                     <div class="frozen-img">
@@ -375,10 +373,10 @@
             
         </section>
         <!-- ******************************** know your cuts ****************************************** -->
-        <div class="know-your-cuts">
+        <div class=" bg-white know-your-cuts">
             <h1>Know your Cuts</h1>
         </div> 
-        <section id="know-your-cuts" class="bg-dgray" >                       
+        <section id="know-your-cuts" class="bg-navy" >                       
             <div class="outer">
                 <!-- Beef Cuts-->
                 <section >
@@ -554,7 +552,7 @@
             </div>
         </section>
         <!-- contact us section-->
-        <section id="contact" class="bg-lgray">
+        <section id="contact" class="bg-dgreen">
             <div class="outer">
                 <div class="column contact-us">
                     <span class="">
@@ -593,7 +591,7 @@
                 </div>            
             </div>
         </section>
-        <footer>
+        <footer class="bg-black">
             <a href="index.html" aria-label="link back to home page" class="foley-footer-link">
             <h3><i class="fas fa-drumstick-bite" ></i> Foley's butchers <i class="fas fa-drumstick-bite"></i></h3>
             </a>      
