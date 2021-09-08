@@ -535,6 +535,7 @@ em{
 }
 #rewards-form-outer h1{
   text-align: center;
+  font-size:4.6rem;
 }
 .user-data{
   margin-bottom: 1rem;
@@ -915,7 +916,7 @@ footer p{
   }  
   /*  ************************ rewards form styles ******************************/
   .rewards-form-outer{
-    width: 94vw;    
+    width: 90vw;    
     margin: 30px 5% ;
   }
   .user-data h1{
@@ -933,8 +934,28 @@ footer p{
   .rewards-info{
     width: 84vw;
   }
-
+  #rewards-form-outer h1{
+    text-align: center;
+    font-size:3.2rem;
+  }
+  #special-delivery {
+    width: 15rem;
+    height: auto;
+  }
+  #feedback {
+    margin-top: 10px;
+    width: 15rem;
+  }
+  .local-choice{
+    width: 20rem;
+    height: auto;
+  }
+  .local-choice div {    
+    margin-left: -16px;
+  }
 }
+
+
 
 
 
@@ -1137,7 +1158,19 @@ footer p{
     width: 90vw;
     margin: 30px 5%;
   }
+  #rewards-form-outer h1{
+    text-align: center;
+    font-size:2rem;
+  }
   .rewards-info {
     width: 80vw;
-}
+  }
+  #special-delivery {
+    width: 15rem;
+    height: auto;
+  }
+  #feedback {
+    margin-top: 10px;
+    width: 15rem;
+  }
 }
