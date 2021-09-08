@@ -146,7 +146,8 @@ button:hover{
 header{    
     z-index: 3;
     position: relative;
-    height: 111px;
+    height: 121px;
+    margin-top: -30px;
 }
 header h1 a{
     float: left;
@@ -332,6 +333,7 @@ header h1 a{
     background-image: url(/assets/images/new-images/cutting-cooked-meat.jpeg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 .greeting h1{
   font-size: 8rem;
@@ -552,11 +554,7 @@ fieldset{
 }
 
 
-/*form styles */
-#rewards-page header{
-  height: 111px;
-  top: -20px;
-}
+/* *******************form styles ******************************/
 
 form {
 	width: 50rem;
@@ -789,6 +787,7 @@ footer p{
       float: none;
       font-size: 4.2rem;
       margin-bottom: 0;
+      line-height:3.5;
   }
   #menu{
       display: none;
@@ -809,6 +808,11 @@ footer p{
   }
   .active{
     background-color: var(--clr--dark-gray);
+  }
+  .greeting{
+    background-size: contain;
+    background-position: top;
+    background-position-y: 50px;
   }
   .greeting h1{
     font-size: 5rem;
@@ -899,7 +903,8 @@ footer p{
   }
   #about p {
     max-width: 94%;
-    padding-left: 6%;    
+    padding-left: 6%; 
+    line-height: 1.2;   
   }
   #about-img-left {
     padding-left: 23rem;
@@ -1007,7 +1012,10 @@ footer p{
 
 
 
-@media screen and (max-width:600px){
+@media screen and (max-width:800px){
+  p, ul, li {
+    line-height: 1.2;
+  }
   section{
     width: 100%;
   }
@@ -1088,22 +1096,25 @@ footer p{
   .con-img img {
     margin-left: -2px;
   }
+  .specials{
+    align-content: center;
+  }
   .specials-img{
     margin-right: 0;
   }
   .special-1 h3, .special-2 h3, .special-3 h3 {
-    text-align: center;
+    margin-left: 33vw;
   }
   .special-1 ul, .special-2 ul, .special-3 ul {
-    padding-left: 74px;    
+    margin-left: 25vw;   
   }
   
   .special-1 p, .special-2 p, .special-3 p {
     padding-top: 1rem;
-    text-align: center;
+    margin-left: 40vw;
   }
   .special-2 {
-    margin-left: 0%;
+    margin-left: 0;
     line-height: 2.5;
   }
   .special-3 {
@@ -1158,6 +1169,11 @@ footer p{
   .condiments ul, .pre-pack ul{
     padding-left: 56px;    
   }
+  #about p {
+    max-width: 94%;
+    padding-left: 6%; 
+    line-height: 1.2;   
+  }
   #about-img{ 
     min-width: 45%;
   }
@@ -1168,7 +1184,8 @@ footer p{
       padding-left: 0;
   }
   .social-media-links {    
-    letter-spacing: 11px;    
+    letter-spacing: 11px; 
+    margin-left: -40px;   
   }
   footer h3 {
     font-size: 25px;
