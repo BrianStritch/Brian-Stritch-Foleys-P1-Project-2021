@@ -375,9 +375,18 @@ header h1 a{
   padding-top: 5rem;
 }
 .learn-more{
-  padding-left:45%;
+  margin-left:45%;
   margin-top: 13rem;
+  color: orange;
+  text-decoration: none;
 }
+.learn-more:hover{
+  border: 2px solid orange;
+  background-color: orange;
+  color: white;
+}
+
+
 /* ********************************** Pre packaged products/frozen food /condiments/specials ************************************/
 .pre-pack h1{
   text-align: left;
