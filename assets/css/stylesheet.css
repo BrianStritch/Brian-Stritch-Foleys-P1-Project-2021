@@ -4,10 +4,9 @@
 /* Color Pallette choice 
 
 bg colors
-Navy Blue color #05274b
+dark gray:#201e1e;
 light gray color #757575
 Dark gray color rgba(0, 0, 0, 0.2)
-light green color #209481
 dark green color rgba(2, 48, 2, 0.9)
 
 
@@ -24,8 +23,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties*/
     /*custom property colors*/
     --clr--navy:#201e1e;
     --clr--light-gray:#7a7676;
-    --clr--dark-gray:rgba(0, 0, 0, 0.6);
-    --clr--light-green:#206694;
+    --clr--dark-gray:rgba(0, 0, 0, 0.6);    
     --clr--dk-green:rgba(2, 48, 2, 0.9);
     --clr--white:rgba(250, 249, 249, 0.7);
     --clr--orange:rgba(255, 165, 0, 0.9);
@@ -58,7 +56,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 p{
     font-family: roboto, serif;
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     line-height: 1.2;
     margin-bottom: 1.2rem; 
     color: var(--clr--white);   
@@ -353,7 +351,8 @@ header h1 a{
   text-decoration: none; 
 }
 .meat-selectors img{
-    box-shadow: none;    
+    box-shadow: none; 
+    margin: 0;   
 }
 .selector{
     height: 83%;
@@ -401,11 +400,27 @@ header h1 a{
   padding-left: 25%;
   line-height: 4;
 }
+.prepak-list a{
+  display: contents;
+}
+.prepak-list-b {
+  padding-top: 5rem;
+}
+.prepak-list h1 {
+  display: contents;
+  margin-left: 1rem;
+}
+.prepak-list-2{
+    display: none;
+}
 .Frozen-list-2{
   display:none;
 }
 .Frozen-list-1{
   display:block;
+}
+.frozen-list-b{
+  padding-top: 2rem;
 }
 .condiments h1{
   text-align: center;
@@ -449,16 +464,19 @@ header h1 a{
   line-height: 5;
   margin-top: 3rem;
 }
+
+.cuts-list {
+  width: 49%;
+  display: contents;
+}
 .lamb ul{
   padding-left: 5rem;
   line-height: 4;
   margin-top: 2rem;
 }
-.prepak-list-2{
-    display: none;
-}
+
 .beef ul, .pork ul, .chicken ul, .lamb ul{
-      padding-left: 10rem;
+      padding-left: 6rem;
       line-height: 2.5;
       margin-top: 5rem;    
       display: inline-block;
@@ -549,9 +567,7 @@ em{
   border: none;
   
 }
-fieldset{
-  border:2px solid --clr--orange;
-}
+
 
 
 /* *******************form styles ******************************/
@@ -564,7 +580,7 @@ legend {
 	font-size: large;
 	font-weight: 600;
 	text-transform: uppercase;
-    font-family: Architects Daughter, sans-serif;
+  font-family:Architects Daughter,sans-serif;
 }
 .personal-details{
     width: 300px;
@@ -746,9 +762,70 @@ footer p{
 }
 
 
-@media screen and (min-width:1500px){
-
-
+@media screen and (min-width:2200px){
+ p{
+   font-size: 2.5rem;
+ }
+ img {
+  border-radius: 10px;
+  box-shadow: 20px 20px darkslategrey;
+  max-width: 100%;
+  /* display: block; */
+  margin: 4rem 0 4rem 4rem;
+  width: 800px;
+  }
+  h1, h2, h3{
+    font-size: 6.4rem;
+    margin-bottom: 5.2rem;
+  }
+  header{  
+  height: 149px;
+  margin-top: -92px;
+  }
+  #menu li{    
+    font-size: 1.8rem;
+    padding-right: 6rem;
+  }
+  .our-products p{
+    font-size: 2.5rem;
+  }
+  .specials-img {
+    margin-right: 11rem;
+  }
+  .know-your-cuts h1 {
+    font-size: 8rem;
+  }
+  .our-products {
+    font-size: 8rem;
+  }
+  #pre-pack li, #frozen-food li, .condiments li, .specials li, #know-your-cuts li, #contact li{
+    font-size: 2.5rem;
+  }
+  button, button a {
+    font-size: 2rem;    
+  }
+  footer {    
+    position: relative;
+    bottom: 0rem;
+    height: 16rem;    
+  }
+  footer h3 {
+    margin-bottom: 0;
+  }
+  .shop-address ul{    
+    text-align: left;
+    padding-left: 32rem;
+  } 
+  .opening-times ul{    
+    text-align: left;
+    padding-left: 28rem;
+  }
+  .rewards-info{
+    font-size: 1rem;
+  }
+  .rewards-form-outer{
+    width: 56rem;
+  }
 }
 
 
@@ -774,6 +851,7 @@ footer p{
   }
   p{
     line-height: 2.5;
+    font-size: 1.2rem;
   }
   section{
     width: 100%;
@@ -932,7 +1010,8 @@ footer p{
   .contact-us{
     display: inline-block;
     line-height: 2.5;
-  }  
+  } 
+  
   /*  ************************ rewards form styles ******************************/
   .rewards-form-outer{
     width: 90vw;    
@@ -1014,6 +1093,7 @@ footer p{
 @media screen and (max-width:800px){
   p, ul, li {
     line-height: 1.2;
+    font-size: 1rem;
   }
   section{
     width: 100%;
