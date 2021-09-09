@@ -401,35 +401,51 @@ header h1 a{
 .pre-pack ul {
   padding-left: 25%;
   line-height: 4;
+  text-transform: capitalize;
+  font-size: 1.4rem; 
 }
 .prepak-list-2{
   display: none;
+  text-transform: capitalize;
+  font-size: 1.4rem; 
 }
 .frozen-food ul {
   padding-left: 25%;
   line-height: 4;
+  text-transform: capitalize;
+  font-size: 1.4rem; 
 }
 .prepak-list a{
   display: contents;
+  text-transform: capitalize;
+  font-size: 1.4rem; 
 }
 .prepak-list-b {
   padding-top: 5rem;
+  text-transform: capitalize;
+  font-size: 1.4rem; 
 }
 .prepak-list h1 {
   display: contents;
   margin-left: 1rem;
 }
 .prepak-list-2{
-    display: none;
+  display: none;
+  text-transform: capitalize;
+  font-size: 1.4rem; 
 }
 .Frozen-list-2{
   display:none;
 }
 .Frozen-list-1{
   display:block;
+  text-transform: capitalize;
+  font-size: 1.4rem;
 }
 .frozen-list-b{
   padding-top: 2rem;
+  text-transform: capitalize;
+  font-size: 1.4rem; 
 }
 .condiments h1{
   text-align: center;
@@ -439,6 +455,8 @@ header h1 a{
 .condiments ul{
   padding-left:40%; 
   line-height: 3; 
+  text-transform: capitalize;
+  font-size: 1.4rem; 
 }
 .con-img img{
   margin-left:20%;  
@@ -463,15 +481,22 @@ header h1 a{
   padding-left: 16rem;
   margin-top: 2rem;
 }
+.beef ul{
+  font-size: 1.4rem;
+  padding-left: 6vw;
+  line-height: 3;
+}
 .pork ul{
-  padding-left: 16rem;
+  padding-left: 8rem;
   line-height: 3.5;
-  margin-top: 2rem;
+  margin-top: 2rem; 
+  font-size: 1.4rem;   
 }
 .chicken ul{
-  padding-left: 5rem;
+  padding-left: 11vw;
   line-height: 5;
-  margin-top: 3rem;
+  margin-top: 3rem; 
+  font-size: 1.4rem;    
 }
 
 .cuts-list {
@@ -479,16 +504,13 @@ header h1 a{
   display: contents;
 }
 .lamb ul{
-  padding-left: 5rem;
+  padding-left: 11vw;
   line-height: 4;
-  margin-top: 2rem;
+  margin-top: 2rem; 
+  font-size: 1.4rem; 
 }
-
-.beef ul, .pork ul, .chicken ul, .lamb ul{
-      padding-left: 6rem;
-      line-height: 2.5;
-      margin-top: 5rem;    
-      display: inline-block;
+.beef ul, .pork ul, .chicken ul, .lamb ul{         
+  display: inline-block;   
 }
 /* *********************************** special offers **********************************************/
 .specials{
@@ -505,6 +527,8 @@ header h1 a{
 .special-1 ul, .special-2 ul, .special-3 ul{
   padding-left: 2rem;
   line-height: 3;
+  text-transform: capitalize;
+  font-size: 1.4rem;  
 }
 .special-1 p, .special-2 p, .special-3 p{
   text-align: left;
@@ -528,6 +552,14 @@ em{
   text-align: left;
 }
 /* ********************************** contact-us ************************************/
+.shop-address ul{    
+  text-align: left;
+  padding-left: 19vw;
+} 
+.opening-times ul{    
+  text-align: left;
+  padding-left: 19vw;
+}
 
 .mapouter{
   position:relative;  
@@ -541,6 +573,9 @@ em{
   background:none!important;
   height:303px;
   width:100%;
+  overflow: hidden;
+  border: none;
+  margin: 0;
 }
 
 .gmap_canvas iframe{
@@ -549,8 +584,6 @@ em{
 }
 
 /* ************************************* rewards page styling and positioning *********************************************** */
-/* *************************** rewards page styles and positioning **************************************************/
-/* rewards form */
 /* *** references from Coders coffeehouse code institute walkthrough for form layout modified to suit this website ***** */
 #rewards-page{
   background-image: url(../images/new-images/hero-image.jpeg) ; 
@@ -579,12 +612,11 @@ em{
 
 
 
-/* *******************form styles ******************************/
+/* ********************************************form styles *********************************************/
 
 form {
 	width: 50rem;
 }
-
 legend {
 	font-size: large;
 	font-weight: 600;
@@ -594,14 +626,11 @@ legend {
 .personal-details{
     width: 300px;
     height: auto;
-    
 }
 .personal-details div input {
     float:right;
     margin: 0 0 0 -6px;
 }
-
-
 .personal-and-address{
   display: inline-block;
   padding: 0 1.5rem;
@@ -770,7 +799,7 @@ footer p{
   text-decoration: none;
 }
 
-
+/* **************************************** Media Queries *********************************************** */
 @media screen and (min-width:2200px){
  p{
    font-size: 2.5rem;
@@ -807,7 +836,7 @@ footer p{
   .our-products {
     font-size: 8rem;
   }
-  #pre-pack li, #frozen-food li, .condiments li, .specials li, #know-your-cuts li, #contact li{
+  #pre-pack li, #frozen-food li, .condiments li, .specials li, .know-your-cuts li, #contact li{
     font-size: 2.5rem;
   }
   button, button a {
@@ -1114,8 +1143,9 @@ footer p{
   header h1 a{
     float: none;
     font-size: 2.2rem;
-    margin-right: 4rem;
-    margin-bottom: 0;
+    margin-right: 4rem;    
+    position: relative;
+    top: 25px;
   }
   .outer {
     min-width: 100%;
@@ -1148,7 +1178,7 @@ footer p{
   /* nav link styles end */
 
   .greeting {
-    height: 200px;
+    height: 280px;
   }
   .greeting h1 {
     font-size: 35px;
@@ -1336,6 +1366,9 @@ footer p{
   #feedback {
     margin-top: 10px;
     width: 15rem;
+  }
+  .feedback-label{
+    font-size: 0.8rem;
   }
   .local-choice{
     width: 20rem;

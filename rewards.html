@@ -17,7 +17,7 @@
                     <ul>
                             <!--Dropdown from W3 school tutorial for dropdown menu - adjusted for this site
                             https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar-->
-                        <li><a href="index.html#home" class="dropbtn active">Home</a></li>
+                        <li><a href="index.html#home" class="dropbtn">Home</a></li>
                             <li class="dropdown">
                                 <a href="index.html#meat-selectors" class="dropbtn">Products</a>
                                     <div class="dropdown-content">
@@ -32,17 +32,17 @@
                             <li><a href="index.html#about" class="dropbtn">About us</a></li>                            
                             <li><a href="index.html#contact" class="dropbtn">Contact</a></li>
                             <li><a href="gallery.html" class="dropbtn">Gallery</a></li>  
-                            <li><a href="rewards.html" class="dropbtn">Rewards</a></li>                                       
+                            <li><a href="rewards.html" class="dropbtn active">Rewards</a></li>                                       
                     </ul>        
                 </nav>
             </div>        
         </header>
         <!-- floating burger button style menu -->
         <div class="burger-menu">
-            <!-- code below from question on w3schools on how to create a burger menu
-            https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
+                <!-- code below from question on w3schools on how to create a burger menu
+                https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
             <div class="topnav">
-                    <a href="#home" ></a> <!--class="active"-->
+                    <a href="#home" ></a> class="active"
                     <div id="myLinks">
                         <a href="index.html#home">Home</a>
                         <a href="index.html#beef">Products</a>
@@ -65,8 +65,7 @@
                                 }
                     </script>
             </div>
-        </div>
-        
+        </div>        
         <div class="rewards-form-outer">
             <form action="https://formdump.codeinstitute.net" method="POST">
                 <fieldset class=" user-data">
@@ -148,7 +147,7 @@
                             </div>
                             <div class="delivery">
                                 <h3 class="underline">Delivery options</h3>
-                                <label for="delivery" class="delivery-list">Prefferred delivery times</label>
+                                <label for="delivery" class="delivery-list">Preferred delivery times</label>
                                 <br>
                                 <input id="delivery"  list="delivery-options" name="delivery-method" placeholder="Select times here" required>
                                     <datalist id="delivery-options">
@@ -193,7 +192,7 @@
                                 <br>
                                 <div>
                                     <input type="checkbox" id="plant-based-milk" name="alternative-milk">
-                                    <label for="plant-based-milk">plant based milk</label>
+                                    <label for="plant-based-milk">Plant based milk</label>
                                 </div>
                                 <div>
                                     <input type="checkbox" id="sauce" name="sauce-variety">
@@ -210,16 +209,16 @@
                     <div>
                         <fieldset>
                             <legend>Feedback</legend>
-                                <label for="feedback">How can we improve your experience with us?</label>
+                                <label for="feedback" class="feedback-label">How can we improve your experience with us?</label>
                                 <br>
                                 <textarea id="feedback" rows="4" cols="87" name="feedback"></textarea>
                         </fieldset>
                         <div>
                             <h3 class="underline">Rewards info:</h3>
                                 <p class="rewards-info">Collect rewards points while you shop and earn rewards. Rewards points can be used towards your purchase by converting 
-                                    to foley's discount vouchers in the members area, or collect 500 points and enter into the christmas hamper draw. 
+                                    to Foley's discount vouchers in the members area, or collect 500 points and enter into the christmas hamper draw. 
                                     Collect 1 point for every euro spent under 20 euro, and 2 points for every euro over 20 euro.  
-                                see in-store for details.
+                                    see in-store for details.
                                   </p>
                             </div>
                         <input type="submit" value="Register now">
@@ -227,14 +226,7 @@
                     </div>  
                 </fieldset>
             </form>
-        </div>
-        
-        <!-- rewards sign up form-->
-        
-
-
-
-        
+        </div>           
         <footer class="bg-black">
             <a href="index.html" aria-label="link back to home page" class="foley-footer-link">
             <h3><i class="fas fa-drumstick-bite" ></i> Foley's butchers <i class="fas fa-drumstick-bite"></i></h3>
