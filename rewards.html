@@ -40,30 +40,53 @@
         </div>
     </header>
     <!-- floating burger button style menu -->
-    <div>
+    <!-- Burger-menu class below to operate onclick for screens below 1200px-->
+    <div class="burger-menu">
         <!-- code below from question on w3schools on how to create a burger menu
-                https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
-        <div class="burger-menu">
-            <!-- code below from question on w3schools on how to create a burger menu
             https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
-            <div class="topnav">
-                <a href="#home"></a>
-                <div id="myLinks">
-                    <a href="index.html#home">Home</a>
-                    <a href="index.html#beef">Products</a>
-                    <a href="index.html#special-offers">Special Offers</a>
-                    <a href="index.html#about">About</a>
-                    <a href="index.html#contact">Contact</a>
-                    <a href="gallery.html">Gallery</a>
-                    <a href="rewards.html">Rewards</a>
-                </div>
-                <!-- Burger-menu class below to operate onclick for screens below 1200px-->
-                <a href="javascript:void(0);" class="icon burger-menu" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-                <!-- Burger-menu-2 class below menu to operate on hover for screens above 1200px-->
-                <a class="icon burger-menu-2" ><i class="fa fa-bars"></i></a>
-            </div>
-        </div>
+        <div class="topnav">
+            <a href="#home"></a>
+            <div id="myLinks">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#beef">Products</a>
+                <a href="index.html#special-offers">Special Offers</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="rewards.html">Rewards</a>
+            </div>            
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>            
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myLinks");
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                    }
+                }
+            </script>
+        </div>        
     </div>
+    <!-- Burger-menu-2 class below menu to operate on hover for screens above 1200px-->
+    <!-- code above ammended by me on a trial and error basis and now working as intended below-->
+    <div class="burger-menu-2">
+        <!-- code below from question on w3schools on how to create a burger menu
+            https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
+        <div class="topnav">
+            <a href="#home"></a>
+            <div id="myLinks">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#beef">Products</a>
+                <a href="index.html#special-offers">Special Offers</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="rewards.html">Rewards</a>
+            </div>
+            <a class="icon" ><i class="fa fa-bars"></i></a>            
+        </div>        
+    </div> 
     <div class="rewards-form-outer">
         <form action="https://formdump.codeinstitute.net" method="POST">
             <fieldset class=" user-data">
