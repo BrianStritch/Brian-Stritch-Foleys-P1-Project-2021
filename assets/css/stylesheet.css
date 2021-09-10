@@ -1280,7 +1280,7 @@ fieldset {
   .gallery-vid iframe {
     margin: 3rem 4vw;
     width: 74vw;
-    height: 41vw;
+    height: 41vh;
   }
   #photos {
     clear: both;
