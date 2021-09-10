@@ -198,7 +198,7 @@ header h1 a {
 
 #menu a.active {
   background-color: var(--clr--black);
-  text-decoration: underline;  
+  text-decoration: underline;
 }
 
 .fa,
@@ -1062,14 +1062,17 @@ audio {
   #menu {
     display: none;
   }
-  .burger-menu-2{
+
+  .burger-menu-2 {
     z-index: 4;
     display: none;
   }
-  .burger-menu{
+
+  .burger-menu {
     z-index: 4;
     display: initial;
   }
+
   .topnav {
     font-size: 11px;
     top: 20px;
@@ -1443,10 +1446,11 @@ audio {
 
   .topnav a:hover {
     background-color: orange;
-    color: black;
+    color: var(--clr--black);
   }
 
   .topnav a {
+    background-color: var(--clr--trans-black);
     font-size: 15px;
     padding: 2px 2px;
   }
@@ -1456,6 +1460,16 @@ audio {
     width: 15px;
     font-size: 23px;
     font-size: large;
+  }
+
+  .burger-menu-2 {
+    z-index: 4;
+    display: none;
+  }
+
+  .burger-menu {
+    z-index: 4;
+    display: initial;
   }
 
   /*** nav link styles end ***/
