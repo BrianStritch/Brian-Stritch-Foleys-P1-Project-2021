@@ -366,7 +366,7 @@ footer p {
 }
 
 .fab {
-  color: blue;
+  color: var(--clr--white);
   background-color: var(--clr--black);
   padding: 10px;
   border-radius: 50%;
