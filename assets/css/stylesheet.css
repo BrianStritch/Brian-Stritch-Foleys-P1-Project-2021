@@ -1,4 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Roboto&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Roboto:ital,wght@1,300&display=swap');
 
 /* Color Pallette choice 
@@ -19,18 +18,18 @@ orange:rgb(255, 115, 0);
 /* code below learned via kevin powell youtuber and leading to google search for custom css properties and information taken from
 https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties*/
 
-:root{
-    /*custom property colors*/
-    --clr--navy:#201e1e;
-    --clr--light-gray:#7a7676;
-    --clr--dark-gray:rgba(0, 0, 0, 0.6);    
-    --clr--dk-green:rgba(2, 48, 2, 0.9);
-    --clr--white:rgba(250, 249, 249, 0.7);
-    --clr--orange:rgba(255, 165, 0, 0.9);
-    --clr--black:#000000;    
-    --ff--primary:"Hina Mincho", san-serif;
-    --ff--secondary:"Roboto", serif;
+:root {
+  /*custom property colors*/
+  --clr--trans-black: #201e1e;
+  --clr--dk-green: rgba(2, 48, 2, 0.9);
+  --clr--white: rgba(250, 249, 249, 0.7);
+  --clr--orange: rgba(255, 165, 0, 0.9);
+  --clr--black: #000000;
+  /* custom property fonts */
+  --ff--primary: "Hina Mincho", san-serif;
+  --ff--secondary: "Roboto", serif;
 }
+
 /*  ******************* page layout and positioning ******************************************* */
 
 /* code below learned via Kevin Powell youtuber and taken from google search from question on freecodecamp on how to set box-sizing: border-box; to every element  
@@ -41,827 +40,977 @@ https://forum.freecodecamp.org/t/before-after-box-sizing-border-box/425735/5*/
 *::after {
   box-sizing: border-box;
 }
-html, body {
+
+html,
+body {
   width: 100%;
-  padding:0;
+  padding: 0;
   margin: 0;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-h1, h2, h3, h4, h5, h6, p, ul, li {
-    margin: 0;
-    
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+
 }
 
-p{
-    font-family: roboto, serif;
-    font-weight: 300;
-    font-size: 1.6rem;
-    line-height: 1.2;
-    margin-bottom: 1.2rem; 
-    color: var(--clr--white);   
+p {
+  font-family: roboto, serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+  color: var(--clr--white);
 }
-h1, h2, h3 {
-    font-family: var(--ff--primary);
-    line-height: 1;
-    font-weight: 600;
-    margin-bottom: 1.2rem;
-    font-size: 2.6rem;
-    color: var(--clr--orange);
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff--primary);
+  line-height: 1;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  font-size: 2.6rem;
+  color: var(--clr--orange);
 }
+
 section {
-    padding: 30px;
+  padding: 30px;
 }
-.outer{
-    margin: 0 auto;
-    min-width: 600px;
-    max-width: 95%;
+
+.outer {
+  margin: 0 auto;
+  min-width: 600px;
+  max-width: 95%;
 }
-.column{
-    display: flex;
-    flex-direction: column;
-    
+
+.column {
+  display: flex;
+  flex-direction: column;
+
 }
-.column div{
-   flex-basis: 100%; 
+
+.column div {
+  flex-basis: 100%;
 }
+
 ul {
   list-style-type: none;
 }
 
-img{
-    border-radius: 10px;
-    box-shadow: 20px 20px darkslategray;
-    max-width: 100%;
-    display: block;
-    margin: 2rem 0;
+img {
+  border-radius: 10px;
+  box-shadow: 20px 20px darkslategray;
+  max-width: 100%;
+  display: block;
+  margin: 2rem 0;
 }
-h1, h2, h3, p{
-    text-align: center;
+
+h1,
+h2,
+h3,
+p {
+  text-align: center;
 }
-/* background colors and font colors for sections */
-.bg-navy{
-    background-color: var(--clr--navy);
-    color: var(--clr--white);
-    
+
+/*************************************** background colors and font colors for sections ************************************/
+.bg-trans-black {
+  background-color: var(--clr--trans-black);
+  color: var(--clr--white);
+
 }
-.bg-lgray{
-    background-color:var(--clr--light-gray);
-    color: var(--clr--white);    
+
+.bg-black {
+  background-color: var(--clr--black);
+  color: var(--clr--white);
 }
-.bg-lgray img{
-    box-shadow: 20px 20px darkslategray;
+
+.bg-dgreen {
+  background-color: var(--clr--dk-green);
+  color: var(--clr--white);
 }
-.bg-black{
-    background-color:var(--clr--black);
-    color: var(--clr--white);
+
+.bg-white {
+  color: var(--clr--trans-black);
 }
-.bg-dgreen{
-    background-color:var(--clr--dk-green);
-    color: var(--clr--white);
+
+.bg-white p {
+  color: var(--clr--trans-black);
 }
-.bg-dgray{
-    background-color: var(--clr--dark-gray);
-    color: var(--clr--white);
-}
-.bg-white{
-    color: var(--clr--navy);
-}
-.bg-white p{
-  color: var(--clr--navy);
-}
-button, button a{
+
+button,
+button a {
   background-color: transparent;
   border: none;
   color: var(--clr--orange);
+  padding: 10px;
+  font-size: 1.2rem;
 }
-button:hover{
-  background-color: orange;
+
+button:hover {
+  background-color:var(--clr--orange);
   border-radius: 5px;
 }
 
-/* ****************** header styles ************************* */
-header{    
-    z-index: 3;
-    position: relative;
-    height: 121px;
-    margin-top: -30px;
-}
-header h1 a{
-    float: left;
-    line-height: 1.5;
-    padding-left: 1.5rem;
-    font-size: 3.8rem;
-    margin-bottom: 0;
-    text-decoration: none;
-    color: var(--clr--orange);
+/* ************************************************** header styles ***************************************************** */
+header {
+  z-index: 3;
+  position: relative;
+  height: 121px;
+  margin-top: -30px;
 }
 
+header h1 a {
+  float: left;
+  line-height: 1.5;
+  padding-left: 1.5rem;
+  font-size: 3.8rem;
+  margin-bottom: 0;
+  text-decoration: none;
+  color: var(--clr--orange);
+}
 
-
-
-/* ****************************navigation links start**************************** */
+/* ****************************************************navigation links start********************************************** */
 #menu {
-    font-weight: 400;
-    font-size: 20px;
-    font-family: nunito-sans, sans-serif;
-    margin-right: 25px;    
-    z-index: 4;
-    
-  }
-  #menu a{
-    height: 66px;
-  }
-  #menu a:hover{
-    color:var(--clr--orange);
-    box-shadow: 0px 1px 3px orange;
-  }
-  
-  #menu ul {
-    text-align: center;
-    width: auto;
-    line-height:6;
-    float: right;
-  }
-  
-  #menu li {
-    text-align: center;
-    display: inline;
-    margin-left: 2px;
-    width: 25px;
-    list-style: none;
-    z-index: 4;
-    padding:0 9px;
-  }
-  
-  /*Code below from an answer given to a question on the following site
-  https://stackoverflow.com/questions/31140935/how-do-i-add-vertical-line-on-my-menu-item-in-html-css */
-  
-  /* #menu li:not(:first-child):before {
-    content: "|      ";
-  } */
-  
-  #menu a.active {
-    background-color: var(--clr--black);
-    text-decoration: underline;
-    color: white;
-  }
-  
-  /* Dropdown menu */
-  
-  /*Dropdown from W3 school tutorial for dropdown menu - adjusted for this site
-                  https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar-->*/
-  
-  li a,
-  .dropbtn {
-    display: inline-block;
-    text-align: center;
-    padding: 0px;
-    text-decoration: none;
-  }
-  a.dropbtn{
-      color: white;
-  }
-  
-  #menu nav li a:hover,
-  .dropdown:hover .dropbtn {
-    border-bottom: 1px solid black;
-    color: white;
-  }
-  
-  li.dropdown {
-    position: relative;
-    display: inline-block;
-    
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color:var(--clr--black);
-    min-width: 210px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    top: 22px;
-    left: 50%;
-    margin-left: -100px;
-    line-height: 1;
-    
-  }
-  
-  .dropdown-content a {
-    color:white;
-    padding: 10px 15px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    
-  }
-  
-  .dropdown-content a:hover {
-    background-color: black;
-    color: var(--clr--navy);
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: inline-block;
-  }
-/* *************** navigation links end ************* */
+  font-weight: 400;
+  font-size: 20px;
+  font-family: nunito-sans, sans-serif;
+  margin-right: 25px;
+  z-index: 4;
 
-/* *************** floating Navigation burger menu styles and positioning******************* */
+}
+
+#menu a {
+  height: 66px;
+}
+
+#menu a:hover {
+  color: var(--clr--orange);
+  box-shadow: 0px 1px 3px orange;
+}
+
+#menu ul {
+  text-align: center;
+  width: auto;
+  line-height: 6;
+  float: right;
+}
+
+#menu li {
+  text-align: center;
+  display: inline;
+  margin-left: 2px;
+  width: 25px;
+  list-style: none;
+  z-index: 4;
+  padding: 0 9px;
+}
+
+#menu a.active {
+  background-color: var(--clr--black);
+  text-decoration: underline;
+  color: white;
+}
+
+/******************** Dropdown menu *********************/
+
+/*Dropdown from W3 school tutorial for dropdown menu - adjusted for this site
+                  https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar-->*/
+
+li a,
+.dropbtn {
+  display: inline-block;
+  text-align: center;
+  padding: 0px;
+  text-decoration: none;
+}
+
+a.dropbtn {
+  color: white;
+}
+
+#menu nav li a:hover,
+.dropdown:hover .dropbtn {
+  border-bottom: 1px solid black;
+  color: white;
+}
+
+li.dropdown {
+  position: relative;
+  display: inline-block;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--clr--black);
+  min-width: 210px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  top: 22px;
+  left: 50%;
+  margin-left: -100px;
+  line-height: 1;
+
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+
+}
+
+.dropdown-content a:hover {
+  background-color: black;
+  color: var(--clr--trans-black);
+}
+
+.dropdown:hover .dropdown-content {
+  display: inline-block;
+}
+
+/* ******************************************** navigation links end ********************************************************* */
+
+/* ************************************ floating Navigation burger menu styles and positioning******************************** */
 /* <!-- code below from question on w3schools on how to create a burger menu
         https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar--> */
 
 .topnav {
-    background-color: var(--clr--dark-gray);
-    position: fixed;
-    right: 45px;
-    top: 63px;
-    z-index: 2;
-  }
-  .topnav:hover{
-    display: block;
-  }
-  
-  
-  .topnav #myLinks {
-    display: none;
-    z-index: 2;
-  }
-  
-  .topnav a {
-    color: orange;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-    z-index: 2;
-  }
-  
-  .topnav a.icon {
-    background: var(--clr--dark-gray);
-    display: block;
-    position: absolute;
-    right: 0;
-    top: -5px;
-    border: 2px solid orange;
-    border-radius: 5px;
-    z-index: 2;
-  }
-  
-  .topnav a:hover {
-    background-color: black;
-    color: var(--clr--orange);
-    z-index: 2;
-  }
-  
-  .active {
-    background-color: #717175;
-    color: white;
-    z-index: 2;
-  }
-  .burger-menu{
-    z-index: 2;
-  }
-/* *************************************** end of floating navigation burger menu ******************************* */
-/* **********************************************end of header section ****************************************** */
-
-/* ********************* greeting section ***************************** */
-.greeting{
-    height: 650px;
-    background-image: url(../images/new-images/cutting-cooked-meat.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  background-color: var(--clr--trans-black);
+  position: fixed;
+  right: 45px;
+  top: 63px;
+  z-index: 2;
 }
-.greeting h1{
+
+.topnav:hover {
+  display: block;
+}
+
+
+.topnav #myLinks {
+  display: none;
+  z-index: 2;
+}
+
+.topnav a {
+  color: orange;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  z-index: 2;
+}
+
+.topnav a.icon {
+  background: var(--clr--trans-black);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: -5px;
+  border: 2px solid orange;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.topnav a:hover {
+  background-color: black;
+  color: var(--clr--orange);
+  z-index: 2;
+}
+
+.active {
+  background-color: #717175;
+  color: white;
+  z-index: 2;
+}
+
+.burger-menu {
+  z-index: 2;
+}
+
+/* *************************************** end of floating navigation burger menu ********************************************* */
+/* **********************************************end of header section ******************************************************** */
+/* ************************************* footer styles and links and positioning ********************************************** */
+
+/*footer and social media links */
+footer {
+  width: 100%;
+  height: 12rem;
+  background-color: var(--clr--black);
+}
+
+footer h3 {
+  text-align: center;
+  color: var(--clr--orange);
+
+}
+
+.foley-footer-link {
+  text-decoration: none;
+}
+
+footer p {
+  padding: 0 20px 0 0;
+  text-align: right;
+  color: var(--clr--white);
+}
+
+.social-media-links li {
+  display: inline;
+  margin: 1% 12% 1% 0;
+}
+
+.social-media-links {
+  font-size: 2rem;
+  margin: 1% -9% 1% 0;
+  color: #fafafa;
+  text-align: center;
+}
+
+.fab {
+  color: blue;
+}
+
+.fab:hover {
+  background-color: orange;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.brians-github {
+  text-decoration: none;
+}
+
+/* **************************************************** greeting section ************************************************ */
+.greeting {
+  height: 650px;
+  background-image: url(../images/cutting-cooked-meat.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.greeting h2 {
   font-size: 8rem;
-  }
-.greeting p{
+}
+
+.greeting p {
   font-size: 1.5rem;
   margin-top: 5px;
   font-weight: 300;
 }
 
 /* ********************* meat selectors section *************************** */
-.meat-selectors{
-    width: 100%;
-    border-radius: 5px;    
+.meat-selectors {
+  width: 100%;
+  border-radius: 5px;
 }
-.meat-selectors a{
-  text-decoration: none; 
+
+.meat-selectors a {
+  text-decoration: none;
 }
-.meat-selectors img{
-    box-shadow: none; 
-    margin: 0;   
+
+.meat-selectors img {
+  box-shadow: none;
+  margin: 0;
 }
-.selector{
-    height: 83%;
-    width: 83%;
-    margin: 40px;    
-    min-width: 20%;
-    border-radius: 50px;
-    overflow: hidden;
+
+.selector {
+  height: 83%;
+  width: 83%;
+  margin: 40px;
+  min-width: 20%;
+  border-radius: 50px;
+  overflow: hidden;
 }
-.our-products{
+
+.our-products {
   margin-bottom: 0;
   padding-bottom: 1rem;
   font-size: 6rem;
   color: var(--clr--orange);
 }
-.meat-description{
+
+.meat-description {
   max-width: 40%;
 }
-.meat-description h1{
+
+.meat-description h1 {
   padding-top: 5rem;
 }
-.learn-more{
-  margin-left:45%;
+
+.learn-more {
+  margin-left: 45%;
   margin-top: 13rem;
   color: orange;
   text-decoration: none;
 }
-.learn-more:hover{
-  border: 2px solid orange;
+
+.learn-more:hover {
   background-color: orange;
   color: white;
 }
 
 
 /* ********************************** Pre packaged products/frozen food /condiments/specials ************************************/
-.pre-pack h1{
+.pre-pack h1 {
   text-align: left;
   padding-left: 17%;
   margin: 4rem 0 2rem;
 }
-.frozen-food h1{
+
+.frozen-food h1 {
   text-align: left;
   padding-left: 26%;
   margin: 4rem 0 2rem;
 }
+
 .pre-pack ul {
   padding-left: 25%;
   line-height: 4;
   text-transform: capitalize;
-  font-size: 1.4rem; 
+  font-size: 1.4rem;
 }
-.prepak-list-2{
+
+.prepak-list-2 {
   display: none;
   text-transform: capitalize;
-  font-size: 1.4rem; 
+  font-size: 1.4rem;
 }
+
 .frozen-food ul {
   padding-left: 25%;
   line-height: 4;
   text-transform: capitalize;
-  font-size: 1.4rem; 
+  font-size: 1.4rem;
 }
-.prepak-list a{
+
+.prepak-list a {
   display: contents;
   text-transform: capitalize;
-  font-size: 1.4rem; 
+  font-size: 1.4rem;
 }
+
 .prepak-list-b {
   padding-top: 5rem;
   text-transform: capitalize;
-  font-size: 1.4rem; 
+  font-size: 1.4rem;
 }
+
 .prepak-list h1 {
   display: contents;
   margin-left: 1rem;
 }
-.prepak-list-2{
+
+.prepak-list-2 {
   display: none;
-  text-transform: capitalize;
-  font-size: 1.4rem; 
-}
-.Frozen-list-2{
-  display:none;
-}
-.Frozen-list-1{
-  display:block;
   text-transform: capitalize;
   font-size: 1.4rem;
 }
-.frozen-list-b{
+
+.Frozen-list-2 {
+  display: none;
+}
+
+.Frozen-list-1 {
+  display: block;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+}
+
+.frozen-list-b {
   padding-top: 2rem;
   text-transform: capitalize;
-  font-size: 1.4rem; 
+  font-size: 1.4rem;
 }
-.condiments h1{
+
+.condiments h1 {
   text-align: center;
   margin: 3rem 0 2rem;
 }
 
-.condiments ul{
-  padding-left:40%; 
-  line-height: 3; 
+.condiments ul {
+  padding-left: 40%;
+  line-height: 3;
   text-transform: capitalize;
-  font-size: 1.4rem; 
-}
-.con-img img{
-  margin-left:20%;  
+  font-size: 1.4rem;
 }
 
-
-
-
-
+.con-img img {
+  margin-left: 20%;
+}
 
 /************************************** Know your cuts section ***********************************/
-.know-your-cuts{
+.know-your-cuts {
   width: 100%;
   margin-bottom: 10px;
 }
-.know-your-cuts h1{
+
+.know-your-cuts h1 {
   padding: 0;
   margin: 0;
   font-size: 5rem;
 }
-.beef h1, .pork h1{
+
+.beef h1,
+.pork h1 {
   padding-left: 16rem;
   margin-top: 2rem;
 }
-.beef ul{
+
+.beef ul {
   font-size: 1.4rem;
   padding-left: 6vw;
   line-height: 3;
 }
-.pork ul{
+
+.pork ul {
   padding-left: 8rem;
   line-height: 3.5;
-  margin-top: 2rem; 
-  font-size: 1.4rem;   
+  margin-top: 2rem;
+  font-size: 1.4rem;
 }
-.chicken ul{
+
+.chicken ul {
   padding-left: 11vw;
   line-height: 5;
-  margin-top: 3rem; 
-  font-size: 1.4rem;    
+  margin-top: 3rem;
+  font-size: 1.4rem;
 }
 
 .cuts-list {
   width: 49%;
   display: contents;
 }
-.lamb ul{
+
+.lamb ul {
   padding-left: 11vw;
   line-height: 4;
-  margin-top: 2rem; 
-  font-size: 1.4rem; 
+  margin-top: 2rem;
+  font-size: 1.4rem;
 }
-.beef ul, .pork ul, .chicken ul, .lamb ul{         
-  display: inline-block;   
+
+.beef ul,
+.pork ul,
+.chicken ul,
+.lamb ul {
+  display: inline-block;
 }
+
 /* *********************************** special offers **********************************************/
-.specials{
+.specials {
   display: contents;
   padding-left: 2rem;
 }
-.specials-img{
-  margin-right: 5rem;
 
+.specials-img {
+  margin-right: 5rem;
 }
-.special-1 h3, .special-2 h3, .special-3 h3{
+
+.special-1 h3,
+.special-2 h3,
+.special-3 h3 {
   text-align: left;
 }
-.special-1 ul, .special-2 ul, .special-3 ul{
+
+.special-1 ul,
+.special-2 ul,
+.special-3 ul {
   padding-left: 2rem;
   line-height: 3;
   text-transform: capitalize;
-  font-size: 1.4rem;  
+  font-size: 1.4rem;
 }
-.special-1 p, .special-2 p, .special-3 p{
+
+.special-1 p,
+.special-2 p,
+.special-3 p {
   text-align: left;
 }
-.special-1 p{
+
+.special-1 p {
   padding-top: 3rem;
 }
-em{
+
+em {
   color: var(--clr--orange);
 }
+
 /************************************* About us section ******************************************/
-#about-img-left{
-  padding-left: 14rem;    
+#about-img-left {
+  padding-left: 14rem;
 }
-#about-img-right{
-  padding-left: 12rem;    
+
+#about-img-right {
+  padding-left: 12rem;
 }
-#about p{
+
+#about p {
   max-width: 80%;
   padding-left: 20%;
   text-align: left;
 }
+
 /* ********************************** contact-us ************************************/
-.shop-address ul{    
-  text-align: left;
-  padding-left: 19vw;
-} 
-.opening-times ul{    
+.shop-address ul {
   text-align: left;
   padding-left: 19vw;
 }
 
-.mapouter{
-  position:relative;  
-  height:303px;
+.opening-times ul {
+  text-align: left;
+  padding-left: 19vw;
+}
+
+.mapouter {
+  position: relative;
+  height: 303px;
   width: 117rem;
   margin: 2rem 0;
 }
 
-.gmap_canvas{
-  overflow:hidden;
-  background:none!important;
-  height:303px;
-  width:100%;
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 303px;
+  width: 100%;
   overflow: hidden;
   border: none;
   margin: 0;
 }
 
-.gmap_canvas iframe{
+.gmap_canvas iframe {
   width: 70%;
-   height: 100%;
+  height: 100%;
 }
 
 /* ************************************* rewards page styling and positioning *********************************************** */
 /* *** references from Coders coffeehouse code institute walkthrough for form layout modified to suit this website ***** */
-#rewards-page{
-  background-image: url(../images/new-images/hero-image.jpeg) ; 
+#rewards-page {
+  background-image: url(../images/rewards-page-image.jpeg);
   margin: 0;
   padding: 0;
   background-size: cover;
 }
-.rewards-form-outer{
+
+.rewards-form-outer {
   width: 50rem;
   height: auto;
-  box-shadow: 10px 10px 40px orange;  
+  box-shadow: 10px 10px 40px orange;
   border-radius: 15px 15px;
   margin: 30px 23%;
-  background-color:rgba(0, 0, 0, 0.7);
-  color: white;  
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
 }
-#rewards-form-outer h1{
+
+#rewards-form-outer h1 {
   text-align: center;
-  font-size:4.6rem;
+  font-size: 4.6rem;
 }
-.user-data{
+
+.user-data {
   margin-bottom: 1rem;
   border: none;
-  
+
 }
-
-
 
 /* ********************************************form styles *********************************************/
 
 form {
-	width: 50rem;
+  width: 50rem;
 }
+
 legend {
-	font-size: large;
-	font-weight: 600;
-	text-transform: uppercase;
-  font-family:Architects Daughter,sans-serif;
+  font-size: large;
+  font-weight: 600;
+  text-transform: uppercase;
 }
-.personal-details{
-    width: 300px;
-    height: auto;
+
+.personal-details {
+  width: 300px;
+  height: auto;
 }
+
 .personal-details div input {
-    float:right;
-    margin: 0 0 0 -6px;
+  float: right;
+  margin: 0 0 0 -6px;
 }
-.personal-and-address{
+
+.personal-and-address {
   display: inline-block;
   padding: 0 1.5rem;
 }
-.products-and-services{
+
+.products-and-services {
   line-height: 20px;
 }
-input{
-    padding: 0 0.5rem;
-    margin: 0;
+
+input {
+  padding: 0 0.5rem;
+  margin: 0;
 }
-label{
-    padding: 0 0.5rem 0 0;
+
+label {
+  padding: 0 0.5rem 0 0;
 }
-form div{
-    display: table-row;
+
+form div {
+  display: table-row;
 }
-.fav-meat{
-    padding: 0 2.9rem 0 0;
+
+.fav-meat {
+  padding: 0 2.9rem 0 0;
 }
-.eat-frequency label, .shop-frequency label{
+
+.eat-frequency label,
+.shop-frequency label {
   margin: -2px -2px 0 0;
 }
-.eat-frequency p, .shop-frequency p{
+
+.eat-frequency p,
+.shop-frequency p {
   margin: 32px 0 0 0;
   text-align: left;
 }
-#distance{
+
+#distance {
   margin-left: 1px;
 }
-.delivery{
+
+.delivery {
   line-height: 20px;
 }
+
 .delivery h3 {
   margin: 22px 0 22px;
   text-align: left;
 }
-.delivery input{
+
+.delivery input {
   margin-bottom: -2px;
 }
-.delivery label{
+
+.delivery label {
   margin-top: 2px;
 }
-#special-delivery{
-    width: 26.8rem;
-    height: auto;
+
+#special-delivery {
+  width: 26.8rem;
+  height: auto;
 }
-.delivery-note{
-    padding: 0 1.55rem 0 0;
+
+.delivery-note {
+  padding: 0 1.55rem 0 0;
 }
-.local-list{
+
+.local-list {
   text-align: left;
   margin-top: 10px;
 }
-.local-choice div{
+
+.local-choice div {
   width: 50px;
   height: auto;
   display: inline;
   margin-left: 33px;
 }
-#chutney{
+
+#chutney {
   margin-left: 61px;
 }
-#goats-milk{
+
+#goats-milk {
   margin-left: 52px;
 }
-#sauce{
+
+#sauce {
   margin-left: 58px;
 }
 
-.underline{
-    text-decoration:underline;
-    margin-left: 0;
-    text-align: left;
+.underline {
+  text-decoration: underline;
+  margin-left: 0;
+  text-align: left;
 }
-.rewards-info{
-    margin: 0 1rem 1rem 1rem;
-    font-size: 0.8rem;
+
+.rewards-info {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 0.8rem;
 }
 
 
-#feedback{
+#feedback {
   margin-top: 10px;
   width: 427px;
 }
-#rewards-page input[type=submit]{
+
+#rewards-page input[type=submit] {
   color: white;
-	border: none;
-	border-radius: 10px;
+  border: none;
+  border-radius: 10px;
   margin: 0 0.75rem 1rem;
-	padding: 0.75rem;
+  padding: 0.75rem;
   background-color: transparent;
   border: 1px solid orange;
 }
-#rewards-page input[type=submit]:hover{
+
+#rewards-page input[type=submit]:hover {
   background-color: orange;
   cursor: pointer;
 }
-input[type=reset]{
+
+input[type=reset] {
   background-color: transparent;
   color: rgba(250, 249, 249, 0.7);
   border: none;
 }
-input[type=reset]:hover{
+
+input[type=reset]:hover {
   color: red;
   cursor: pointer;
 }
-fieldset{
+
+fieldset {
   border: none;
 }
-/* ********************************** rewards form styles and positioning end ************************** */
+
 /* ********************************** gallery page and styling *************************************/
+.gallery-heading {
+  text-align: inherit;
+  font-size: 11rem;
+}
+
 #photos {
   clear: both;
   line-height: 0;
   column-count: 4;
   column-gap: 0;
+  margin: 0 auto;
 }
 
-#photos > img {
-  width: 100%;
+#photos>img {
+  width: 80%;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
 }
 
-
-/* ************************************* footer styles and links and positioning ********************************************** */
-
-/*footer and social media links */
-footer{
-  width: 100%;
-  height: 12rem;
-  background-color: var(--clr--black);
-}
-footer h3{
-  text-align: center;
-  color: var(--clr--orange);
-  
-}
-.foley-footer-link{
-  text-decoration: none;
+.gallery-vid div {
+  flex-direction: column;
+  align-items: center;
 }
 
-footer p{
-  padding: 0 20px 0 0;
-  text-align: right;
-  color: var(--clr--white);
+.gallery-vid iframe {
+  margin: 3rem 9vw;
+  width: auto;
+  height: auto;
+  height: 506px;
+  width: 900px;
+  border: none;
 }
-.social-media-links li{
-  display: inline;
-  margin: 1% 12% 1% 0;
-}
-.social-media-links{
-  font-size: 2rem;
-  margin: 1% -9% 1% 0;
-  color: #fafafa;
-  text-align: center;       
-}  
-.fab {
-  color: blue;  
-}
-.fab:hover{
-  background-color: orange;
-  padding: 10px;
-  border-radius: 50%;
-}
-.brians-github {
-  text-decoration: none;
-}
+
 
 /* **************************************** Media Queries *********************************************** */
-@media screen and (min-width:2200px){
- p{
-   font-size: 2.5rem;
- }
- img {
-  border-radius: 10px;
-  box-shadow: 20px 20px darkslategrey;
-  max-width: 100%;
-  /* display: block; */
-  margin: 4rem 0 4rem 4rem;
-  width: 800px;
+@media screen and (min-width:2200px) {
+  p {
+    font-size: 2.5rem;
   }
-  h1, h2, h3{
+
+  img {
+    border-radius: 10px;
+    box-shadow: 20px 20px darkslategrey;
+    max-width: 100%;
+    /* display: block; */
+    margin: 4rem 0 4rem 4rem;
+    width: 800px;
+  }
+
+  h1,
+  h2,
+  h3 {
     font-size: 6.4rem;
     margin-bottom: 5.2rem;
   }
-  header{  
-  height: 149px;
-  margin-top: -92px;
+
+  header {
+    height: 149px;
+    margin-top: -92px;
   }
-  #menu li{    
+
+  #menu li {
     font-size: 1.8rem;
     padding-right: 6rem;
   }
-  .our-products p{
+
+  .our-products p {
     font-size: 2.5rem;
   }
+
   .specials-img {
     margin-right: 11rem;
   }
+
   .know-your-cuts h1 {
     font-size: 8rem;
   }
+
   .our-products {
     font-size: 8rem;
   }
-  #pre-pack li, #frozen-food li, .condiments li, .specials li, .know-your-cuts li, #contact li{
+
+  #pre-pack li,
+  #frozen-food li,
+  .condiments li,
+  .specials li,
+  .know-your-cuts li,
+  #contact li {
     font-size: 2.5rem;
   }
-  button, button a {
-    font-size: 2rem;    
+
+  button,
+  button a {
+    font-size: 2rem;
   }
-  footer {    
+
+  footer {
     position: relative;
     bottom: 0rem;
-    height: 16rem;    
+    height: 16rem;
   }
+
   footer h3 {
     margin-bottom: 0;
   }
-  .shop-address ul{    
+
+  .shop-address ul {
     text-align: left;
     padding-left: 32rem;
-  } 
-  .opening-times ul{    
+  }
+
+  .opening-times ul {
     text-align: left;
     padding-left: 28rem;
   }
-  .rewards-info{
+
+  .rewards-info {
     font-size: 1rem;
   }
-  .rewards-form-outer{
+
+  .rewards-form-outer {
     width: 56rem;
   }
 }
@@ -870,253 +1019,344 @@ footer p{
 
 
 
-@media screen and (min-width:1200px){
-    .column{
-        flex-direction: row;
-        
-    }
-    .column div{
-        flex-basis: 100%;
-    }
-    
+@media screen and (min-width:1200px) {
+  .column {
+    flex-direction: row;
+
+  }
+
+  .column div {
+    flex-basis: 100%;
+  }
+
 }
 
 
 
-@media screen and (max-width:1200px){
-  h1, h2, h3, p {    
+@media screen and (max-width:1200px) {
+
+  h1,
+  h2,
+  h3,
+  p {
     font-weight: 500;
   }
-  p{
+
+  p {
     line-height: 2.5;
     font-size: 1.2rem;
   }
-  section{
+
+  section {
     width: 100%;
   }
-  header{
+
+  header {
     width: 100%;
     position: static;
     height: 90px;
   }
-  header h1 a {    
+
+  header h1 a {
     font-size: 3.2rem;
     margin-bottom: 0px;
-    line-height: 2;    
+    line-height: 2;
   }
-  #menu{
-      display: none;
+
+  #menu {
+    display: none;
   }
-  .topnav{
+
+  .topnav {
     font-size: 11px;
     top: 20px;
   }
+
   .topnav a {
     font-size: 11px;
   }
+
   .topnav a.icon {
     top: -5px;
     right: -7px;
   }
-  .topnav #mylinks{
+
+  .topnav #mylinks {
     background-color: var(--clr--dark-gray);
   }
-  .active{
+
+  .active {
     background-color: var(--clr--dark-gray);
   }
-  .greeting{
+
+  .greeting {
     background-size: contain;
     background-position: top;
     background-position-y: 50px;
   }
-  .greeting h1{
+
+  .greeting h2 {
     font-size: 5rem;
   }
+
   .greeting p {
     font-size: 15px;
     text-align: center;
   }
-  #beef .meat-img  img,#pork .meat-img img,#lamb .meat-img  img,#chicken .meat-img  img{
+
+  #beef .meat-img img,
+  #pork .meat-img img,
+  #lamb .meat-img img,
+  #chicken .meat-img img {
     margin-left: 25%;
   }
-  #about-img{    
+
+  #about-img {
     min-width: 45%;
   }
-  .selector{
+
+  .selector {
     width: 48%;
     min-width: 49%;
   }
-  .meat-selectors{
+
+  .meat-selectors {
     margin-left: 20%;
   }
+
   .meat-description {
     max-width: 69%;
     margin-left: 17%;
   }
+
   .pre-pack h1 {
     padding-left: 33%;
   }
+
   .pre-pack ul {
-    padding-left: 42%;    
+    padding-left: 42%;
   }
-  .prepak-list-2{
+
+  .prepak-list-2 {
     display: block;
   }
-  .prepak-list, .beef-1, .pork-1, .chicken-1, .lamb-1{
+
+  .prepak-list,
+  .beef-1,
+  .pork-1,
+  .chicken-1,
+  .lamb-1 {
     display: none;
-  }  
-  .beef-2,.pork-2, .chicken-2, .lamb-2{
+  }
+
+  .beef-2,
+  .pork-2,
+  .chicken-2,
+  .lamb-2 {
     display: inline;
-  } 
-  .prepak-img, .frozen-img, .condiments-img, .specials-img, .chicken-cuts-img, .lamb-cuts-img{
+  }
+
+  .prepak-img,
+  .frozen-img,
+  .condiments-img,
+  .specials-img,
+  .chicken-cuts-img,
+  .lamb-cuts-img {
     margin-left: 20%;
   }
-  .Frozen-list-1{
-    display:none;
+
+  .Frozen-list-1 {
+    display: none;
   }
-  .Frozen-list-2{
-    display:block;
+
+  .Frozen-list-2 {
+    display: block;
   }
+
   .frozen-food ul {
     padding-left: 42%;
-    
+
   }
-  .frozen-food h1 {    
-    padding-left: 33%;    
-  }  
-  .pre-pack ul, .frozen-food ul, .condiments ul, .special-1, .special-3{    
+
+  .frozen-food h1 {
+    padding-left: 33%;
+  }
+
+  .pre-pack ul,
+  .frozen-food ul,
+  .condiments ul,
+  .special-1,
+  .special-3 {
     line-height: 2.5;
   }
-    
+
   .special-1 p {
     padding-top: 1rem;
   }
-  .special-2{
+
+  .special-2 {
     margin-left: 36%;
     line-height: 2.5;
   }
-  .special-3{
-    margin-left: 67%;    
-  }  
-  .beef-cuts-img, .pork-cuts-img{
+
+  .special-3 {
+    margin-left: 67%;
+  }
+
+  .beef-cuts-img,
+  .pork-cuts-img {
     margin-left: 20%;
-  }  
-  .beef ul, .pork ul, .chicken ul {
+  }
+
+  .beef ul,
+  .pork ul,
+  .chicken ul {
     padding-left: 11rem;
     line-height: 2.5;
-    margin-top: 2rem;    
+    margin-top: 2rem;
     display: inline-block;
   }
-  .chicken ul{
+
+  .chicken ul {
     margin-left: 10%;
-  } 
-  .lamb ul{
+  }
+
+  .lamb ul {
     margin-left: 20%;
     line-height: 2.5;
-    margin-top: 2rem;    
+    margin-top: 2rem;
     display: inline-block;
   }
+
   #about p {
     max-width: 94%;
-    padding-left: 6%; 
-    line-height: 1.2;   
+    padding-left: 6%;
+    line-height: 1.2;
   }
+
   #about-img-left {
     padding-left: 23rem;
   }
+
   #about-img-right {
     padding-left: 6rem;
   }
-  
-  .mapouter{
+
+  .mapouter {
     position: static;
-    height:370px;
-    width:97rem;
+    height: 370px;
+    width: 97rem;
     left: 12%;
     bottom: 22rem;
     margin: 2rem 0;
     text-align: left;
   }
-  .gmap_canvas{    
-    height:400px;
-    width:100%;
+
+  .gmap_canvas {
+    height: 400px;
+    width: 100%;
   }
-  .gmap_canvas iframe{
+
+  .gmap_canvas iframe {
     width: 60%;
-     height: 100%;
+    height: 100%;
   }
-  .contact-us{
+
+  .contact-us {
     display: inline-block;
     line-height: 2.5;
-  } 
-  
-  /*  ************************ rewards form styles ******************************/
-  .rewards-form-outer{
-    width: 90vw;    
-    margin: 30px 5% ;
   }
-  .user-data h1{
+
+  /*  ************************ rewards form styles ******************************/
+  .rewards-form-outer {
+    width: 90vw;
+    margin: 30px 5%;
+  }
+
+  .user-data h1 {
     width: 64vw;
     padding-left: 19vw;
   }
+
   .personal-details div input {
     width: 40vw;
   }
-  .local-list{
+
+  .local-list {
     text-align: center;
     width: 70vw;
   }
-  .underline{
+
+  .underline {
     text-align: left;
     padding-left: 19vw;
   }
-  .rewards-info{
+
+  .rewards-info {
     width: 84vw;
   }
-  #rewards-form-outer h1{
+
+  #rewards-form-outer h1 {
     text-align: center;
-    font-size:3.2rem;
+    font-size: 3.2rem;
   }
+
   #special-delivery {
     width: 15rem;
     height: auto;
   }
+
   #feedback {
     margin-top: 10px;
     width: 15rem;
   }
-  .local-choice{
+
+  .local-choice {
     width: 20rem;
     height: auto;
   }
-  .local-choice div {    
+
+  .local-choice div {
     margin-left: -16px;
-    display:inherit;
+    display: inherit;
     line-height: 1;
   }
-  .local-choice br{    
+
+  .local-choice br {
     display: none;
   }
+
   .underline {
     padding-left: 0;
     font-size: 2rem;
   }
-  #chutney{
+
+  #chutney {
     margin-left: 0;
   }
-  #goats-milk{
+
+  #goats-milk {
     margin-left: 0;
   }
-  #sauce{
+
+  #sauce {
     margin-left: 0;
   }
-  .footer{
+
+  .footer {
     height: auto;
   }
+
   .social-media-links {
     letter-spacing: -5px;
   }
-  
+
+  .gallery-vid iframe {
+    margin: 3rem 9vw;
+    width: auto;
+    height: auto;
+
+  }
 }
 
 
@@ -1128,284 +1368,376 @@ footer p{
 
 
 
-@media screen and (max-width:800px){
-  p, ul, li {
+@media screen and (max-width:800px) {
+
+  p,
+  ul,
+  li {
     line-height: 1.2;
     font-size: 1rem;
   }
-  section{
+
+  section {
     width: 100%;
   }
-  header{
+
+  header {
     width: 100%;
     height: 90px;
   }
-  header h1 a{
+
+  header h1 a {
     float: none;
     font-size: 2.2rem;
-    margin-right: 4rem;    
+    margin-right: 4rem;
     position: relative;
     top: 25px;
   }
+
   .outer {
     min-width: 100%;
   }
-  
+
   /* nav link styles */
-  #menu{
+  #menu {
     display: none;
   }
+
   .topnav {
-    background-color:var(--clr--dark-gray);
+    background-color: var(--clr--dark-gray);
     position: fixed;
     right: 32px;
     top: 37px;
     z-index: 2;
   }
+
   .topnav a.icon {
     top: -22px;
     right: -15px;
   }
-  
-  .topnav a {   
-    font-size: 21px; 
-    padding: 2px 2px;    
+
+  .topnav a {
+    font-size: 21px;
+    padding: 2px 2px;
   }
-  .fa, .fas{
+
+  .fa,
+  .fas {
     width: 15px;
     font-size: 17px;
   }
+
   /* nav link styles end */
 
   .greeting {
     height: 280px;
   }
-  .greeting h1 {
+
+  .greeting h2 {
     font-size: 35px;
   }
+
   .greeting p {
     font-size: 10px;
     text-align: center;
   }
+
   .meat-selectors {
     margin-left: 82px;
   }
+
   .selector {
     width: 95%;
     min-width: 49%;
     margin: 40px 40px 40px -77px;
   }
+
   .our-products {
     font-size: 50px;
-  }  
-  #beef .meat-img img, #pork .meat-img img, #lamb .meat-img img, #chicken .meat-img img {
+  }
+
+  #beef .meat-img img,
+  #pork .meat-img img,
+  #lamb .meat-img img,
+  #chicken .meat-img img {
     margin-left: -2px;
     height: 174px;
   }
+
   .meat-description {
     margin-left: 40px;
   }
-  .prepak-img, .frozen-img, .condiments-img, .specials-img{
-    margin-left: -2px;    
+
+  .prepak-img,
+  .frozen-img,
+  .condiments-img,
+  .specials-img {
+    margin-left: -2px;
   }
-  .chicken-cuts-img, .lamb-cuts-img {
-    margin-left: -30px;    
+
+  .chicken-cuts-img,
+  .lamb-cuts-img {
+    margin-left: -30px;
   }
+
   .con-img img {
     margin-left: -2px;
   }
-  .specials{
+
+  .specials {
     align-content: center;
   }
-  .specials-img{
+
+  .specials-img {
     margin-right: 0;
   }
-  .special-1 h3, .special-2 h3, .special-3 h3 {
+
+  .special-1 h3,
+  .special-2 h3,
+  .special-3 h3 {
     margin-left: 33vw;
   }
-  .special-1 ul, .special-2 ul, .special-3 ul {
-    margin-left: 25vw;   
+
+  .special-1 ul,
+  .special-2 ul,
+  .special-3 ul {
+    margin-left: 25vw;
   }
-  
-  .special-1 p, .special-2 p, .special-3 p {
+
+  .special-1 p,
+  .special-2 p,
+  .special-3 p {
     padding-top: 1rem;
     margin-left: 40vw;
   }
+
   .special-2 {
     margin-left: 0;
     line-height: 2.5;
   }
+
   .special-3 {
     margin-left: 0%;
   }
-  .beef-cuts-img, .pork-cuts-img {
+
+  .beef-cuts-img,
+  .pork-cuts-img {
     margin-left: -31px;
   }
-  .beef ul, .pork ul, .chicken ul {    
+
+  .beef ul,
+  .pork ul,
+  .chicken ul {
     line-height: 2.5;
     margin-top: 2rem;
     display: inline-block;
   }
+
   .beef ul {
     padding-left: 0px;
     padding-right: 14px;
   }
+
   .pork ul {
     padding-left: 0px;
     padding-right: 41px;
   }
-  .chicken ul{
-    padding-left: 28px;    
-  } 
-  .lamb-2 ul{
-    padding-left: 7px;    
+
+  .chicken ul {
+    padding-left: 28px;
   }
+
+  .lamb-2 ul {
+    padding-left: 7px;
+  }
+
   .pre-pack h1 {
     padding-left: 30px;
   }
-  .prepak-list{
+
+  .prepak-list {
     display: none;
   }
-  .prepak-list-2{
+
+  .prepak-list-2 {
     display: block;
   }
-  .frozen-list-1{
+
+  .frozen-list-1 {
     display: none;
   }
-  .Frozen-list-2{
-    display:block;
+
+  .Frozen-list-2 {
+    display: block;
   }
-  .frozen-img{
+
+  .frozen-img {
     margin-left: -2px;
   }
+
   .frozen-food h1 {
     padding-left: 25px;
   }
+
   .frozen-food ul {
     padding-left: 52px;
   }
-  .condiments ul, .pre-pack ul{
-    padding-left: 56px;    
+
+  .condiments ul,
+  .pre-pack ul {
+    padding-left: 56px;
   }
+
   #about p {
     max-width: 94%;
-    padding-left: 6%; 
-    line-height: 1.2;   
+    padding-left: 6%;
+    line-height: 1.2;
   }
-  #about-img{ 
+
+  #about-img {
     min-width: 45%;
   }
+
   #about-img-left {
     padding-left: 0;
   }
+
   #about-img-right {
-      padding-left: 0;
+    padding-left: 0;
   }
-  .social-media-links {    
-    letter-spacing: 11px; 
-    margin-left: -40px;   
+
+  .social-media-links {
+    letter-spacing: 11px;
+    margin-left: -40px;
   }
+
   footer h3 {
     font-size: 25px;
   }
+
   footer p {
     padding: 42px 39px 0px 0px;
     text-align: right;
     color: var(--clr--white);
     font-size: 14px;
   }
-  .mapouter{
+
+  .mapouter {
     position: static;
-    height:260px;
-    width:260px;
+    height: 260px;
+    width: 260px;
     left: 12%;
     bottom: 22rem;
     margin: 2rem 0;
     text-align: left;
   }
-  .gmap_canvas{    
-    height:260px;
-    width:260px;
+
+  .gmap_canvas {
+    height: 260px;
+    width: 260px;
   }
-  .gmap_canvas iframe{
+
+  .gmap_canvas iframe {
     width: 100%;
-     height: 100%;
+    height: 100%;
   }
-  
+
   /*  ************************ rewards form styles ******************************/
-  .rewards-form-outer{
-    width: 90vw;    
-    margin: 30px 5% ;
+  .rewards-form-outer {
+    width: 90vw;
+    margin: 30px 5%;
   }
-  .user-data h1{
+
+  .user-data h1 {
     width: 64vw;
     padding-left: 19vw;
   }
+
   .personal-details div input {
     width: 40vw;
   }
-  .local-list{
+
+  .local-list {
     text-align: center;
     width: 70vw;
   }
-  .underline{
+
+  .underline {
     text-align: left;
     padding-left: 19vw;
   }
-  .rewards-info{
+
+  .rewards-info {
     width: 80vw;
   }
-  #rewards-form-outer h1{
+
+  #rewards-form-outer h1 {
     text-align: center;
-    font-size:2rem;
+    font-size: 2rem;
   }
+
   #special-delivery {
     width: 15rem;
     height: auto;
   }
+
   #feedback {
     margin-top: 10px;
     width: 15rem;
   }
-  .feedback-label{
+
+  .feedback-label {
     font-size: 0.8rem;
   }
-  .local-choice{
+
+  .local-choice {
     width: 20rem;
     height: auto;
   }
-  .local-choice div {    
+
+  .local-choice div {
     margin-left: -16px;
-    display:inherit;
+    display: inherit;
     line-height: 1;
   }
-  .local-choice br{    
+
+  .local-choice br {
     display: none;
   }
+
   .underline {
     padding-left: 0;
     font-size: 2rem;
   }
-  #chutney{
+
+  #chutney {
     margin-left: 0;
   }
-  #goats-milk{
+
+  #goats-milk {
     margin-left: 0;
   }
-  #sauce{
+
+  #sauce {
     margin-left: 0;
   }
-  .footer{
+
+  .footer {
     height: auto;
   }
+
   .social-media-links {
     letter-spacing: -5px;
   }
-  .eat-frequency label, .shop-frequency label {    
+
+  .eat-frequency label,
+  .shop-frequency label {
     display: inherit;
   }
-  .eat-frequency p, .shop-frequency p {    
+
+  .eat-frequency p,
+  .shop-frequency p {
     font-size: 4vw;
   }
-  
+
 }
