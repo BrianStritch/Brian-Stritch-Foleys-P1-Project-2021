@@ -1413,7 +1413,10 @@ audio{
     padding: -4px 24px;
     font-size: 10px;
   }
-
+  .topnav a:hover{
+    background-color: orange;
+    color: black;
+  }
   .topnav a {
     font-size: 15px;
     padding: 2px 2px;
@@ -1742,5 +1745,5 @@ audio{
     margin: 3rem 0vw;
     width: 86vw;
     height: 36vh;
-}
+  }
 }
