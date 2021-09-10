@@ -75,7 +75,8 @@ p {
 
 h1,
 h2,
-h3 {
+h3,
+h6 {
   font-family: var(--ff--primary);
   line-height: 1;
   font-weight: 600;
@@ -852,7 +853,10 @@ fieldset {
   height: 28vh;
   border: none;
 }
-
+audio{
+  margin-left: 42vw;
+  margin-bottom: 2rem;
+}
 
 /* **************************************** Media Queries *********************************************** */
 @media screen and (min-width:2200px) {
