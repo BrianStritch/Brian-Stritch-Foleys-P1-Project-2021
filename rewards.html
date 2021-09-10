@@ -43,8 +43,11 @@
     <div class="burger-menu">
         <!-- code below from question on w3schools on how to create a burger menu
                 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
+        <div class="burger-menu">
+        <!-- code below from question on w3schools on how to create a burger menu
+            https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
         <div class="topnav">
-            <a href="#home"></a> class="active"
+            <a href="#home"></a>
             <div id="myLinks">
                 <a href="index.html#home">Home</a>
                 <a href="index.html#beef">Products</a>
@@ -52,21 +55,10 @@
                 <a href="index.html#contact">Contact</a>
                 <a href="gallery.html">Gallery</a>
                 <a href="rewards.html">Rewards</a>
-
             </div>
-
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-            <script>
-                function myFunction() {
-                    var x = document.getElementById("myLinks");
-                    if (x.style.display === "block") {
-                        x.style.display = "none";
-                    } else {
-                        x.style.display = "block";
-                    }
-                }
-            </script>
-        </div>
+            <a  class="icon" ><i class="fa fa-bars"></i></a>          
+        </div> 
+    </div>
     </div>
     <div class="rewards-form-outer">
         <form action="https://formdump.codeinstitute.net" method="POST">
@@ -85,7 +77,7 @@
                         </div>
                         <div>
                             <label for="eircode">Eircode</label>
-                            <input id="eircode" type="text" name="eircode" placeholder="Optional">
+                            <input id="eircode" type="text" name="eircode">
                         </div>
                         <div>
                             <label for="number">Contact No:</label>
@@ -182,7 +174,7 @@
                         <div class="local-choice">
                             <div>
                                 <input type="checkbox" id="free-range-eggs" name="eggs">
-                                <label for="free-range-eggs">Free range eggs</label>
+                                <label for="free-range-eggs">Free Range Eggs</label>
                             </div>
                             <div>
                                 <input type="checkbox" id="chutney" name="fruit-chutney">
@@ -191,7 +183,7 @@
                             <br>
                             <div>
                                 <input type="checkbox" id="bread" name="gluten-free-bread">
-                                <label for="bread">Gluten free bread</label>
+                                <label for="bread">Gluten Free Bread</label>
                             </div>
                             <div>
                                 <input type="checkbox" id="goats-milk" name="goats-milk">
@@ -200,16 +192,16 @@
                             <br>
                             <div>
                                 <input type="checkbox" id="plant-based-milk" name="alternative-milk">
-                                <label for="plant-based-milk">Plant based milk</label>
+                                <label for="plant-based-milk">Plant Based Milk</label>
                             </div>
                             <div>
                                 <input type="checkbox" id="sauce" name="sauce-variety">
-                                <label for="sauce">Variety of sauces</label>
+                                <label for="sauce">Variety Of Sauces</label>
                             </div>
                             <br>
                             <div>
                                 <input type="checkbox" id="seasoning" name="seasoning-variety">
-                                <label for="seasoning">Variety of seasonings</label>
+                                <label for="seasoning">Variety Of Seasonings</label>
                             </div>
                         </div>
                     </fieldset>
