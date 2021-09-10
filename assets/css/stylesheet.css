@@ -309,8 +309,8 @@ li.dropdown {
 }
 
 .topnav a:hover {
-  background-color: black;
-  color: var(--clr--orange);
+  background-color: orange;
+  color: black;
   z-index: 2;
 }
 
@@ -1055,6 +1055,7 @@ audio{
   }
 
   .topnav a.icon {
+    background: var(--clr--trans-black);
     top: -5px;
     right: -7px;
   }
@@ -1406,6 +1407,7 @@ audio{
   }
 
   .topnav a.icon {
+    background: var(--clr--trans-black);
     top: -22px;
     right: -15px;
     padding: -4px 24px;
@@ -1416,7 +1418,7 @@ audio{
     font-size: 15px;
     padding: 2px 2px;
   }
-
+  
   .fa,
   .fas {
     width: 15px;
