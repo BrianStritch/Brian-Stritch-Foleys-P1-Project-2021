@@ -848,10 +848,8 @@ fieldset {
 
 .gallery-vid iframe {
   margin: 3rem 9vw;
-  width: auto;
-  height: auto;
-  height: 506px;
-  width: 900px;
+  width: 80vw;
+  height: 51vh;
   border: none;
 }
 
@@ -1279,9 +1277,10 @@ fieldset {
 
   .gallery-vid iframe {
     margin: 3rem 4vw;
-    width: 74vw;
-    height: 41vh;
+    width: 80vw;
+    height: 51vh;
   }
+
   #photos {
     clear: both;
     line-height: 0;
@@ -1289,7 +1288,7 @@ fieldset {
     column-gap: 0;
     margin: 0 auto;
   }
-  
+
   #photos>img {
     width: 39vw;
     border: none;
@@ -1297,7 +1296,7 @@ fieldset {
     margin: 0;
     box-shadow: none;
   }
-  
+
 }
 
 @media screen and (max-width:800px) {
