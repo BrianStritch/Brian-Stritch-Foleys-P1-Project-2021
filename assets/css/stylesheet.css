@@ -198,10 +198,11 @@ header h1 a {
 
 #menu a.active {
   background-color: var(--clr--black);
-  text-decoration: underline;
-  color: white;
+  text-decoration: underline;  
 }
-.fa, .fas {
+
+.fa,
+.fas {
   font-weight: 900;
   font-size: 19px;
 }
@@ -322,7 +323,9 @@ li.dropdown {
 
 .burger-menu {
   z-index: 2;
+  display: none;
 }
+
 
 /* *************************************** end of floating navigation burger menu ********************************************* */
 
@@ -347,6 +350,7 @@ footer p {
   padding: 0 20px 0 0;
   text-align: right;
   color: var(--clr--white);
+  line-height: 0.5;
 }
 
 .social-media-links li {
@@ -363,6 +367,9 @@ footer p {
 
 .fab {
   color: blue;
+  background-color: var(--clr--black);
+  padding: 10px;
+  border-radius: 50%;
 }
 
 .fab:hover {
@@ -373,6 +380,7 @@ footer p {
 
 .brians-github {
   text-decoration: none;
+  margin-bottom: 2rem;
 }
 
 /* **************************************************** index greeting section ************************************************ */
@@ -857,13 +865,15 @@ fieldset {
   height: 28vh;
   border: none;
 }
-.thank-you{
+
+.thank-you {
   margin: 0 auto;
 }
-audio{
+
+audio {
   margin: 0px 41vw 2rem;
-    width: 15vw;
-    min-width: 300px;
+  width: 15vw;
+  min-width: 300px;
 }
 
 /* **************************************** Media Queries *********************************************** */
@@ -896,10 +906,12 @@ audio{
     font-size: 1.8rem;
     padding-right: 6rem;
   }
+
   .topnav:hover #myLinks {
     display: block;
     z-index: 2;
   }
+
   .our-products p {
     font-size: 2.5rem;
   }
@@ -952,13 +964,16 @@ audio{
   .rewards-form-outer {
     width: 56rem;
   }
+
   .gallery-vid iframe {
     margin: 3rem 9vw;
     width: 57rem;
     height: 30rem;
     border: none;
   }
-  .far, .fas {
+
+  .far,
+  .fas {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     display: inline-block;
@@ -968,6 +983,7 @@ audio{
     line-height: 1;
     font-size: xx-large;
   }
+
   .topnav a {
     color: orange;
     padding: 17px;
@@ -976,6 +992,7 @@ audio{
     display: block;
     z-index: 2;
   }
+
   .topnav a.icon {
     background: var(--clr--trans-black);
     display: block;
@@ -1002,6 +1019,7 @@ audio{
   .column div {
     flex-basis: 100%;
   }
+
   .topnav:hover #myLinks {
     display: block;
     z-index: 2;
@@ -1012,7 +1030,7 @@ audio{
 
 @media screen and (max-width:1200px) {
 
-  
+
   h1,
   h2,
   h3,
@@ -1021,7 +1039,7 @@ audio{
   }
 
   p {
-    line-height: 2.5;
+    line-height: 0.5;
     font-size: 1.2rem;
   }
 
@@ -1044,7 +1062,14 @@ audio{
   #menu {
     display: none;
   }
-
+  .burger-menu-2{
+    z-index: 4;
+    display: none;
+  }
+  .burger-menu{
+    z-index: 4;
+    display: initial;
+  }
   .topnav {
     font-size: 11px;
     top: 20px;
@@ -1245,15 +1270,17 @@ audio{
     display: inline-block;
     line-height: 2.5;
   }
-  audio{
+
+  audio {
     margin: 0px 28vw 2rem;
     min-width: 300px;
   }
-  .gallery-vid iframe{
+
+  .gallery-vid iframe {
     width: 81%;
     height: 21rem;
   }
-  
+
 
   /*  ************************ rewards form styles ******************************/
   .rewards-form-outer {
@@ -1413,15 +1440,17 @@ audio{
     padding: -4px 24px;
     font-size: 10px;
   }
-  .topnav a:hover{
+
+  .topnav a:hover {
     background-color: orange;
     color: black;
   }
+
   .topnav a {
     font-size: 15px;
     padding: 2px 2px;
   }
-  
+
   .fa,
   .fas {
     width: 15px;
@@ -1741,6 +1770,7 @@ audio{
   .shop-frequency p {
     font-size: 4vw;
   }
+
   .gallery-vid iframe {
     margin: 3rem 0vw;
     width: 86vw;

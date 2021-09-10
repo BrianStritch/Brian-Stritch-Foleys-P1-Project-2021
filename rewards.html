@@ -40,25 +40,29 @@
         </div>
     </header>
     <!-- floating burger button style menu -->
-    <div class="burger-menu">
+    <div>
         <!-- code below from question on w3schools on how to create a burger menu
                 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
         <div class="burger-menu">
-        <!-- code below from question on w3schools on how to create a burger menu
+            <!-- code below from question on w3schools on how to create a burger menu
             https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar-->
-        <div class="topnav">
-            <a href="#home"></a>
-            <div id="myLinks">
-                <a href="index.html#home">Home</a>
-                <a href="index.html#beef">Products</a>
-                <a href="index.html#about">About</a>
-                <a href="index.html#contact">Contact</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="rewards.html">Rewards</a>
+            <div class="topnav">
+                <a href="#home"></a>
+                <div id="myLinks">
+                    <a href="index.html#home">Home</a>
+                    <a href="index.html#beef">Products</a>
+                    <a href="index.html#special-offers">Special Offers</a>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#contact">Contact</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="rewards.html">Rewards</a>
+                </div>
+                <!-- Burger-menu class below to operate onclick for screens below 1200px-->
+                <a href="javascript:void(0);" class="icon burger-menu" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+                <!-- Burger-menu-2 class below menu to operate on hover for screens above 1200px-->
+                <a class="icon burger-menu-2" ><i class="fa fa-bars"></i></a>
             </div>
-            <a  class="icon" ><i class="fa fa-bars"></i></a>          
-        </div> 
-    </div>
+        </div>
     </div>
     <div class="rewards-form-outer">
         <form action="https://formdump.codeinstitute.net" method="POST">
