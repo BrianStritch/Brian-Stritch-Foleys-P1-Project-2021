@@ -1278,10 +1278,26 @@ fieldset {
   }
 
   .gallery-vid iframe {
-    margin: 3rem 9vw;
-    width: auto;
+    margin: 3rem 4vw;
+    width: 74vw;
     height: auto;
   }
+  #photos {
+    clear: both;
+    line-height: 0;
+    column-count: 2;
+    column-gap: 0;
+    margin: 0 auto;
+  }
+  
+  #photos>img {
+    width: 39vw;
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+  }
+  
 }
 
 @media screen and (max-width:800px) {
