@@ -299,7 +299,7 @@ li.dropdown {
 }
 
 .topnav a.icon {
-  background: var(--clr--trans-black);
+  background-color: var(--clr--trans-black);
   display: block;
   position: absolute;
   right: 0;
@@ -910,6 +910,7 @@ audio {
   .topnav:hover #myLinks {
     display: block;
     z-index: 2;
+    background-color: var(--clr--trans-black);
   }
 
   .our-products p {
@@ -985,6 +986,7 @@ audio {
   }
 
   .topnav a {
+    background-color: var(--clr--trans-black);
     color: orange;
     padding: 17px;
     text-decoration: none;
@@ -1021,6 +1023,7 @@ audio {
   }
 
   .topnav:hover #myLinks {
+    background-color: var(--clr--trans-black);
     display: block;
     z-index: 2;
   }
@@ -1080,6 +1083,7 @@ audio {
 
   .topnav a {
     font-size: 11px;
+    background-color: var(--clr--trans-black);
   }
 
   .topnav a.icon {
@@ -1789,5 +1793,10 @@ audio {
     margin: 3rem 0vw;
     width: 86vw;
     height: 36vh;
+  }
+}
+@media screen and (max-width:300px){
+  header h1 a{
+    font-size: 1.4rem;
   }
 }
