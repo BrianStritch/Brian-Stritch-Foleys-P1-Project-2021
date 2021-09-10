@@ -853,9 +853,13 @@ fieldset {
   height: 28vh;
   border: none;
 }
+.thank-you{
+  margin: 0 auto;
+}
 audio{
-  margin-left: 45vw;
-  margin-bottom: 2rem;
+  margin: 0px 41vw 2rem;
+    width: 15vw;
+    min-width: 300px;
 }
 
 /* **************************************** Media Queries *********************************************** */
@@ -941,6 +945,12 @@ audio{
   .rewards-form-outer {
     width: 56rem;
   }
+  .gallery-vid iframe {
+    margin: 3rem 9vw;
+    width: 57rem;
+    height: 30rem;
+    border: none;
+}
 }
 
 
@@ -1194,6 +1204,15 @@ audio{
     display: inline-block;
     line-height: 2.5;
   }
+  audio{
+    margin: 0px 28vw 2rem;
+    min-width: 300px;
+  }
+  .gallery-vid iframe{
+    width: 81%;
+    height: 21rem;
+  }
+  
 
   /*  ************************ rewards form styles ******************************/
   .rewards-form-outer {
@@ -1674,5 +1693,9 @@ audio{
   .shop-frequency p {
     font-size: 4vw;
   }
-
+  .gallery-vid iframe {
+    margin: 3rem 0vw;
+    width: 86vw;
+    height: 36vh;
+}
 }
