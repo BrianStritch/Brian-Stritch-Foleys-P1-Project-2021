@@ -1,38 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Roboto:ital,wght@1,300&display=swap');
 
-/* Color Pallette choice 
 
-bg colors
-dark gray:#201e1e;
-light gray color #757575
-Dark gray color rgba(0, 0, 0, 0.2)
-dark green color rgba(2, 48, 2, 0.9)
+/*  ******************* page layout and positioning ****************************** */
 
-
-font colors
-White color rgba(250, 249, 249, 0.9)
-black rgba(0, 0, 0, 0.9)
-orange:rgb(255, 115, 0);
- */
-
-/* code below learned via kevin powell youtuber and leading to google search for custom css properties and information taken from
-https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties*/
-
-:root {
-  /*custom property colors*/
-  --clr--trans-black: #201e1e;
-  --clr--dk-green: rgba(2, 48, 2, 0.9);
-  --clr--white: rgba(250, 249, 249, 0.7);
-  --clr--orange: rgba(255, 165, 0, 0.9);
-  --clr--black: #000000;
-  /* custom property fonts */
-  --ff--primary: "Hina Mincho", san-serif;
-  --ff--secondary: "Roboto", serif;
-}
-
-/*  ******************* page layout and positioning ******************************************* */
-
-/* code below learned via Kevin Powell youtuber and taken from google search from question on freecodecamp on how to set box-sizing: border-box; to every element  
+/* code below inspired by Kevin Powell youtuber and taken from google search from question on freecodecamp on how to set box-sizing: border-box; to every element  
 https://forum.freecodecamp.org/t/before-after-box-sizing-border-box/425735/5*/
 
 *,
@@ -64,12 +35,12 @@ li {
 }
 
 p {
-  font-family: var(--ff--secondary);
+  font-family: "Roboto", serif;
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 1.2;
   margin-bottom: 1.2rem;
-  color: var(--clr--white);
+  color: rgba(250, 249, 249, 0.7);
   text-align: center;
 }
 
@@ -77,12 +48,12 @@ h1,
 h2,
 h3,
 h6 {
-  font-family: var(--ff--primary);
+  font-family: "Hina Mincho", san-serif;;
   line-height: 1;
   font-weight: 600;
   margin-bottom: 1.2rem;
   font-size: 2.6rem;
-  color: var(--clr--orange);
+  color: rgba(255, 165, 0, 0.9);
   text-align: center;
 }
 
@@ -118,32 +89,32 @@ img {
   margin: 2rem 0;
 }
 
-/*************************************** background colors and font colors for sections ************************************/
+/*************** background colors and font colors for sections *****************/
 .bg-trans-black {
-  background-color: var(--clr--trans-black);
-  color: var(--clr--white);
+  background-color: #201e1e;
+  color: rgba(250, 249, 249, 0.7);
 }
 
 .bg-black {
-  background-color: var(--clr--black);
-  color: var(--clr--white);
+  background-color: #000000;
+  color: rgba(250, 249, 249, 0.7);
 }
 
 .bg-dgreen {
-  background-color: var(--clr--dk-green);
-  color: var(--clr--white);
+  background-color:rgba(2, 48, 2, 0.9);
+  color: rgba(250, 249, 249, 0.7);
 }
 
 .bg-white {
-  color: var(--clr--trans-black);
+  color: #201e1e;
 }
 
 .bg-white p {
-  color: var(--clr--trans-black);
+  color: #201e1e;
 }
 
 
-/* ************************************************** header styles ***************************************************** */
+/* ********************* header styles ********************** */
 header {
   z-index: 3;
   position: relative;
@@ -158,10 +129,10 @@ header h1 a {
   font-size: 3.8rem;
   margin-bottom: 0;
   text-decoration: none;
-  color: var(--clr--orange);
+  color: rgba(255, 165, 0, 0.9);
 }
 
-/* ****************************************************navigation links start********************************************** */
+/* *****************navigation links start*********************** */
 #menu {
   font-weight: 400;
   font-size: 20px;
@@ -175,7 +146,7 @@ header h1 a {
 }
 
 #menu a:hover {
-  color: var(--clr--orange);
+  color: rgba(255, 165, 0, 0.9);
   box-shadow: 0px 1px 3px orange;
 }
 
@@ -197,7 +168,7 @@ header h1 a {
 }
 
 #menu a.active {
-  background-color: var(--clr--black);
+  background-color: #000000;
   text-decoration: underline;
 }
 
@@ -238,7 +209,7 @@ li.dropdown {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: var(--clr--black);
+  background-color: #000000;
   min-width: 210px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   top: 22px;
@@ -257,22 +228,22 @@ li.dropdown {
 
 .dropdown-content a:hover {
   background-color: black;
-  color: var(--clr--trans-black);
+  color: #201e1e;
 }
 
 .dropdown:hover .dropdown-content {
   display: inline-block;
 }
 
-/* ********************************************* navigation links end ********************************************************* */
-/* **********************************************end of header section ******************************************************** */
+/* ************************************* navigation links end ***************************** */
+/* ******************************end of header section ************************************ */
 
-/* ************************************ floating Navigation burger menu styles and positioning********************************* */
+/* ********************* floating Navigation burger menu styles and positioning************ */
 /* <!-- code below from question on w3schools on how to create a burger menu
         https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar--> */
 
 .topnav {
-  background-color: var(--clr--trans-black);
+  background-color: #201e1e;
   position: fixed;
   right: 45px;
   top: 63px;
@@ -284,7 +255,8 @@ li.dropdown {
 }
 
 
-.topnav #myLinks, .topnav #myLinks-2 {
+.topnav #myLinks,
+.topnav #myLinks-2 {
   display: none;
   z-index: 2;
 }
@@ -299,7 +271,7 @@ li.dropdown {
 }
 
 .topnav a.icon {
-  background-color: var(--clr--trans-black);
+  background-color: #201e1e;
   display: block;
   position: absolute;
   right: 0;
@@ -327,18 +299,18 @@ li.dropdown {
 }
 
 
-/* *************************************** end of floating navigation burger menu ********************************************* */
+/* ****************** end of floating navigation burger menu ************************** */
 
-/* ************************************* footer styles and links and positioning ********************************************** */
+/* ***************** footer styles and links and positioning ************************** */
 footer {
   width: 100%;
   height: 12rem;
-  background-color: var(--clr--black);
+  background-color: #000000;
 }
 
 footer h3 {
   text-align: center;
-  color: var(--clr--orange);
+  color:rgba(255, 165, 0, 0.9);
 
 }
 
@@ -349,7 +321,7 @@ footer h3 {
 footer p {
   padding: 0 20px 0 0;
   text-align: right;
-  color: var(--clr--white);
+  color: rgba(250, 249, 249, 0.7);
   line-height: 0.5;
 }
 
@@ -366,8 +338,8 @@ footer p {
 }
 
 .fab {
-  color: var(--clr--white);
-  background-color: var(--clr--black);
+  color: rgba(250, 249, 249, 0.7);
+  background-color: #000000;
   padding: 10px;
   border-radius: 50%;
 }
@@ -383,7 +355,7 @@ footer p {
   margin-bottom: 2rem;
 }
 
-/* **************************************************** index greeting section ************************************************ */
+/* ************* index greeting section ******************** */
 .greeting {
   height: 650px;
   background-image: url(../images/cutting-cooked-meat.jpeg);
@@ -402,7 +374,7 @@ footer p {
   font-weight: 300;
 }
 
-/* ***************************************************** meat selectors section *************************************************** */
+/* **************** meat selectors section *************************** */
 .meat-selectors {
   width: 100%;
   border-radius: 5px;
@@ -430,7 +402,7 @@ footer p {
   margin-bottom: 0;
   padding-bottom: 1rem;
   font-size: 6rem;
-  color: var(--clr--orange);
+  color: rgba(255, 165, 0, 0.9);
 }
 
 .meat-description {
@@ -546,7 +518,7 @@ footer p {
 }
 
 em {
-  color: var(--clr--orange);
+  color: rgba(255, 165, 0, 0.9);
 }
 
 /************************************** Know your cuts section ***********************************/
@@ -903,10 +875,11 @@ audio {
     padding-right: 6rem;
   }
 
-  .topnav:hover #myLinks, .topnav:hover#myLinks-2{
+  .topnav:hover #myLinks,
+  .topnav:hover#myLinks-2 {
     display: block;
     z-index: 2;
-    background-color: var(--clr--trans-black);
+    background-color: #201e1e;
   }
 
   .our-products p {
@@ -971,8 +944,6 @@ audio {
 
   .far,
   .fas {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
     display: inline-block;
     font-style: normal;
     font-variant: normal;
@@ -982,7 +953,7 @@ audio {
   }
 
   .topnav a {
-    background-color: var(--clr--trans-black);
+    background-color: #201e1e;
     color: orange;
     padding: 17px;
     text-decoration: none;
@@ -992,7 +963,7 @@ audio {
   }
 
   .topnav a.icon {
-    background: var(--clr--trans-black);
+    background: #201e1e;
     display: block;
     position: absolute;
     right: 0;
@@ -1006,7 +977,7 @@ audio {
 
 
 
-
+/*************************************** min width 1200px ****************************/
 
 @media screen and (min-width:1200px) {
   .column {
@@ -1018,14 +989,15 @@ audio {
     flex-basis: 100%;
   }
 
-  .topnav:hover #myLinks, .topnav:hover #myLinks-2{
-    background-color: var(--clr--trans-black);
+  .topnav:hover #myLinks,
+  .topnav:hover #myLinks-2 {
+    background-color: #201e1e;
     display: block;
     z-index: 2;
   }
 }
 
-
+/*************************************** max width 1200px ****************************/
 
 @media screen and (max-width:1200px) {
 
@@ -1079,21 +1051,22 @@ audio {
 
   .topnav a {
     font-size: 11px;
-    background-color: var(--clr--trans-black);
+    background-color:#201e1e;
   }
 
   .topnav a.icon {
-    background: var(--clr--trans-black);
+    background: #201e1e;
     top: -5px;
     right: -7px;
   }
 
-  .topnav #mylinks, .topnav #myLinks-2{
-    background-color: var(--clr--dark-gray);
+  .topnav #mylinks,
+  .topnav #myLinks-2 {
+    background-color: #201e1e;
   }
 
   .active {
-    background-color: var(--clr--dark-gray);
+    background-color: #201e1e;
   }
 
   .greeting {
@@ -1285,7 +1258,7 @@ audio {
   }
 
 
-  /*  ************************ rewards form styles ******************************/
+  /*  ********** rewards form styles *****************/
   .rewards-form-outer {
     width: 90vw;
     margin: 30px 5%;
@@ -1368,7 +1341,7 @@ audio {
   .social-media-links {
     letter-spacing: -5px;
   }
-
+/******************* gallery styles *****************/
   .gallery-vid iframe {
     margin: 3rem 4vw;
     width: 86vw;
@@ -1392,7 +1365,7 @@ audio {
   }
 
 }
-
+/*************************************** max width 800px ****************************/
 @media screen and (max-width:800px) {
 
   p,
@@ -1429,7 +1402,7 @@ audio {
   }
 
   .topnav {
-    background-color: var(--clr--dark-gray);
+    background-color: #201e1e;
     position: fixed;
     right: 32px;
     top: 37px;
@@ -1437,20 +1410,20 @@ audio {
   }
 
   .topnav a.icon {
-    background: var(--clr--trans-black);
+    background: #201e1e;
     top: -22px;
     right: -15px;
-    padding: -4px 24px;
+    padding: 0px 24px;
     font-size: 10px;
   }
 
   .topnav a:hover {
     background-color: orange;
-    color: var(--clr--black);
+    color: #000000;
   }
 
   .topnav a {
-    background-color: var(--clr--trans-black);
+    background-color: #201e1e;
     font-size: 15px;
     padding: 2px 2px;
   }
@@ -1663,7 +1636,7 @@ audio {
   footer p {
     padding: 42px 39px 0px 0px;
     text-align: right;
-    color: var(--clr--white);
+    color: rgba(250, 249, 249, 0.7);
     font-size: 14px;
   }
 
@@ -1687,7 +1660,7 @@ audio {
     height: 100%;
   }
 
-  /*  ************************ rewards form styles ******************************/
+  /*  ************ rewards form styles *****************/
   .rewards-form-outer {
     width: 90vw;
     margin: 30px 5%;
@@ -1791,8 +1764,9 @@ audio {
     height: 36vh;
   }
 }
-@media screen and (max-width:300px){
-  header h1 a{
+/****************** min width 300px ****************/
+@media screen and (max-width:300px) {
+  header h1 a {
     font-size: 1.4rem;
   }
 }

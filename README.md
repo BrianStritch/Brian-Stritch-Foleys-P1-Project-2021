@@ -8,7 +8,7 @@ Additionally Foley's of Duleek offers a rewards scheme to loyal customers who co
 
 
 
-![Responsice Mockup](assets/images/readme/amiresponsive.JPG )
+![Responsice Mockup](assets/images/readme/amiresponsive.jpg )
 
 ## Features 
 1. The Home Page - The home landing page provides the user with a background image of cooked meat being sliced on a wooden chopping board, instantly being recognisable as a food based website. On larger screens the initial page displays four tabs across the lower section of the page displaying four different meat selections.
@@ -70,106 +70,173 @@ Additionally Foley's of Duleek offers a rewards scheme to loyal customers who co
 
 - __Our-Products__
 
-  - This section will allow the user to see exactly when the meetups will happen, where they will be located and how long the run will be in kilometers. 
-  - This section will be updated as these times change to keep the user up to date. 
+  - This section showcases the main meat proucts available at foleys and gives a brief description. A learn more link has been provided below the description which opens in a new tab and directs the user to wikipedia should they wish to discover more information regarding the selected product. 
 
-![Meetup Times](https://github.com/lucyrush/readme-template/blob/master/media/love_running_times.png)
+![Image of the Product Selectors](assets/images/readme/our-products-1.jpg)
+![Image of the Product Selectors](assets/images/readme/our-products-2.jpg)
+
 
 - __Pre-packaged food, Frozen Foods, Dry Foods and Condiments__
 
-  - This section will allow the user to see exactly when the meetups will happen, where they will be located and how long the run will be in kilometers. 
-  - This section will be updated as these times change to keep the user up to date. 
+  - This page gives a summary of all the pre packaged products for sale. It also includes frozen food products which are readily available. This section also displays a vast selection of dry foods, sauces, and condiments.
 
-![Meetup Times](https://github.com/lucyrush/readme-template/blob/master/media/love_running_times.png)
+
+![Image of the Product Selectors](assets/images/readme/pre-pack-products.jpg)
+![Image of the Product Selectors](assets/images/readme/frozen-food-range.jpg)
+![Image of the Product Selectors](assets/images/readme/condiments.jpg)
+
+
 
 
 - __Special Offers__
 
-  - This section will allow the user to see exactly when the meetups will happen, where they will be located and how long the run will be in kilometers. 
-  - This section will be updated as these times change to keep the user up to date. 
+  - This section provides a list of the current special offer deals at the time of compiling this website.
 
-![Meetup Times](https://github.com/lucyrush/readme-template/blob/master/media/love_running_times.png)
+![Image of the Product Selectors](assets/images/readme/specials.jpg)
 
 
 - __Know your Cuts__
 
-  - This section will allow the user to see exactly when the meetups will happen, where they will be located and how long the run will be in kilometers. 
-  - This section will be updated as these times change to keep the user up to date. 
+  - This section is to illustrate to the user where each cut comes from on the animal in question. A list of the types of jut are adjacent to the image.
 
-![Meetup Times](https://github.com/lucyrush/readme-template/blob/master/media/love_running_times.png)
+![Image of the beef-cuts illustration](assets/images/readme/beef-cuts.jpg)
+![Image of the pork-cuts illustration](assets/images/readme/pork-cuts.jpg)
+![Image of the chicken-cuts illustration](assets/images/readme/chicken-cuts.jpg)
+![Image of the lamb-cuts illustration](assets/images/readme/lamb-cuts.jpg)
 
 
 - __About Us__
 
-  - This section will allow the user to see exactly when the meetups will happen, where they will be located and how long the run will be in kilometers. 
-  - This section will be updated as these times change to keep the user up to date. 
+  - This section gives the user a basic background on foleys buthers, their partners and their principles.
 
-![Meetup Times](https://github.com/lucyrush/readme-template/blob/master/media/love_running_times.png)
+![Image of the about us section upper](assets/images/readme/about-1.jpg)
+![Image of the about us section lower](assets/images/readme/about-2.jpg)
 
 - __Contact Us__
 
-  - This section will allow the user to see exactly when the meetups will happen, where they will be located and how long the run will be in kilometers. 
-  - This section will be updated as these times change to keep the user up to date. 
+  - This section contains th erelevant contact details to make contact with the shop. This section also incorporates a google maps iframe where the user can obtain realtime directions to the shop.
 
-![Meetup Times](https://github.com/lucyrush/readme-template/blob/master/media/love_running_times.png)
+![Image of the contact us section](assets/images/readme/contact.jpg)
 
 - __The Footer__ 
 
-  - The footer section includes links to the relevant social media sites for Love Running. The links will open to a new tab to allow easy navigation for the user. 
+  - The footer section includes links to the relevant social media sites for Foleys. The links will open to a new tab to allow easy navigation for the user. 
   - The footer is valuable to the user as it encourages them to keep connected via social media
 
-![Footer](https://github.com/lucyrush/readme-template/blob/master/media/love_running_footer.png)
+![Image of the footer](assets/images/readme/footer.jpg)
 
 - __Gallery__
 
-  - The gallery will provide the user with supporting images to see what the meet ups look like. 
-  - This section is valuable to the user as they will be able to easily identify the types of events the organisation puts together. 
+  - The gallery provides the user with images of the different products available at foleys. 
+  - A selection of educational videos have been included in relation to organic farming in ireland. 
 
-![Gallery](https://github.com/lucyrush/readme-template/blob/master/media/love_running_gallery.png)
+![Image of the gallery upper](assets/images/readme/gallery-1.jpg)
+![Image of the gallery lower](assets/images/readme/gallery-2.jpg)
 
-- __The Sign Up Rewards Page__
+- __The Rewards Sign Up Page__
 
-  - This page will allow the user to get signed up to Love Running to start their running journey with the community. The user will be able specify if they would like to take part in road, trail or both types of running. The user will be asked to submit their full name and email address. 
+  - This page will allow the user to get signed up to the Foley's rewards scheme. The user will be asked to submit their full name,  email and address along with a brief questionairre collecting data about their meat preferences. 
 
-![Sign Up](https://github.com/lucyrush/readme-template/blob/master/media/love_running_signup.png)
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+![Image of the rewards form](assets/images/readme/rewards.jpg)
 
 ### Features Left to Implement
 
-- Sales page 
+- E-commerce sales page
+- members area login
+- rewards points calculator 
 
 ## Testing 
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+All aspects of the site have been tested and appear to be working as intended. The user should be able to achieve their goal as the site intends, depending on whatever they choose to do when they visit. 
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+I have used Developer tools in Google Chrome to test the responsiveness of the site on different devices small and large and the site appears to render well on different screen sizes, however some issues were noted. see bugs below.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+I have tested the site out on Google Chrome and Android, Edge, Safari however it has not been tested on IOS.
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+Page Links
+  - check all links in the main nav bar and verify their destination, from index.html, gallery.html and rewards.html. check all products subheadings redirect to relevant section on index page from index.html, rewards.html, gallery.html.
+Burger navigation menu
+  - check all links in the Burger menu and verify their destination, from index.html, gallery.html and rewards.html.
+Audio File
+  - click on the play button and verify that the thank you audio file plays
+  - click on the pause button and verify that the thank you audio file pauses
+  - click on the progress bar to change the timing position of the thank you audio file and verify 
+    that the file plays correctly
+  - mute the volume and verify that the volume mutes    
+Videos
+  - click on the play button and verify that the video plays
+  - click on the pause button and verify that the video pauses  
+  - click on the progress bar to change the timing position of the video and verify 
+  that the video plays correctly
+  - mute the volume and verify that the volume mutes
+  - change the volume to lowest setting and verify that the video cannot be heard
+  - make the video full screen and then back to regular size and verify that there 
+  are no issues
 
+Contact Form
+  - try to submit with all fields blank and verify that an error message regarding 
+    the required fields is shown
+  - fill in all fields, but have name field blank and submit and verify that an 
+    error message regarding the required fields is shown
+  - fill in all fields, but have email address field blank and submit and verify 
+    that an error message regarding the required fields is shown
+  - fill in all fields, but have email address field without "@" symbol and submit 
+    and verify that an error message regarding the required fields is shown
+  - fill in all fields, have email address field with "@" symbol but without ".com" 
+    and submit and verify that an error message regarding the required fields is shown
+  - fill in all fields correctly, but change radio button selection to "other" and 
+    submit and verify the form is successful
+  - fill in all fields, but have "give us some specific details" field blank and 
+    submit and verify that an error message regarding the required fields is shown
+Social Media
+ - social media link testing
+    - click on Facebook icon and verify that the correct page opens in a new tab
+    - click on Twitter icon and verify that the correct page opens in a new tab
+    - click on Linked-in icon and verify that the correct page opens in a new tab
+    - click on snapchat icon and verify that the correct page opens in a new tab
+    
 
 ### Validator Testing 
-
-- HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
+- W3C HTML Code Validator
+  - The code for the following html pages was entered into the validator and all pages passed:
+  - index.html
+  - gallery.html
+  - rewards.html
+- W3C CSS Jigsaw Validator
+  - The code for the stylesheet.css was entered into the validator and passed.
+  - No errors were returned when passing through the official w3 html validator.
+  ![W3 Validator index.html](assets/images/readme/index-page-validation.jpg)
+  ![W3 validator gallery.html](assets/images/readme/gallery-page-validation.jpg)
+  ![W3 validator rewards.html](assets/images/readme/rewards-page-validation.jpg)
+  ![W3 validator stylesheet.css](assets/images/readme/css-validator.jpg)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+  - No errors were found when passing through the official [(Jigsaw) validator](href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!")
+- Accesibility lighthouse
+  ![lighthouse index.html](assets/images/readme/index-lighthouse.jpg)
+  ![lighthouse gallery.html](assets/images/readme/gallery-lighthouse.jpg)
+  ![lighthouse rewards.html](assets/images/readme/rewards-lighthouse.jpg)
 
 ### Unfixed Bugs
 
-You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
+While many bugs have been found during the development phase, such as layout issues,
+font size issues, and links not working when commited to GitHub. The majority of these have all been
+fixed in the final edition of this website. 
+
+- The video iframe elements in the gallery scale up and down and at certain screen sizes appear to be either stretched slightly or compressed slightly.
+
+- An issue was noted with the burger menu which, incorporated a javascript function "onclick" where the navigation icon would have to be clicked to open and clicked again to close. If left open on larger screens the dropdown list was visible when the icon was hidden. I attempted to rectify this by stating "mouseover" in place of "onclick" however this created a glich. In the end i duplicated the complete burger menu code block, removed the javascript and set to display on hover which fixed this issue. A secondary issue then arose where on a media device you cannot hover so the navigation was inoperable. The resolution to this was to create two burger menu batches of code with two seperate classes and have one visible at one screen size and up and the other one visible from thatsize down which allowed for the crossover and hence allowing the two seperate trigger types to operate when needed. When not in use display is set to none on the required block of code. 
+
+Some minor issues were noted with responsiveness on different size devices and a happy medium had to be achieved as i could not get the site to appear uniform on all different types of media devices,
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
-
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
   - In the GitHub repository, navigate to the Settings tab 
-  - From the source section drop-down menu, select the Master Branch
+  - in settings select pages on the menu along left hand side.
+  - select branch in the source section and change setting to main
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
 The live link can be found here - https://brianstritch.github.io/Brian-Stritch-Foleys-P1-Project-2021/ 
@@ -177,16 +244,11 @@ The live link can be found here - https://brianstritch.github.io/Brian-Stritch-F
 
 ## Credits 
 
-- I would like to thank ALan Foley for allowing me to base this website on his butchers, and allowing me to obtain images of the shop and for the time spent discussing the text content.
+- I would like to thank Alan Foley for allowing me to base this website on his butcher shop, and allowing me to obtain images of the shop and products within for the time spent discussing the text content.
 - I would like to thank my mentor Maranatha llesanmi for the guidance throughout the project.
 - I would like to credit Kevin Powell youtuber for numerous educational tutorials regarding the positioning and layout of this site.
 - I would like to thank all my family and friends for the help in testing the website searching for errors and bugs.
 
-
-
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-
-You can break the credits section up into Content and Media, depending on what you have included in your project. 
 
 ### Content 
 
@@ -223,9 +285,9 @@ You can break the credits section up into Content and Media, depending on what y
     -	A rewards sign-up form for loyal customers
     -	Links to social media 
 
-      ###__Features and Content__
-         - example: A user wishes to sign up to the loyal customers rewards scheme, a rewards sign up form with a submit option would be required for this function to take place. 
-        - ![scope Diagram](assets/ux/scope.jpg)
+  - ### __Features and Content__
+     - example: A user wishes to sign up to the loyal customers rewards scheme, a rewards sign up form with a submit option would be required for this function to take place. 
+    - ![scope Diagram](assets/ux/scope.jpg)
     
 
 - ### __Strategy__
@@ -269,10 +331,10 @@ You can break the credits section up into Content and Media, depending on what y
     - An additional hamburger icon navigation menu is fixed to the screen in the upper right corner, which is hidden behind the main navigation bar when at the top of the page, so as to not confuse the user, but on scrolling down the page it reveals itself and remains in place allowing the user to navigate to anywhere in the website without restricting the viewport height allowing for a more pleasurable experience. When the user hovers their mouse over the hamburger menu on larger screens a dropdown menu appears allowing the user to navigate to the area of their liking.
     - On mobile devices the main navigation bar disappears, and the hamburger menu comes forward to sit above the header and is always in full sight of the user. It is located to the top-right of the screen in the same position as it is found on larger screens. This when pressed drops the navigation menu so the user can select their destination within the website. Each link is clearly marked out with a hover feature so the user can clearly see which link is being selected. 
     - On desktop each navigation link has a gentle hover to show that the area is active and the active page has an underline indicating which page the user is currently on. Once clicked or pressed the link will smoothly take the user to whichever section they desire. 
-              The gallery and video areas are close together for easy access to jump from one to another. The media player will play clips of videos on you tube which directly relate to the sourcing of the products for the shop. An audio file has been included thanking the user for visiting the website and requests that the user visit the shop. The user has control over the play, pause rewind, fast-forward and volume functions.
+    The gallery and video areas are close together for easy access to jump from one to another. The media player will play clips of videos on you tube which directly relate to the sourcing of the products for the shop. An audio file has been included thanking the user for visiting the website and requests that the user visit the shop. The user has control over the play, pause rewind, fast-forward and volume functions.
     - The site includes hyperlinks to external sources on Wikipedia for additional information which relates to the content found in this website.
-              The site also incorporates a rewards page which includes a sign up form which gathers data via the input fields and submits the data to the code institute database and returns a table of the contents gathered. The sign up form also includes a clear button which clears all the data fields.
-              Each social media link also has a hover effect so the user knows the link is active and it will take the user to the relevant platform requested. 
+    The site also incorporates a rewards page which includes a sign up form which gathers data via the input fields and submits the data to the code institute database and returns a table of the contents gathered. The sign up form also includes a clear button which clears all the data fields.
+    Each social media link also has a hover effect so the user knows the link is active and it will take the user to the relevant platform requested. 
  - ### __Skeleton__
 
     - Below is a set of wireframes created on balsamiq illustrating the index, gallery and rewards pages of the website.
@@ -284,23 +346,6 @@ You can break the credits section up into Content and Media, depending on what y
       - ![Foley's of Duleek Wireframe from Balsamiq](assets/ux/rewards-wireframe.jpg)
  
 
-  
 
-Congratulations on completing your Readme, you have made another big stride in the direction of being a developer! 
 
-## Other General Project Advice
 
-Below you will find a couple of extra tips that may be helpful when completing your project. Remember that each of these projects will become part of your final portfolio so it’s important to allow enough time to showcase your best work! 
-
-- One of the most basic elements of keeping a healthy commit history is with the commit message. When getting started with your project, read through [this article](https://chris.beams.io/posts/git-commit/) by Chris Beams on How to Write  a Git Commit Message 
-  - Make sure to keep the messages in the imperative mood 
-
-- When naming the files in your project directory, make sure to consider meaningful naming of files, point to specific names and sections of content.
-  - For example, instead of naming an image used ‘image1.png’ consider naming it ‘landing_page_img.png’. This will ensure that there are clear file paths kept. 
-
-- Do some extra research on good and bad coding practices, there are a handful of useful articles to read, consider reviewing the following list when getting started:
-  - [Writing Your Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
-  - [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
-  - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#General)
-
-Getting started with your Portfolio Projects can be daunting, planning your project can make it a lot easier to tackle, take small steps to reach the final outcome and enjoy the process! 
