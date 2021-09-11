@@ -284,7 +284,7 @@ li.dropdown {
 }
 
 
-.topnav #myLinks {
+.topnav #myLinks, .topnav #myLinks-2 {
   display: none;
   z-index: 2;
 }
@@ -543,10 +543,6 @@ footer p {
 .special-2 p,
 .special-3 p {
   text-align: left;
-}
-
-.special-1 p {
-  padding-top: 3rem;
 }
 
 em {
@@ -907,7 +903,7 @@ audio {
     padding-right: 6rem;
   }
 
-  .topnav:hover #myLinks {
+  .topnav:hover #myLinks, .topnav:hover#myLinks-2{
     display: block;
     z-index: 2;
     background-color: var(--clr--trans-black);
@@ -1022,7 +1018,7 @@ audio {
     flex-basis: 100%;
   }
 
-  .topnav:hover #myLinks {
+  .topnav:hover #myLinks, .topnav:hover #myLinks-2{
     background-color: var(--clr--trans-black);
     display: block;
     z-index: 2;
@@ -1092,7 +1088,7 @@ audio {
     right: -7px;
   }
 
-  .topnav #mylinks {
+  .topnav #mylinks, .topnav #myLinks-2{
     background-color: var(--clr--dark-gray);
   }
 
